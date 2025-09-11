@@ -1,1 +1,45 @@
 @import "tailwindcss";
+
+@theme {
+  /* Breakpoints */
+  --breakpoint-xs: 36rem;
+  --breakpoint-sm: 40rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 64rem;
+  --breakpoint-xl: 80rem;
+  --breakpoint-2xl: 90rem;
+  /* Fonts */
+  --font-muller: "Muller-Trial";
+  --font-rover: "Land Rover Web";
+  /* Colors */
+  --color-primary: #1c2126;
+  --color-brand-red: #d60000;
+  --color-brand-gray: #a9a9a9;
+  --color-brand-gray-100: #eceef1;
+  --color-brand-green-400: #484F55;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply font-muller text-primary !leading-none overflow-x-hidden;
+  }
+  button {
+    @apply cursor-pointer;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-muller leading-none;
+  }
+}
+
+@utility container-base {
+  @apply w-full max-w-340 mx-auto px-5;
+}

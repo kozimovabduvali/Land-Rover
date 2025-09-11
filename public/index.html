@@ -1,12 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Главная</title>
+  <!-- Styles -->
   <link rel="stylesheet" href="./css/output.css">
+  <!-- Font Rover -->
+  <link rel="stylesheet" href="./fonts/muller/stylesheet.css">
+  <!-- Font Muller -->
+  <link rel="stylesheet" href="./fonts/rover/stylesheet.css">
 </head>
+
 <body>
-  hello
+  <!-- Header -->
+  <header>
+    <div class="container-base pt-6.5 pb-7.5">
+      <!-- Top -->
+      <div class="w-full flex items-center justify-between border-b border-black/20 pb-5.5 mb-5.5">
+        <!-- Logo  -->
+        <a href="./index.html" class="shrink-0">
+          <img class="h-15.25" src="./assets/icons/logo.svg" alt="Logo">
+        </a>
+
+        <!-- Center -->
+        <div class="text-center">
+          <h4 class="font-bold text-xl mb-1.5">
+            43-км МКАД, Вл1, С1
+          </h4>
+          <p class="font-light">
+            между Киевским и Калужским шоссе
+          </p>
+        </div>
+
+        <!-- Right -->
+        <div class="flex gap-4">
+          <div class="text-right">
+            <a href="+84950250005" class="font-bold text-xl mb-1.5">
+              8 495 025-00-05
+            </a>
+            <p class="font-light">
+              между Киевским и Калужским шоссе
+            </p>
+          </div>
+          <div>
+            <img class="h-3 mb-1" src="./assets/icons/google-play.svg" alt="Play Market Icon">
+            <a href="#"
+              class="flex items-center justify-center bg-brand-green-400 text-white rounded-full h-8.25 py-1.5 px-3.5 transition duration-300 hover:bg-brand-green-400/80">
+              Личный кабинет
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Bottom -->
+      <div class="flex items-center justify-between">
+        <!-- Links -->
+        <div class="flex items-center lg:gap-7 xl:gap-10">
+          <a href="#"
+            class="flex items-center justify-center border-[0.5px] border-black/20 h-7.5 py-1.5 px-4 rounded-[10px] text-lg leading-none">
+            Главная
+          </a>
+          <a href="#"
+            class="flex items-center justify-center h-7.5 rounded-[10px] text-lg leading-none transition duration-300 hover:text-brand-red">
+            О компании
+          </a>
+          <a href="#"
+            class="flex items-center justify-center h-7.5 rounded-[10px] text-lg leading-none transition duration-300 hover:text-brand-red">
+            Акции
+          </a>
+          <a href="#"
+            class="flex items-center justify-center h-7.5 rounded-[10px] text-lg leading-none transition duration-300 hover:text-brand-red">
+            Мобильное приложение
+          </a>
+          <a href="#"
+            class="flex items-center justify-center h-7.5 rounded-[10px] text-lg leading-none transition duration-300 hover:text-brand-red">
+            Вакансии
+          </a>
+          <a href="#"
+            class="flex items-center justify-center h-7.5 rounded-[10px] text-lg leading-none transition duration-300 hover:text-brand-red">
+            Контакты
+          </a>
+        </div>
+
+        <!-- Search -->
+        <div class="relative w-full max-w-87.5">
+          <input type="text" name="search" id="search"
+            class="w-full h-8.5 bg-brand-gray-100 rounded-lg p-2.5 outline-none placeholder:text-sm text-sm border-[0.5px] border-transparent focus:border-black/20"
+            placeholder="Поиск по сайту">
+
+          <div class="absolute right-2.5 top-1/2 -translate-y-1/2">
+            <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M5.88095 1.73822C4.64959 1.73822 3.46866 2.22737 2.59796 3.09808C1.72725 3.96878 1.2381 5.14971 1.2381 6.38107C1.2381 7.61244 1.72725 8.79337 2.59796 9.66407C3.46866 10.5348 4.64959 11.0239 5.88095 11.0239C7.1067 11.0239 8.28248 10.5392 9.15203 9.67595C9.15677 9.67089 9.16162 9.66589 9.16656 9.66095C9.17104 9.65648 9.17558 9.65209 9.18016 9.64778C10.0407 8.77867 10.5238 7.60477 10.5238 6.38107C10.5238 5.14971 10.0347 3.96878 9.16395 3.09808C8.29324 2.22737 7.11231 1.73822 5.88095 1.73822ZM10.4559 10.0764C11.2971 9.0351 11.7619 7.73205 11.7619 6.38107C11.7619 4.82135 11.1423 3.32551 10.0394 2.22261C8.93652 1.11972 7.44068 0.500122 5.88095 0.500122C4.32123 0.500122 2.82538 1.11972 1.72249 2.22261C0.619599 3.32551 0 4.82135 0 6.38107C0 7.9408 0.619599 9.43664 1.72249 10.5395C2.82538 11.6424 4.32123 12.262 5.88095 12.262C7.23394 12.262 8.53887 11.7958 9.58092 10.9523L11.9428 13.3184C12.1844 13.5604 12.5763 13.5607 12.8183 13.3192C13.0603 13.0777 13.0606 12.6857 12.8191 12.4437L10.4559 10.0764Z"
+                fill="#1C2126" fill-opacity="0.7" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 </body>
+
 </html>
