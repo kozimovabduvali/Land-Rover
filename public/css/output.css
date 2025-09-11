@@ -31,11 +31,13 @@
     --default-mono-font-family: var(--font-mono);
     --font-muller: "Muller-Trial";
     --font-rover: "Land Rover Web";
+    --text-display-22: 1.375rem;
     --text-display-26: 1.625rem;
     --text-display-50: 3.125rem;
     --color-primary: #1c2126;
     --color-main-primary: #282828;
     --color-brand-red: #d60000;
+    --color-brand-gray: #a9a9a9;
     --color-brand-gray-100: #eceef1;
     --color-brand-green-400: #484f55;
   }
@@ -275,6 +277,14 @@
   .table {
     display: table;
   }
+  .size-22 {
+    width: calc(var(--spacing) * 22);
+    height: calc(var(--spacing) * 22);
+  }
+  .size-22\.25 {
+    width: calc(var(--spacing) * 22.25);
+    height: calc(var(--spacing) * 22.25);
+  }
   .size-full {
     width: 100%;
     height: 100%;
@@ -348,14 +358,6 @@
   .border-collapse {
     border-collapse: collapse;
   }
-  .translate-x-1 {
-    --tw-translate-x: calc(var(--spacing) * 1);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .translate-x-1\/4 {
-    --tw-translate-x: calc(1/4 * 100%);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
   .-translate-y-1 {
     --tw-translate-y: calc(var(--spacing) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
@@ -379,6 +381,12 @@
   .justify-between {
     justify-content: space-between;
   }
+  .justify-center {
+    justify-content: center;
+  }
+  .gap-1 {
+    gap: calc(var(--spacing) * 1);
+  }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
@@ -388,14 +396,37 @@
   .gap-4 {
     gap: calc(var(--spacing) * 4);
   }
+  .space-y-11 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 11) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 11) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-11\.5 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 11.5) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 11.5) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
   .overflow-hidden {
     overflow: hidden;
+  }
+  .overflow-x-auto {
+    overflow-x: auto;
+  }
+  .rounded-\[1\.25rem\] {
+    border-radius: 1.25rem;
   }
   .rounded-\[1\.875rem\] {
     border-radius: 1.875rem;
   }
   .rounded-\[10px\] {
     border-radius: 10px;
+  }
+  .rounded-\[30px\] {
+    border-radius: 30px;
   }
   .rounded-full {
     border-radius: calc(infinity * 1px);
@@ -415,9 +446,6 @@
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
   }
-  .border-\[\#ECEEF1\] {
-    border-color: #ECEEF1;
-  }
   .border-black {
     border-color: var(--color-black);
   }
@@ -427,14 +455,14 @@
       border-color: color-mix(in oklab, var(--color-black) 20%, transparent);
     }
   }
+  .border-brand-gray {
+    border-color: var(--color-brand-gray);
+  }
   .border-transparent {
     border-color: transparent;
   }
   .border-white {
     border-color: var(--color-white);
-  }
-  .bg-\[\#ECEEF1\] {
-    background-color: #ECEEF1;
   }
   .bg-brand-gray-100 {
     background-color: var(--color-brand-gray-100);
@@ -457,8 +485,8 @@
   .bg-transparent {
     background-color: transparent;
   }
-  .object-cover {
-    object-fit: cover;
+  .bg-white {
+    background-color: var(--color-white);
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
@@ -492,6 +520,12 @@
   }
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
+  }
+  .py-12 {
+    padding-block: calc(var(--spacing) * 12);
+  }
+  .py-12\.5 {
+    padding-block: calc(var(--spacing) * 12.5);
   }
   .py-29 {
     padding-block: calc(var(--spacing) * 29);
@@ -543,6 +577,9 @@
   .text-xl {
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .text-display-22 {
+    font-size: var(--text-display-22);
   }
   .text-display-26 {
     font-size: var(--text-display-26);
@@ -649,6 +686,11 @@
       margin-bottom: calc(var(--spacing) * 30);
     }
   }
+  .lg\:gap-3\.75 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 3.75);
+    }
+  }
   .lg\:gap-7 {
     @media (width >= 64rem) {
       gap: calc(var(--spacing) * 7);
@@ -718,6 +760,11 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-space-y-reverse {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
@@ -751,6 +798,7 @@
       --tw-rotate-z: initial;
       --tw-skew-x: initial;
       --tw-skew-y: initial;
+      --tw-space-y-reverse: 0;
       --tw-border-style: solid;
       --tw-font-weight: initial;
       --tw-outline-style: solid;
