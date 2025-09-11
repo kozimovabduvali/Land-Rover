@@ -11,12 +11,16 @@
   /* Fonts */
   --font-muller: "Muller-Trial";
   --font-rover: "Land Rover Web";
+  /* Font-size */
+  --text-display-26: 1.625rem;
+  --text-display-50: 3.125rem;
   /* Colors */
   --color-primary: #1c2126;
+  --color-main-primary: #282828;
   --color-brand-red: #d60000;
   --color-brand-gray: #a9a9a9;
   --color-brand-gray-100: #eceef1;
-  --color-brand-green-400: #484F55;
+  --color-brand-green-400: #484f55;
 }
 
 @layer base {
@@ -24,7 +28,7 @@
     @apply scroll-smooth;
   }
   body {
-    @apply font-muller text-primary !leading-none overflow-x-hidden;
+    @apply font-muller bg-white text-primary !leading-none overflow-x-hidden;
   }
   button {
     @apply cursor-pointer;
@@ -36,10 +40,31 @@
   h4,
   h5,
   h6 {
-    @apply font-muller leading-none;
+    @apply font-rover;
+  }
+
+  .text-xs,
+  .text-sm,
+  .text-base,
+  .text-lg,
+  .text-xl,
+  .text-2xl,
+  .text-2xl,
+  .text-3xl,
+  .text-4xl,
+  .text-5xl {
+    @apply !leading-none;
   }
 }
 
 @utility container-base {
   @apply w-full max-w-340 mx-auto px-5;
+}
+
+@utility flex-mai-center {
+  @apply flex items-center justify-center;
+}
+
+@utility bg-shadow-blur {
+  box-shadow: 0px 0px 30px 2px #1c21264d;
 }
