@@ -1,4 +1,5 @@
 /*! tailwindcss v4.1.13 | MIT License | https://tailwindcss.com */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
@@ -29,7 +30,7 @@
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
-    --font-muller: "Muller-Trial";
+    --font-muller: "Montserrat";
     --font-rover: "Land Rover Web";
     --text-display-22: 1.375rem;
     --text-display-26: 1.625rem;
@@ -337,6 +338,12 @@
   .w-full {
     width: 100%;
   }
+  .max-w-61 {
+    max-width: calc(var(--spacing) * 61);
+  }
+  .max-w-63 {
+    max-width: calc(var(--spacing) * 63);
+  }
   .max-w-87 {
     max-width: calc(var(--spacing) * 87);
   }
@@ -348,6 +355,12 @@
   }
   .max-w-178\.75 {
     max-width: calc(var(--spacing) * 178.75);
+  }
+  .max-w-235 {
+    max-width: calc(var(--spacing) * 235);
+  }
+  .max-w-235\.5 {
+    max-width: calc(var(--spacing) * 235.5);
   }
   .flex-shrink {
     flex-shrink: 1;
@@ -565,6 +578,10 @@
   .text-7xl {
     font-size: var(--text-7xl);
     line-height: var(--tw-leading, var(--text-7xl--line-height));
+  }
+  .text-display-22\/\[112\%\] {
+    font-size: var(--text-display-22);
+    line-height: 112%;
   }
   .text-lg {
     font-size: var(--text-lg);
