@@ -72,6 +72,10 @@
   box-shadow: 0px 0px 30px 2px #1c21264d;
 }
 
+@utility bg-shadow-blur-2 {
+  box-shadow: 0px 0px 10px 0px #00000033;
+}
+
 @utility bg-main-gradient {
   background: linear-gradient(
     89.99deg,
@@ -79,8 +83,6 @@
     rgba(217, 217, 217, 0.29) 100%
   );
 }
-
-
 
 .no-scrollbar::-webkit-scrollbar {
   display: none;

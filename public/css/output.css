@@ -8,9 +8,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-gray-50: oklch(98.5% 0.002 247.839);
     --color-gray-100: oklch(96.7% 0.003 264.542);
-    --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -257,14 +255,8 @@
   .mb-1\.5 {
     margin-bottom: calc(var(--spacing) * 1.5);
   }
-  .mb-2 {
-    margin-bottom: calc(var(--spacing) * 2);
-  }
   .mb-3 {
     margin-bottom: calc(var(--spacing) * 3);
-  }
-  .mb-3\.5 {
-    margin-bottom: calc(var(--spacing) * 3.5);
   }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
@@ -275,11 +267,11 @@
   .mb-5\.5 {
     margin-bottom: calc(var(--spacing) * 5.5);
   }
-  .mb-6 {
-    margin-bottom: calc(var(--spacing) * 6);
-  }
   .mb-7 {
     margin-bottom: calc(var(--spacing) * 7);
+  }
+  .mb-7\.5 {
+    margin-bottom: calc(var(--spacing) * 7.5);
   }
   .mb-9 {
     margin-bottom: calc(var(--spacing) * 9);
@@ -305,8 +297,8 @@
   .mb-20 {
     margin-bottom: calc(var(--spacing) * 20);
   }
-  .ml-3 {
-    margin-left: calc(var(--spacing) * 3);
+  .mb-21 {
+    margin-bottom: calc(var(--spacing) * 21);
   }
   .ml-4 {
     margin-left: calc(var(--spacing) * 4);
@@ -434,6 +426,12 @@
   .h-161\.25 {
     height: calc(var(--spacing) * 161.25);
   }
+  .h-165 {
+    height: calc(var(--spacing) * 165);
+  }
+  .h-165\.25 {
+    height: calc(var(--spacing) * 165.25);
+  }
   .min-h-16 {
     min-height: calc(var(--spacing) * 16);
   }
@@ -494,14 +492,14 @@
   .max-w-141 {
     max-width: calc(var(--spacing) * 141);
   }
-  .max-w-143 {
-    max-width: calc(var(--spacing) * 143);
-  }
-  .max-w-143\.5 {
-    max-width: calc(var(--spacing) * 143.5);
-  }
   .max-w-150 {
     max-width: calc(var(--spacing) * 150);
+  }
+  .max-w-162 {
+    max-width: calc(var(--spacing) * 162);
+  }
+  .max-w-162\.5 {
+    max-width: calc(var(--spacing) * 162.5);
   }
   .max-w-178 {
     max-width: calc(var(--spacing) * 178);
@@ -511,9 +509,6 @@
   }
   .max-w-250 {
     max-width: calc(var(--spacing) * 250);
-  }
-  .min-w-80 {
-    min-width: calc(var(--spacing) * 80);
   }
   .min-w-full {
     min-width: 100%;
@@ -548,9 +543,6 @@
   .resize {
     resize: both;
   }
-  .list-inside {
-    list-style-position: inside;
-  }
   .list-outside {
     list-style-position: outside;
   }
@@ -560,14 +552,8 @@
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
   .grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-  .flex-wrap {
-    flex-wrap: wrap;
   }
   .items-center {
     align-items: center;
@@ -654,6 +640,9 @@
   .rounded-\[30px\] {
     border-radius: 30px;
   }
+  .rounded-\[40px\] {
+    border-radius: 40px;
+  }
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
@@ -687,6 +676,9 @@
   }
   .border-brand-gray {
     border-color: var(--color-brand-gray);
+  }
+  .border-brand-red {
+    border-color: var(--color-brand-red);
   }
   .border-primary {
     border-color: var(--color-primary);
@@ -726,6 +718,12 @@
   }
   .bg-white {
     background-color: var(--color-white);
+  }
+  .object-cover {
+    object-fit: cover;
+  }
+  .object-center {
+    object-position: center;
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
@@ -851,6 +849,9 @@
   .text-\[10px\] {
     font-size: 10px;
   }
+  .text-\[34px\] {
+    font-size: 34px;
+  }
   .text-display-22 {
     font-size: var(--text-display-22);
   }
@@ -893,6 +894,9 @@
   }
   .bg-shadow-blur {
     box-shadow: 0px 0px 30px 2px #1c21264d;
+  }
+  .bg-shadow-blur-2 {
+    box-shadow: 0px 0px 10px 0px #00000033;
   }
   .outline {
     outline-style: var(--tw-outline-style);
