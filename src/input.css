@@ -80,6 +80,9 @@
   background: linear-gradient(86.06deg, #1c2126 45%, #7d858d 100%);
 }
 
+@utility bg-gradient-secondary {
+  box-shadow: 0px 0px 20px 1px #ffffff69;
+}
 @utility bg-main-gradient {
   background: linear-gradient(
     89.99deg,
