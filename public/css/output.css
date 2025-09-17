@@ -273,6 +273,12 @@
   .mb-1\.5 {
     margin-bottom: calc(var(--spacing) * 1.5);
   }
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
+  .mb-2\.5 {
+    margin-bottom: calc(var(--spacing) * 2.5);
+  }
   .mb-3 {
     margin-bottom: calc(var(--spacing) * 3);
   }
@@ -320,6 +326,12 @@
   }
   .mb-15\.75 {
     margin-bottom: calc(var(--spacing) * 15.75);
+  }
+  .mb-16 {
+    margin-bottom: calc(var(--spacing) * 16);
+  }
+  .mb-16\.75 {
+    margin-bottom: calc(var(--spacing) * 16.75);
   }
   .mb-20 {
     margin-bottom: calc(var(--spacing) * 20);
@@ -467,6 +479,12 @@
   .h-39\.25 {
     height: calc(var(--spacing) * 39.25);
   }
+  .h-45 {
+    height: calc(var(--spacing) * 45);
+  }
+  .h-45\.25 {
+    height: calc(var(--spacing) * 45.25);
+  }
   .h-75 {
     height: calc(var(--spacing) * 75);
   }
@@ -560,6 +578,9 @@
   .max-w-57\.5 {
     max-width: calc(var(--spacing) * 57.5);
   }
+  .max-w-59 {
+    max-width: calc(var(--spacing) * 59);
+  }
   .max-w-67 {
     max-width: calc(var(--spacing) * 67);
   }
@@ -622,6 +643,9 @@
   }
   .max-w-237\.5 {
     max-width: calc(var(--spacing) * 237.5);
+  }
+  .max-w-240 {
+    max-width: calc(var(--spacing) * 240);
   }
   .max-w-250 {
     max-width: calc(var(--spacing) * 250);
@@ -801,6 +825,10 @@
   .rounded-lg {
     border-radius: var(--radius-lg);
   }
+  .rounded-b-\[30px\] {
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
@@ -916,6 +944,12 @@
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
+  .px-6 {
+    padding-inline: calc(var(--spacing) * 6);
+  }
+  .px-6\.5 {
+    padding-inline: calc(var(--spacing) * 6.5);
+  }
   .px-7 {
     padding-inline: calc(var(--spacing) * 7);
   }
@@ -970,6 +1004,12 @@
   .py-29 {
     padding-block: calc(var(--spacing) * 29);
   }
+  .pt-3 {
+    padding-top: calc(var(--spacing) * 3);
+  }
+  .pt-3\.75 {
+    padding-top: calc(var(--spacing) * 3.75);
+  }
   .pt-6 {
     padding-top: calc(var(--spacing) * 6);
   }
@@ -1008,6 +1048,9 @@
   }
   .text-right {
     text-align: right;
+  }
+  .\!font-muller {
+    font-family: var(--font-muller) !important;
   }
   .font-muller {
     font-family: var(--font-muller);
@@ -1061,6 +1104,9 @@
   }
   .text-\[10px\] {
     font-size: 10px;
+  }
+  .text-\[28px\] {
+    font-size: 28px;
   }
   .text-\[34px\] {
     font-size: 34px;
