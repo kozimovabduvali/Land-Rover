@@ -594,6 +594,9 @@
   .min-h-40 {
     min-height: calc(var(--spacing) * 40);
   }
+  .min-h-80 {
+    min-height: calc(var(--spacing) * 80);
+  }
   .min-h-113 {
     min-height: calc(var(--spacing) * 113);
   }
@@ -773,14 +776,6 @@
     --tw-translate-x: calc(calc(1/2 * 100%) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
-  .translate-x-7 {
-    --tw-translate-x: calc(var(--spacing) * 7);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .translate-x-9 {
-    --tw-translate-x: calc(var(--spacing) * 9);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
   .translate-x-10 {
     --tw-translate-x: calc(var(--spacing) * 10);
     translate: var(--tw-translate-x) var(--tw-translate-y);
@@ -791,10 +786,6 @@
   }
   .-translate-y-1\/2 {
     --tw-translate-y: calc(calc(1/2 * 100%) * -1);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .-translate-y-7 {
-    --tw-translate-y: calc(var(--spacing) * -7);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .translate-y-2 {
@@ -885,6 +876,12 @@
   }
   .gap-11 {
     gap: calc(var(--spacing) * 11);
+  }
+  .gap-12 {
+    gap: calc(var(--spacing) * 12);
+  }
+  .gap-12\.5 {
+    gap: calc(var(--spacing) * 12.5);
   }
   .space-y-1 {
     :where(& > :not(:last-child)) {
@@ -1242,6 +1239,14 @@
   .text-2xl\/\[112\%\] {
     font-size: var(--text-2xl);
     line-height: 112%;
+  }
+  .text-2xl\/\[115\%\] {
+    font-size: var(--text-2xl);
+    line-height: 115%;
+  }
+  .text-2xl\/\[120\%\] {
+    font-size: var(--text-2xl);
+    line-height: 120%;
   }
   .text-3xl {
     font-size: var(--text-3xl);
