@@ -84,7 +84,6 @@
   backdrop-filter: blur(10px);
 }
 
-
 @utility bg-gradient-secondary {
   box-shadow: 0px 0px 20px 1px #ffffff69;
 }
@@ -96,6 +95,50 @@
   );
 }
 
-no-scrollbar::-webkit-scrollbar {
+.no-scrollbar::-webkit-scrollbar {
   display: none;
+}
+
+.scroll-1::-webkit-scrollbar {
+  @apply w-0.75 rounded-full;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  @apply rounded-full
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  @apply rounded-full
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  @apply rounded-full
+}
+.fade-in {
+  animation: fadeIn 0.2s ease-in-out forwards, scaleIn 0.2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.modal-main {
+  display: none;
+}
+.modal-main.active {
+  display: flex; /* yoki block */
 }
