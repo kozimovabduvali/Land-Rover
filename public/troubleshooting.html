@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Страница модели</title>
+  <!-- Styles -->
+  <link rel="stylesheet" href="./css/output.css">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Font Rover -->
+  <link rel="stylesheet" href="./fonts/muller/stylesheet.css">
+  <!-- Font Muller -->
+  <link rel="stylesheet" href="./fonts/rover/stylesheet.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container-base pt-6.5 pb-7.5">
+      <!-- Top -->
+      <div class="w-full flex items-center justify-between border-b border-black/20 pb-5.5 mb-5.5">
+        <!-- Logo  -->
+        <a href="./index.html" class="shrink-0">
+          <img class="h-15.25" src="./assets/icons/logo.svg" alt="Logo">
+        </a>
+
+        <!-- Center -->
+        <div class="text-center">
+          <h4 class="font-bold text-xl mb-1.5">
+            43-км МКАД, Вл1, С1
+          </h4>
+          <p class="font-light">
+            между Киевским и Калужским шоссе
+          </p>
+        </div>
+
+        <!-- Right -->
+        <div class="flex gap-4">
+          <div class="text-right">
+            <a href="+84950250005" class="font-bold block text-xl mb-1.5">
+              8 (495) 025-00-05
+            </a>
+            <p class="font-light">
+              ежедневно с 9:00 до 21:00
+            </p>
+          </div>
+          <div>
+            <img class="h-3 mb-1" src="./assets/icons/google-play.svg" alt="Play Market Icon">
+            <a href="#"
+              class="flex-mai-center bg-brand-green-400 text-white rounded-full h-8.25 py-1.5 px-3.5 transition duration-300 hover:bg-brand-green-400/80">
+              Личный кабинет
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Bottom -->
+      <div class="flex items-center justify-between">
+        <!-- Links -->
+        <div class="text-lg flex items-center lg:gap-7 xl:gap-10">
+          <a href="#" class="flex-mai-center h-7.5 py-1.5 rounded-[10px]">
+            Главная
+          </a>
+          <a href="#" class="flex-mai-center h-7.5 rounded-[10px] transition duration-300 hover:text-brand-red">
+            О компании
+          </a>
+          <a href="#" class="flex-mai-center h-7.5 rounded-[10px] transition duration-300 hover:text-brand-red">
+            Акции
+          </a>
+          <a href="#" class="flex-mai-center h-7.5 rounded-[10px] transition duration-300 hover:text-brand-red">
+            Мобильное приложение
+          </a>
+          <a href="#" class="flex-mai-center h-7.5 rounded-[10px] transition duration-300 hover:text-brand-red">
+            Вакансии
+          </a>
+          <a href="#" class="flex-mai-center h-7.5 rounded-[10px] transition duration-300 hover:text-brand-red">
+            Контакты
+          </a>
+        </div>
+
+        <!-- Search -->
+        <div class="relative w-full max-w-87.5">
+          <input type="text" name="search" id="search"
+            class="w-full h-8.5 bg-brand-gray-100 rounded-lg p-2.5 outline-none placeholder:text-sm text-sm border-[0.5px] border-transparent focus:border-black/20"
+            placeholder="Поиск по сайту">
+
+          <div class="absolute right-2.5 top-1/2 -translate-y-1/2">
+            <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M5.88095 1.73822C4.64959 1.73822 3.46866 2.22737 2.59796 3.09808C1.72725 3.96878 1.2381 5.14971 1.2381 6.38107C1.2381 7.61244 1.72725 8.79337 2.59796 9.66407C3.46866 10.5348 4.64959 11.0239 5.88095 11.0239C7.1067 11.0239 8.28248 10.5392 9.15203 9.67595C9.15677 9.67089 9.16162 9.66589 9.16656 9.66095C9.17104 9.65648 9.17558 9.65209 9.18016 9.64778C10.0407 8.77867 10.5238 7.60477 10.5238 6.38107C10.5238 5.14971 10.0347 3.96878 9.16395 3.09808C8.29324 2.22737 7.11231 1.73822 5.88095 1.73822ZM10.4559 10.0764C11.2971 9.0351 11.7619 7.73205 11.7619 6.38107C11.7619 4.82135 11.1423 3.32551 10.0394 2.22261C8.93652 1.11972 7.44068 0.500122 5.88095 0.500122C4.32123 0.500122 2.82538 1.11972 1.72249 2.22261C0.619599 3.32551 0 4.82135 0 6.38107C0 7.9408 0.619599 9.43664 1.72249 10.5395C2.82538 11.6424 4.32123 12.262 5.88095 12.262C7.23394 12.262 8.53887 11.7958 9.58092 10.9523L11.9428 13.3184C12.1844 13.5604 12.5763 13.5607 12.8183 13.3192C13.0603 13.0777 13.0606 12.6857 12.8191 12.4437L10.4559 10.0764Z"
+                fill="#1C2126" fill-opacity="0.7" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <!-- Hero -->
+    <section class="mb-9 md:mb-20 lg:mb-30">
+      <div class="bg-white bg-shadow-blur border border-brand-gray rounded-[30px] max-lg:-mx-5">
+        <div class="container-base py-12.5">
+          <!-- link list -->
+          <div class="text-lg flex items-center gap-1.5 mb-10">
+            <p class="text-black/30">
+              Главная /
+            </p>
+            <p class="text-black/30">
+              Модель Range Rover Sport L320 /
+            </p>
+            <a href="#" class="">
+              Неисправность тормозов
+            </a>
+          </div>
+
+          <!--  -->
+          <div class="grid lg:grid-cols-2 gap-11 mb-15">
+            <!-- Left -->
+            <div class="w-full h-80 rounded-[30px] overflow-hidden">
+              <img src="./assets/images/brake/brake-failure.png" alt="img" class="size-full object-cover">
+            </div>
+            <!-- Right -->
+            <div class="flex flex-col justify-between gap-7">
+              <div>
+                <p class="text-2xl/[112%] mb-2.5">
+                  Модель Range Rover Sport L320
+                </p>
+                <h1 class="font-bold text-7xl">
+                  Неисправность тормозов
+                </h1>
+              </div>
+              <p class="text-2xl/[112%]">
+                Выберите раздел, чтобы ознакомиться со списком неисправностей
+              </p>
+            </div>
+          </div>
+
+          <div class="swiper-grid-container flex items-center justify-between gap-3">
+            <button
+              class="swiper-button-prev__grid size-11.25 rounded-full shrink-0 button-blur bg-black/10 flex-mai-center">
+              <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 0.500122L1 8.50012L9 16.5001" stroke="black" />
+              </svg>
+            </button>
+            <div class="max-w-295.5 w-full mx-auto">
+              <div class="swiper swiper-grid">
+                <div class="swiper-wrapper">
+                  <!-- 1 -->
+                  <div class="swiper-slide !h-73">
+                    <a href="#"
+                      class="block h-full relative group bg-white border border-[#9E9E9E] rounded-[1.875rem] overflow-hidden p-7.5">
+                      <h4 class="relative z-10 font-bold text-xl text-center">
+                        Колодки
+                      </h4>
+
+                      <img class="w-full h-41 absolute z-0 bottom-7.5 left-1/2 -translate-x-1/2"
+                        src="./assets/images/home/middle-car.png" alt="Car Img">
+                    </a>
+                  </div>
+                  <!-- 1 -->
+                  <div class="swiper-slide !h-73">
+                    <a href="#"
+                      class="block h-full relative group bg-white border border-[#9E9E9E] rounded-[1.875rem] overflow-hidden p-7.5">
+                      <h4 class="relative z-10 font-bold text-xl text-center">
+                        Колодки
+                      </h4>
+
+                      <img class="w-full h-41 absolute z-0 bottom-7.5 left-1/2 -translate-x-1/2"
+                        src="./assets/images/home/middle-car.png" alt="Car Img">
+                    </a>
+                  </div>
+                  <!-- 1 -->
+                  <div class="swiper-slide !h-73">
+                    <a href="#"
+                      class="block h-full relative group bg-white border border-[#9E9E9E] rounded-[1.875rem] overflow-hidden p-7.5">
+                      <h4 class="relative z-10 font-bold text-xl text-center">
+                        Колодки
+                      </h4>
+
+                      <img class="w-full h-41 absolute z-0 bottom-7.5 left-1/2 -translate-x-1/2"
+                        src="./assets/images/home/middle-car.png" alt="Car Img">
+                    </a>
+                  </div>
+                  <!-- 1 -->
+                  <div class="swiper-slide !h-73">
+                    <a href="#"
+                      class="block h-full relative group bg-white border border-[#9E9E9E] rounded-[1.875rem] overflow-hidden p-7.5">
+                      <h4 class="relative z-10 font-bold text-xl text-center">
+                        Колодки
+                      </h4>
+
+                      <img class="w-full h-41 absolute z-0 bottom-7.5 left-1/2 -translate-x-1/2"
+                        src="./assets/images/home/middle-car.png" alt="Car Img">
+                    </a>
+                  </div>
+                  <!-- 1 -->
+                  <div class="swiper-slide !h-73">
+                    <a href="#"
+                      class="block h-full relative group bg-white border border-[#9E9E9E] rounded-[1.875rem] overflow-hidden p-7.5">
+                      <h4 class="relative z-10 font-bold text-xl text-center">
+                        Колодки
+                      </h4>
+
+                      <img class="w-full h-41 absolute z-0 bottom-7.5 left-1/2 -translate-x-1/2"
+                        src="./assets/images/home/middle-car.png" alt="Car Img">
+                    </a>
+                  </div>
+                  <!-- 1 -->
+                  <div class="swiper-slide !h-73">
+                    <a href="#"
+                      class="block h-full relative group bg-white border border-[#9E9E9E] rounded-[1.875rem] overflow-hidden p-7.5">
+                      <h4 class="relative z-10 font-bold text-xl text-center">
+                        Колодки
+                      </h4>
+
+                      <img class="w-full h-41 absolute z-0 bottom-7.5 left-1/2 -translate-x-1/2"
+                        src="./assets/images/home/middle-car.png" alt="Car Img">
+                    </a>
+                  </div>
+                  <!-- 1 -->
+                  <div class="swiper-slide !h-73">
+                    <a href="#"
+                      class="block h-full relative group bg-white border border-[#9E9E9E] rounded-[1.875rem] overflow-hidden p-7.5">
+                      <h4 class="relative z-10 font-bold text-xl text-center">
+                        Колодки
+                      </h4>
+
+                      <img class="w-full h-41 absolute z-0 bottom-7.5 left-1/2 -translate-x-1/2"
+                        src="./assets/images/home/middle-car.png" alt="Car Img">
+                    </a>
+                  </div>
+                  <!-- 1 -->
+                  <div class="swiper-slide !h-73">
+                    <a href="#"
+                      class="block h-full relative group bg-white border border-[#9E9E9E] rounded-[1.875rem] overflow-hidden p-7.5">
+                      <h4 class="relative z-10 font-bold text-xl text-center">
+                        Колодки
+                      </h4>
+
+                      <img class="w-full h-41 absolute z-0 bottom-7.5 left-1/2 -translate-x-1/2"
+                        src="./assets/images/home/middle-car.png" alt="Car Img">
+                    </a>
+                  </div>
+                  <!-- 1 -->
+                  <div class="swiper-slide !h-73">
+                    <a href="#"
+                      class="block h-full relative group bg-white border border-[#9E9E9E] rounded-[1.875rem] overflow-hidden p-7.5">
+                      <h4 class="relative z-10 font-bold text-xl text-center">
+                        Колодки
+                      </h4>
+
+                      <img class="w-full h-41 absolute z-0 bottom-7.5 left-1/2 -translate-x-1/2"
+                        src="./assets/images/home/middle-car.png" alt="Car Img">
+                    </a>
+                  </div>
+                  <!-- 1 -->
+                  <div class="swiper-slide !h-73">
+                    <a href="#"
+                      class="block h-full relative group bg-white border border-[#9E9E9E] rounded-[1.875rem] overflow-hidden p-7.5">
+                      <h4 class="relative z-10 font-bold text-xl text-center">
+                        Колодки
+                      </h4>
+
+                      <img class="w-full h-41 absolute z-0 bottom-7.5 left-1/2 -translate-x-1/2"
+                        src="./assets/images/home/middle-car.png" alt="Car Img">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="swiper-button-next__grid size-11.25 rounded-full shrink-0 button-blur bg-black/10 flex-mai-center">
+              <svg class="rotate-180" width="10" height="17" viewBox="0 0 10 17" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 0.500122L1 8.50012L9 16.5001" stroke="black" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Запишитесь на диагностику неисправностей -->
+    <section class="mb-9 md:mb-20 lg:mb-30">
+      <div class="bg-gradient-primary rounded-[30px] py-15">
+        <div class="container-base">
+          <h2 class="font-muller text-white !font-normal text-[40px] mb-11">
+            Воспользуйтесь нашим опытом
+            <span class="font-semibold block mt-2.5">
+              С нами надежно
+            </span>
+          </h2>
+
+          <div class="flex items-center justify-between gap-5">
+            <!-- Left -->
+            <div class="max-w-195 w-full px-17.5 py-8.25 bg-white bg-gradient-secondary rounded-[30px]">
+              <div class="mb-9.25">
+                <p class="font-bold text-display-22 mb-3.75">
+                  Записаться на диагностику
+                </p>
+
+                <p class="text-lg">
+                  Заполните форму и наш менеджер свяжется с вами в течение 20 минут
+                </p>
+              </div>
+              <form action="">
+                <div class="flex items-end justify-between mb-1">
+                  <input type="text" name="name" id="name" placeholder="Имя"
+                    class="max-w-45 w-full h-7.75 border-b border-primary pb-3.75 text-primary placeholder:text-primary/70 focus:outline-none focus:border-brand-gray" />
+
+                  <input type="text" name="number" id="number" placeholder="Телефон"
+                    class="max-w-45 w-full h-7.75 border-b border-primary pb-3.75 text-primary placeholder:text-primary/70 focus:outline-none focus:border-brand-gray" />
+
+                  <button
+                    class="h-12 bg-brand-red text-white rounded-full py-2 px-10 transition duration-200 hover:bg-brand-red/75">
+                    Записаться
+                  </button>
+                </div>
+
+                <p class="text-primary/50 text-[0.5rem] w-full max-w-43 ml-auto">
+                  Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности
+                </p>
+              </form>
+            </div>
+
+            <!-- Right -->
+            <div class="w-full max-w-127.5 flex items-center gap-4">
+              <img class="shrink-0 h-39.25" src="./assets/images/home/rounded-line.svg" alt="line icon">
+
+              <div class="min-h-40 text-2xl text-white flex flex-col justify-between">
+                <p>Опыт мастеров более 15 лет</p>
+                <p>Свободный доступ в ремзону </p>
+                <p>Работаем без выходных и праздников</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Неисправности -->
+    <section class="mb-9 md:mb-20 lg:mb-30">
+      <div class="container-base">
+        <div class="text-center mb-11.5">
+          <h2 class="font-bold text-display-50 mb-5">
+            Неисправности
+          </h2>
+          <p class="text-3xl">
+            Выберите раздел, чтобы ознакомиться со списком неисправностей
+          </p>
+        </div>
+
+        <div class="grid grid-cols-4 gap-4">
+
+          <!-- 1 -->
+          <a href="#"
+            class="block h-75 relative group bg-white border border-[#9E9E9E] rounded-[1.875rem] overflow-hidden p-7.5 transition duration-200 hover:bg-shadow-blur">
+            <h4 class="relative z-10 font-bold text-xl text-center">
+              Электроника
+            </h4>
+
+            <img class="w-75 h-42.5 absolute z-0 bottom-7.5 left-1/2 -translate-x-1/2"
+              src="./assets/images/home/middle-car.png" alt="Car Img">
+          </a>
+
+          <!-- 1 -->
+          <a href="#"
+            class="block h-75 relative group bg-white border border-[#9E9E9E] rounded-[1.875rem] overflow-hidden p-7.5 transition duration-200 hover:bg-shadow-blur">
+            <h4 class="relative z-10 font-bold text-xl text-center">
+              Электроника
+            </h4>
+
+            <img class="w-75 h-42.5 absolute z-0 bottom-7.5 left-1/2 -translate-x-1/2"
+              src="./assets/images/home/middle-car.png" alt="Car Img">
+          </a>
+
+          <!-- 1 -->
+          <a href="#"
+            class="block h-75 relative group bg-white border border-[#9E9E9E] rounded-[1.875rem] overflow-hidden p-7.5 transition duration-200 hover:bg-shadow-blur">
+            <h4 class="relative z-10 font-bold text-xl text-center">
+              Электроника
+            </h4>
+
+            <img class="w-75 h-42.5 absolute z-0 bottom-7.5 left-1/2 -translate-x-1/2"
+              src="./assets/images/home/middle-car.png" alt="Car Img">
+          </a>
+
+          <!-- 1 -->
+          <a href="#"
+            class="block h-75 relative group bg-white border border-[#9E9E9E] rounded-[1.875rem] overflow-hidden p-7.5 transition duration-200 hover:bg-shadow-blur">
+            <h4 class="relative z-10 font-bold text-xl text-center">
+              Электроника
+            </h4>
+
+            <img class="w-75 h-42.5 absolute z-0 bottom-7.5 left-1/2 -translate-x-1/2"
+              src="./assets/images/home/middle-car.png" alt="Car Img">
+          </a>
+
+          <!-- 1 -->
+          <a href="#"
+            class="block h-75 relative group bg-white border border-[#9E9E9E] rounded-[1.875rem] overflow-hidden p-7.5 transition duration-200 hover:bg-shadow-blur">
+            <h4 class="relative z-10 font-bold text-xl text-center">
+              Электроника
+            </h4>
+
+            <img class="w-75 h-42.5 absolute z-0 bottom-7.5 left-1/2 -translate-x-1/2"
+              src="./assets/images/home/middle-car.png" alt="Car Img">
+          </a>
+
+          <!-- 1 -->
+          <a href="#"
+            class="block h-75 relative group bg-white border border-[#9E9E9E] rounded-[1.875rem] overflow-hidden p-7.5 transition duration-200 hover:bg-shadow-blur">
+            <h4 class="relative z-10 font-bold text-xl text-center">
+              Электроника
+            </h4>
+
+            <img class="w-75 h-42.5 absolute z-0 bottom-7.5 left-1/2 -translate-x-1/2"
+              src="./assets/images/home/middle-car.png" alt="Car Img">
+          </a>
+
+          <!-- 1 -->
+          <a href="#"
+            class="block h-75 relative group bg-white border border-[#9E9E9E] rounded-[1.875rem] overflow-hidden p-7.5 transition duration-200 hover:bg-shadow-blur">
+            <h4 class="relative z-10 font-bold text-xl text-center">
+              Электроника
+            </h4>
+
+            <img class="w-75 h-42.5 absolute z-0 bottom-7.5 left-1/2 -translate-x-1/2"
+              src="./assets/images/home/middle-car.png" alt="Car Img">
+          </a>
+
+          <!-- 1 -->
+          <a href="#"
+            class="block h-75 relative group bg-white border border-[#9E9E9E] rounded-[1.875rem] overflow-hidden p-7.5 transition duration-200 hover:bg-shadow-blur">
+            <h4 class="relative z-10 font-bold text-xl text-center">
+              Электроника
+            </h4>
+
+            <img class="w-75 h-42.5 absolute z-0 bottom-7.5 left-1/2 -translate-x-1/2"
+              src="./assets/images/home/middle-car.png" alt="Car Img">
+          </a>
+
+          <!-- 1 -->
+          <a href="#"
+            class="block h-75 relative group bg-white border border-[#9E9E9E] rounded-[1.875rem] overflow-hidden p-7.5 transition duration-200 hover:bg-shadow-blur">
+            <h4 class="relative z-10 font-bold text-xl text-center">
+              Электроника
+            </h4>
+
+            <img class="w-75 h-42.5 absolute z-0 bottom-7.5 left-1/2 -translate-x-1/2"
+              src="./assets/images/home/middle-car.png" alt="Car Img">
+          </a>
+
+          <!-- 1 -->
+          <a href="#"
+            class="block h-75 relative group bg-white border border-[#9E9E9E] rounded-[1.875rem] overflow-hidden p-7.5 transition duration-200 hover:bg-shadow-blur">
+            <h4 class="relative z-10 font-bold text-xl text-center">
+              Электроника
+            </h4>
+
+            <img class="w-75 h-42.5 absolute z-0 bottom-7.5 left-1/2 -translate-x-1/2"
+              src="./assets/images/home/middle-car.png" alt="Car Img">
+          </a>
+
+          <!-- 1 -->
+          <a href="#"
+            class="block h-75 relative group bg-white border border-[#9E9E9E] rounded-[1.875rem] overflow-hidden p-7.5 transition duration-200 hover:bg-shadow-blur">
+            <h4 class="relative z-10 font-bold text-xl text-center">
+              Электроника
+            </h4>
+
+            <img class="w-75 h-42.5 absolute z-0 bottom-7.5 left-1/2 -translate-x-1/2"
+              src="./assets/images/home/middle-car.png" alt="Car Img">
+          </a>
+
+          <!-- 1 -->
+          <a href="#"
+            class="block h-75 relative group bg-white border border-[#9E9E9E] rounded-[1.875rem] overflow-hidden p-7.5 transition duration-200 hover:bg-shadow-blur">
+            <h4 class="relative z-10 font-bold text-xl text-center">
+              Электроника
+            </h4>
+
+            <img class="w-75 h-42.5 absolute z-0 bottom-7.5 left-1/2 -translate-x-1/2"
+              src="./assets/images/home/middle-car.png" alt="Car Img">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Запишитесь на диагностику неисправностей -->
+    <section class="mb-9 md:mb-20 lg:mb-30">
+      <div class="bg-gradient-primary rounded-[30px] py-15">
+        <div class="container-base">
+          <h2 class="font-muller text-white !font-normal text-[40px] mb-11">
+            Воспользуйтесь нашим опытом
+            <span class="font-semibold block mt-2.5">
+              С нами надежно
+            </span>
+          </h2>
+
+          <div class="flex items-center justify-between gap-5">
+            <!-- Left -->
+            <div class="max-w-195 w-full px-17.5 py-8.25 bg-white bg-gradient-secondary rounded-[30px]">
+              <div class="mb-9.25">
+                <p class="font-bold text-display-22 mb-3.75">
+                  Записаться на диагностику
+                </p>
+
+                <p class="text-lg">
+                  Заполните форму и наш менеджер свяжется с вами в течение 20 минут
+                </p>
+              </div>
+              <form action="">
+                <div class="flex items-end justify-between mb-1">
+                  <input type="text" name="name" id="name" placeholder="Имя"
+                    class="max-w-45 w-full h-7.75 border-b border-primary pb-3.75 text-primary placeholder:text-primary/70 focus:outline-none focus:border-brand-gray" />
+
+                  <input type="text" name="number" id="number" placeholder="Телефон"
+                    class="max-w-45 w-full h-7.75 border-b border-primary pb-3.75 text-primary placeholder:text-primary/70 focus:outline-none focus:border-brand-gray" />
+
+                  <button
+                    class="h-12 bg-brand-red text-white rounded-full py-2 px-10 transition duration-200 hover:bg-brand-red/75">
+                    Записаться
+                  </button>
+                </div>
+
+                <p class="text-primary/50 text-[0.5rem] w-full max-w-43 ml-auto">
+                  Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности
+                </p>
+              </form>
+            </div>
+
+            <!-- Right -->
+            <div class="w-full max-w-127.5 flex items-center gap-4">
+              <img class="shrink-0 h-39.25" src="./assets/images/home/rounded-line.svg" alt="line icon">
+
+              <div class="min-h-40 text-2xl text-white flex flex-col justify-between">
+                <p>Опыт мастеров более 15 лет</p>
+                <p>Свободный доступ в ремзону </p>
+                <p>Работаем без выходных и праздников</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container-base flex items-end justify-between gap-5 mb-10.5">
+      <div class="max-w-85 w-full">
+        <a class="block mb-7.25" href="#">
+          <img src="./assets/icons/logo.svg" alt="Logo" class="h-15.25">
+        </a>
+
+        <p class="text-xl/[112%] mb-7.25">
+          © BROTHERS, 2016-2024
+        </p>
+
+        <div class="font-bold text-xl/[112%] space-y-5 mb-7.25">
+          <p>
+            Москва, 43-км МКАД, Вл1, С1 (Проектируемый проезд №7534)
+          </p>
+          <p>
+            ПН-ВС с 9-00 до 21-00
+          </p>
+          <p>
+            Тел.: 8 (495) 025-00-05
+          </p>
+        </div>
+
+        <div class="mb-7.25">
+          <img class="h-18.75" src="./assets/images/home/footer-yandex.png" alt="Img">
+        </div>
+
+        <p class="max-w-75 w-full text-base/[140%]">
+          Копирование материалов с сайта преследуется по закону
+        </p>
+      </div>
+
+      <div class="max-w-203.5 w-full">
+        <div class="text-display-22 max-w-170 w-full flex justify-between gap-5 mb-7">
+          <div class="max-w-95 w-full flex flex-col gap-7">
+            <a href="#" class="text-display-22 transition duration-200 hover:text-brand-red">
+              Главная
+            </a>
+
+            <a href="#" class="text-display-22 transition duration-200 hover:text-brand-red">
+              О компании
+            </a>
+
+            <a href="#" class="text-display-22 transition duration-200 hover:text-brand-red">
+              Акции
+            </a>
+
+            <a href="#" class="text-display-22 transition duration-200 hover:text-brand-red">
+              Вакансии
+            </a>
+
+            <a href="#" class="text-display-22 transition duration-200 hover:text-brand-red">
+              Контакты
+            </a>
+
+            <a href="#" class="text-display-22 transition duration-200 hover:text-brand-red">
+              Политика конфиденциальности
+            </a>
+          </div>
+
+          <div class="max-w-62.5 w-full flex flex-col gap-5.5">
+            <h4 class="text-display-22 transition duration-200 hover:text-brand-red">
+              Мы в социальных сетях
+            </h4>
+
+            <a href="#" class="flex items-center gap-2.5 group">
+              <img class="shrink-0" src="./assets/icons/vk.svg" alt="vk icon">
+              <span class="transition duration-200 group-hover:text-brand-red">
+                ВКонтакте
+              </span>
+            </a>
+
+            <a href="#" class="flex items-center gap-2.5 group">
+              <img class="shrink-0" src="./assets/icons/you-tube.svg" alt="icon">
+              <span class="transition duration-200 group-hover:text-brand-red">
+                YouTube
+              </span>
+            </a>
+
+            <a href="#" class="flex items-center gap-2.5 group">
+              <img class="shrink-0" src="./assets/icons/rutube.svg" alt="icon">
+              <span class="transition duration-200 group-hover:text-brand-red">
+                RuTube
+              </span>
+            </a>
+
+            <a href="#" class="flex items-center gap-2.5 group">
+              <img class="shrink-0" src="./assets/icons/instagram.svg" alt="icon">
+              <span class="transition duration-200 group-hover:text-brand-red">
+                Instagram
+              </span>
+            </a>
+
+            <a href="#" class="flex items-center gap-2.5 group">
+              <img class="shrink-0" src="./assets/icons/zden.svg" alt="icon">
+              <span class="transition duration-200 group-hover:text-brand-red">
+                Дзен
+              </span>
+            </a>
+          </div>
+        </div>
+        <p class="text-base/[112%]">
+          Вся предоставленная информация на сайте ни при каких условиях не является публичной офертой, определяемой
+          положениями Статьи 437 (2) Гражданского кодекса РФ
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    let swiper = new Swiper(".swiper-grid", {
+      slidesPerView: 4,
+      spaceBetween: 16,
+      grid: {
+        rows: 2,
+        fill: 'row',
+      },
+      // pagination: {
+      //   el: ".swiper-pagination",
+      //   clickable: true,
+      // },
+      navigation: {
+        nextEl: ".swiper-button-next__grid",
+        prevEl: ".swiper-button-prev__grid",
+      },
+    });
+
+
+    // Dropdown
+    document.body.addEventListener('click', (e) => {
+      const button = e.target.closest('.dropdown-button');
+      const dropdown = e.target.closest('.dropdown');
+
+      if (button) {
+        const currentDropdown = button.nextElementSibling;
+        currentDropdown.classList.toggle('hidden');
+        return;
+      }
+
+      if (e.target.matches('.dropdown a, .dropdown button, .dropdown select, .dropdown input')) {
+        const parentDropdown = e.target.closest('.dropdown');
+        parentDropdown.classList.add('hidden');
+        return;
+      }
+
+
+      if (!dropdown) {
+        document.querySelectorAll('.dropdown').forEach(el => el.classList.add('hidden'));
+      }
+    });
+
+  </script>
+</body>
+
+</html>
