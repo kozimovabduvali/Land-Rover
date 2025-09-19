@@ -121,6 +121,32 @@
   }
 }
 
+.main-shadow-blur2:hover {
+  animation: shadowBlurIn2 0.5s ease-in-out forwards;
+}
+
+.main-shadow-blur2:not(:hover) {
+  animation: shadowBlurOut2 0.5s ease-in-out forwards;
+}
+
+@keyframes shadowBlurIn2 {
+  0% {
+    box-shadow: 0px 0px 0px 0px #1c21264d;
+  }
+  100% {
+    box-shadow: 0px 0px 15px 2px #1c21264d;
+  }
+}
+
+@keyframes shadowBlurOut2 {
+  0% {
+    box-shadow: 0px 0px 15px 2px #1c21264d;
+  }
+  100% {
+    box-shadow: 0px 0px 0px 0px #1c21264d;
+  }
+}
+
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
