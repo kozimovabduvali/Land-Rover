@@ -21,7 +21,7 @@
   --color-primary: #1c2126;
   --color-main-primary: #282828;
   --color-brand-red: #d60000;
-  --color-brand-red-700: #7D0000;
+  --color-brand-red-700: #7d0000;
   --color-brand-gray: #a9a9a9;
   --color-brand-gray-100: #eceef1;
   --color-brand-green-400: #484f55;
@@ -95,17 +95,29 @@
     rgba(217, 217, 217, 0.29) 100%
   );
 }
-
 .main-shadow-blur:hover {
-  animation: shadowBlur 0.5s ease-in-out forwards;
+  animation: shadowBlurIn 0.5s ease-in-out forwards;
 }
 
-@keyframes shadowBlur {
+.main-shadow-blur:not(:hover) {
+  animation: shadowBlurOut 0.5s ease-in-out forwards;
+}
+
+@keyframes shadowBlurIn {
   0% {
     box-shadow: 0px 0px 0px 0px #1c21264d;
   }
   100% {
     box-shadow: 0px 0px 30px 2px #1c21264d;
+  }
+}
+
+@keyframes shadowBlurOut {
+  0% {
+    box-shadow: 0px 0px 30px 2px #1c21264d;
+  }
+  100% {
+    box-shadow: 0px 0px 0px 0px #1c21264d;
   }
 }
 
