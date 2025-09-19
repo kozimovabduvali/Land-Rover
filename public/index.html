@@ -126,7 +126,7 @@
 
                     <div class="max-lg:min-w-68 flex items-center gap-2.5">
                       <button
-                        class="bg-brand-red text-white min-h-16.75 rounded-full text-2xl px-10 py-4 transition duration-300 hover:bg-brand-red/80">
+                        class="bg-brand-red text-white min-h-16.75 rounded-full text-2xl px-10 py-4 transition duration-300 hover:bg-brand-red-700">
                         Записаться на ремонт
                       </button>
 
@@ -154,43 +154,14 @@
         <div class="grid grid-cols-4 gap-4">
           <!-- 1 -->
           <a href="#"
-            class="block h-81 relative group border border-transparent bg-brand-gray-100 rounded-[1.875rem] overflow-hidden p-7.5">
+            class="block h-81 relative group border border-transparent bg-brand-gray-100 group rounded-[1.875rem] overflow-hidden p-7.5 main-shadow-blur">
             <h4 class="relative z-10 font-bold text-xl">
               Наименование авто
             </h4>
 
-            <img class="w-80 h-76 absolute z-0 top-1/2 -translate-y-1/2 right-0" src="./assets/images/home/rover-1.png"
-              alt="Car Img">
-          </a>
-          <!-- 1 -->
-          <a href="#"
-            class="block h-81 relative group border border-transparent bg-brand-gray-100 rounded-[1.875rem] overflow-hidden p-7.5">
-            <h4 class="relative z-10 font-bold text-xl">
-              Наименование авто
-            </h4>
-
-            <img class="w-80 h-76 absolute z-0 top-1/2 -translate-y-1/2 right-0" src="./assets/images/home/rover-1.png"
-              alt="Car Img">
-          </a>
-          <!-- 1 -->
-          <a href="#"
-            class="block h-81 relative group border border-transparent bg-brand-gray-100 rounded-[1.875rem] overflow-hidden p-7.5">
-            <h4 class="relative z-10 font-bold text-xl">
-              Наименование авто
-            </h4>
-
-            <img class="w-80 h-76 absolute z-0 top-1/2 -translate-y-1/2 right-0" src="./assets/images/home/rover-1.png"
-              alt="Car Img">
-          </a>
-          <!-- 1 -->
-          <a href="#"
-            class="block h-81 relative group border border-transparent bg-brand-gray-100 rounded-[1.875rem] overflow-hidden p-7.5">
-            <h4 class="relative z-10 font-bold text-xl">
-              Наименование авто
-            </h4>
-
-            <img class="w-80 h-76 absolute z-0 top-1/2 -translate-y-1/2 right-0" src="./assets/images/home/rover-1.png"
-              alt="Car Img">
+            <img
+              class="w-[318px] h-[304px] absolute z-0 bottom-0 right-0 translate-x-15 -translate-y-5 transition duration-700 group-hover:translate-x-3 group-hover:-translate-y-1"
+              src="./assets/images/home/rover-1.png" alt="Car Img">
           </a>
         </div>
       </div>
@@ -1642,7 +1613,7 @@
               </div>
 
               <button
-                class="text-2xl h-16.75 bg-brand-red text-white rounded-full py-4 px-10 transition duration-200 hover:bg-brand-red/75">
+                class="text-2xl h-16.75 bg-brand-red text-white rounded-full py-4 px-10 transition duration-200 hover:bg-brand-red-700">
                 Расчитать стоимость
               </button>
 
@@ -1695,7 +1666,7 @@
               </div>
 
               <button
-                class="text-2xl h-16.75 bg-brand-red text-white rounded-full py-4 px-10 transition duration-200 hover:bg-brand-red/75">
+                class="text-2xl h-16.75 bg-brand-red text-white rounded-full py-4 px-10 transition duration-200 hover:bg-brand-red-700">
                 Оставить заявку
               </button>
             </div>
@@ -1923,7 +1894,7 @@
                 </div>
 
                 <button
-                  class="h-12 bg-brand-red text-white rounded-full py-2 px-10 transition duration-200 hover:bg-brand-red/75">
+                  class="h-12 bg-brand-red text-white rounded-full py-2 px-10 transition duration-200 hover:bg-brand-red-700">
                   Записаться на диагностику
                 </button>
               </div>
@@ -1972,7 +1943,7 @@
                     class="max-w-45 w-full h-7.75 border-b border-primary pb-3.75 text-primary placeholder:text-primary/70 focus:outline-none focus:border-brand-gray" />
 
                   <button
-                    class="h-12 bg-brand-red text-white rounded-full py-2 px-10 transition duration-200 hover:bg-brand-red/75">
+                    class="h-12 bg-brand-red text-white rounded-full py-2 px-10 transition duration-200 hover:bg-brand-red-700">
                     Записаться
                   </button>
                 </div>
@@ -2281,13 +2252,13 @@
 
 
               <div class="flex gap-3.75">
-                <button
-                  class="size-16.75 text-[50px] font-extralight flex-mai-center rounded-full border border-primary text-primary transition duration-200 hover:opacity-75">
+                <button id="toggleBtn"
+                  class="size-16.75 text-[50px] font-extralight flex-mai-center rounded-full border border-primary text-primary transition duration-200 hover:bg-primary hover:text-white">
                   +
                 </button>
 
                 <button
-                  class="text-2xl max-w-82 w-full h-16.75 bg-brand-red text-white rounded-full py-4 px-7 transition duration-200 hover:bg-brand-red/75">
+                  class="text-2xl max-w-82 w-full h-16.75 bg-brand-red text-white rounded-full py-4 px-7 transition duration-200 hover:bg-brand-red-700">
                   Расчитать стоимость
                 </button>
               </div>
@@ -2535,7 +2506,7 @@
                     class="max-w-45 w-full h-7.75 border-b border-primary pb-3.75 text-primary placeholder:text-primary/70 focus:outline-none focus:border-brand-gray" />
 
                   <button
-                    class="h-12 bg-brand-red text-white rounded-full py-2 px-10 transition duration-200 hover:bg-brand-red/75">
+                    class="h-12 bg-brand-red text-white rounded-full py-2 px-10 transition duration-200 hover:bg-brand-red-700">
                     Записаться
                   </button>
                 </div>
@@ -2779,6 +2750,13 @@
           }
         });
       });
+    });
+
+
+    const btn = document.getElementById("toggleBtn");
+
+    btn.addEventListener("click", () => {
+      btn.textContent = btn.textContent === "+" ? "-" : "+";
     });
 
 
