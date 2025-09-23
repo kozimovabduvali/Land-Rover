@@ -32,7 +32,7 @@
     @apply scroll-smooth;
   }
   body {
-    @apply font-muller bg-white text-primary !leading-none overflow-x-hidden;
+    @apply font-muller bg-white text-primary !leading-none;
   }
   button {
     @apply cursor-pointer;
@@ -73,6 +73,11 @@
   box-shadow: 0px 0px 30px 2px #1c21264d;
 }
 
+
+@utility bg-shadow-blur-mobile {
+  box-shadow: 0px 0px 30px 2px #1c21264d;
+}
+
 @utility bg-shadow-blur-2 {
   box-shadow: 0px 0px 10px 0px #00000033;
 }
@@ -95,6 +100,7 @@
     rgba(217, 217, 217, 0.29) 100%
   );
 }
+
 .main-shadow-blur:hover {
   animation: shadowBlurIn 0.5s ease-in-out forwards;
 }
@@ -153,6 +159,10 @@
 
 .scroll-1::-webkit-scrollbar {
   @apply w-0.75 rounded-full;
+}
+
+.scroll-2::-webkit-scrollbar {
+  @apply w-0.5 h-0.5 rounded-full;
 }
 
 /* Track */
