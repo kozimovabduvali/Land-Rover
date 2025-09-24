@@ -115,7 +115,7 @@
               Неисправность тормозов /
             </p>
             <a href="#" class="">
-               Диски
+              Диски
             </a>
           </div>
 
@@ -477,6 +477,7 @@
                   </a>
                 </div>
               </div>
+                <!-- <div class="swiper-scrollbar"></div> -->
             </div>
           </div>
           <button
@@ -612,16 +613,18 @@
       spaceBetween: 16,
       grid: {
         rows: 2,
-        fill: 'row',
+        fill: "row",
       },
-      // pagination: {
-      //   el: ".swiper-pagination",
-      //   clickable: true,
-      // },
       navigation: {
         nextEl: ".swiper-button-next__grid",
         prevEl: ".swiper-button-prev__grid",
       },
+      scrollbar: {
+        el: ".swiper-scrollbar",
+        draggable: true,
+      },
+      mousewheel: true,
+      freeMode: true, // scrollni yanada erkin qiladi
     });
 
 

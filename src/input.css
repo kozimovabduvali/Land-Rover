@@ -73,7 +73,6 @@
   box-shadow: 0px 0px 30px 2px #1c21264d;
 }
 
-
 @utility bg-shadow-blur-mobile {
   box-shadow: 0px 0px 30px 2px #1c21264d;
 }
@@ -201,7 +200,7 @@
 .modal-main {
   display: none;
 }
-.modal-main.active {
+.modal-main.active, .modal-main__car.active {
   display: flex; /* yoki block */
 }
 
@@ -211,4 +210,9 @@
 
 .main-swiper-hero .swiper-pagination-bullet-active {
   @apply !w-3.75 !h-1.25 !bg-[#1C2126] !rounded-full;
+}
+
+.tab.active {
+  /* box-shadow: 0px 0px 10px 2px #1c21264d; */
+  @apply !border-primary;
 }

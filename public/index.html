@@ -19,7 +19,7 @@
 <body>
   <!-- Header -->
   <header>
-    <div class="container-base pt-3.5 lg:pt-6.5 pb-4 lg:pb-7.5">
+    <div class="container-base pt-3.5 lg:pt-6.5">
       <!-- Top -->
       <div
         class="w-full flex items-center justify-between xl:border-b border-black/20 pb-2.5 md:pb-4 xl:pb-5.5 xl:mb-5.5">
@@ -131,8 +131,8 @@
   <!-- Main -->
   <main>
     <!-- Hero -->
-    <section class="mb-9 md:mb-20 lg:mb-30 overflow-x-hidden">
-      <div class="main-swiper-hero">
+    <section class="mb-9 md:mb-20 lg:mb-30">
+      <div class="main-swiper-hero overflow-hidden pt-7.5">
         <div class="swiper main-hero-swiper !overflow-visible">
           <div class="swiper-wrapper">
             <!-- 1 -->
@@ -413,7 +413,7 @@
 
         <div class="modal-main hidden fixed top-0 left-0 right-0 size-full z-50 flex-mai-center bg-black/50 px-5">
           <div
-            class="modal-content relative fade-in max-w-150 w-full mx-auto bg-white rounded-[30px] px-6 lg:px-9 py-3">
+            class="modal-content relative fade-in max-w-150 w-full mx-auto bg-white rounded-[30px] px-5 lg:px-9 py-3 max-lg:pt-10">
             <div class="overflow-y-auto scroll-1 h-[calc(100vh-80px)] lg:h-[calc(100vh-150px)] max-h-220 pr-1.5 py-5">
               <div
                 class="w-full h-27 md:h-55 lg:h-74 bg-transparent border border-brand-gray flex-mai-center rounded-[30px] overflow-hidden mb-5.5">
@@ -538,13 +538,13 @@
 
               <div class="space-y-3.5">
                 <button
-                  class="h-12 bg-brand-red text-white rounded-full py-2 px-7 transition duration-200 hover:bg-brand-red-700">
+                  class="h-12 bg-brand-red text-white text-xs lg:text-base rounded-full py-2 px-7 transition duration-200 hover:bg-brand-red-700">
                   Записаться на диагностику
                 </button>
 
 
                 <button
-                  class="h-12 bg-transparent border border-primary rounded-full py-2 px-10 transition duration-200 hover:bg-primary hover:text-white">
+                  class="h-12 text-xs lg:text-base bg-transparent border border-primary rounded-full py-2 px-10 transition duration-200 hover:bg-primary hover:text-white">
                   Подробнее о модели
                 </button>
 
@@ -552,7 +552,8 @@
               </div>
             </div>
 
-            <button class="exit-modal absolute top-0 right-0 max-lg:-translate-y-10 lg:translate-x-10 text-white">
+            <button
+              class="exit-modal absolute top-5 lg:top-0 right-5 lg:right-0 lg:translate-x-10 text-brand-red lg:text-white">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="size-8">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
@@ -1832,7 +1833,7 @@
             Калькулятор технического обслуживания
           </h2>
 
-          <p class="text-3xl mb-11.5">
+          <p class="md:text-xl lg:text-3xl mb-3 md:mb-6 lg:mb-11.5">
             Рассчитайте стоимость в
             <span class="text-brand-red">
               3 шага
@@ -1840,82 +1841,168 @@
           </p>
         </div>
 
-        <div class="bg-white bg-shadow-blur md:border border-brand-gray rounded-[30px] px-5 lg:px-10 py-12.5 max-lg:-mx-5">
-          <div class="w-full flex justify-between gap-5">
+        <div
+          class="bg-white bg-shadow-blur-2 lg:bg-shadow-blur md:border border-brand-gray rounded-[30px] px-5 lg:px-10 py-6 md:py-8 lg:py-12.5 max-lg:-mx-5">
+          <div class="w-full flex max-lg:flex-col justify-between gap-5">
             <!-- Left -->
-            <div class="w-full max-w-150">
-              <p class="text-display-22 mb-4">
+            <div class="w-full lg:max-w-150">
+              <p class="lg:font-bold text-xs md:text-base lg:text-display-22 mb-4">
                 Выберите модель:
               </p>
 
-              <div class="flex gap-2 overflow-x-auto no-scrollbar">
+              <div id="tabs" class="flex gap-2 overflow-x-auto scroll-2 pb-2">
+                <!-- 1 -->
                 <div
-                  class="shrink-0 size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden">
+                  class="tab active shrink-0 size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden"
+                  data-tab="1">
                   <img src="./assets/images/home/car.png" alt="car Img" />
                 </div>
+                <!-- 2 -->
                 <div
-                  class="shrink-0 size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden">
+                  class="tab shrink-0 size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden"
+                  data-tab="2">
+                  <img src="./assets/images/home/rover-1.png" alt="car Img" />
+                </div>
+                <!-- 3 -->
+                <div
+                  class="tab shrink-0 size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden"
+                  data-tab="3">
                   <img src="./assets/images/home/car.png" alt="car Img" />
                 </div>
+                <!-- 4 -->
                 <div
-                  class="shrink-0 size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden">
+                  class="tab shrink-0 size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden"
+                  data-tab="4">
+                  <img src="./assets/images/home/rover-1.png" alt="car Img" />
+                </div>
+                <!-- 5 -->
+                <div
+                  class="tab shrink-0 size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden"
+                  data-tab="5">
                   <img src="./assets/images/home/car.png" alt="car Img" />
                 </div>
+                <!-- 6 -->
                 <div
-                  class="shrink-0 size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden">
+                  class="tab shrink-0 size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden"
+                  data-tab="6">
+                  <img src="./assets/images/home/rover-1.png" alt="car Img" />
+                </div>
+                <!-- 7 -->
+                <div
+                  class="tab shrink-0 size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden"
+                  data-tab="7">
                   <img src="./assets/images/home/car.png" alt="car Img" />
                 </div>
+                <!-- 8 -->
                 <div
-                  class="shrink-0 size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden">
+                  class="tab shrink-0 size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden"
+                  data-tab="8">
+                  <img src="./assets/images/home/rover-1.png" alt="car Img" />
+                </div>
+                <!-- 9 -->
+                <div
+                  class="tab shrink-0 size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden"
+                  data-tab="9">
                   <img src="./assets/images/home/car.png" alt="car Img" />
                 </div>
+                <!-- 10 -->
                 <div
-                  class="shrink-0 size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden">
+                  class="tab shrink-0 size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden"
+                  data-tab="10">
+                  <img src="./assets/images/home/rover-1.png" alt="car Img" />
+                </div>
+                <!-- 11 -->
+                <div
+                  class="tab shrink-0 size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden"
+                  data-tab="11">
                   <img src="./assets/images/home/car.png" alt="car Img" />
                 </div>
+                <!-- 12 -->
                 <div
-                  class="shrink-0 size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden">
-                  <img src="./assets/images/home/car.png" alt="car Img" />
-                </div>
-                <div
-                  class="shrink-0 size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden">
-                  <img src="./assets/images/home/car.png" alt="car Img" />
-                </div>
-                <div
-                  class="shrink-0 size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden">
-                  <img src="./assets/images/home/car.png" alt="car Img" />
-                </div>
-                <div
-                  class="shrink-0 size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden">
-                  <img src="./assets/images/home/car.png" alt="car Img" />
-                </div>
-                <div
-                  class="shrink-0 size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden">
-                  <img src="./assets/images/home/car.png" alt="car Img" />
-                </div>
-                <div
-                  class="shrink-0 size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden">
-                  <img src="./assets/images/home/car.png" alt="car Img" />
+                  class="tab shrink-0 size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden"
+                  data-tab="12">
+                  <img src="./assets/images/home/rover-1.png" alt="car Img" />
                 </div>
               </div>
+              <!-- Tab contents -->
               <div class="py-2">
-                <img class="h-87.5" src="./assets/images/home/middle-car.png" alt="img">
+                <!-- 1 -->
+                <div class="tab-content" id="tab-1">
+                  <img class="max-lg:mx-auto h-63 md:h-76 lg:h-87.5 object-contain"
+                    src="./assets/images/home/middle-car.png" alt="img">
+                </div>
+                <!-- 2 -->
+                <div class="tab-content hidden" id="tab-2">
+                  <img class="max-lg:mx-auto h-63 md:h-76 lg:h-87.5 object-contain"
+                    src="./assets/images/home/rover-1.png" alt="img">
+                </div>
+                <!-- 1 -->
+                <div class="tab-content hidden" id="tab-3">
+                  <img class="max-lg:mx-auto h-63 md:h-76 lg:h-87.5 object-contain"
+                    src="./assets/images/home/middle-car.png" alt="img">
+                </div>
+                <!-- 2 -->
+                <div class="tab-content hidden" id="tab-4">
+                  <img class="max-lg:mx-auto h-63 md:h-76 lg:h-87.5 object-contain"
+                    src="./assets/images/home/rover-1.png" alt="img">
+                </div>
+                <!-- 1 -->
+                <div class="tab-content hidden" id="tab-5">
+                  <img class="max-lg:mx-auto h-63 md:h-76 lg:h-87.5 object-contain"
+                    src="./assets/images/home/middle-car.png" alt="img">
+                </div>
+                <!-- 2 -->
+                <div class="tab-content hidden" id="tab-6">
+                  <img class="max-lg:mx-auto h-63 md:h-76 lg:h-87.5 object-contain"
+                    src="./assets/images/home/rover-1.png" alt="img">
+                </div>
+                <!-- 1 -->
+                <div class="tab-content hidden" id="tab-7">
+                  <img class="max-lg:mx-auto h-63 md:h-76 lg:h-87.5 object-contain"
+                    src="./assets/images/home/middle-car.png" alt="img">
+                </div>
+                <!-- 2 -->
+                <div class="tab-content hidden" id="tab-8">
+                  <img class="max-lg:mx-auto h-63 md:h-76 lg:h-87.5 object-contain"
+                    src="./assets/images/home/rover-1.png" alt="img">
+                </div>
+                <!-- 1 -->
+                <div class="tab-content hidden" id="tab-9">
+                  <img class="max-lg:mx-auto h-63 md:h-76 lg:h-87.5 object-contain"
+                    src="./assets/images/home/middle-car.png" alt="img">
+                </div>
+                <!-- 2 -->
+                <div class="tab-content hidden" id="tab-10">
+                  <img class="max-lg:mx-auto h-63 md:h-76 lg:h-87.5 object-contain"
+                    src="./assets/images/home/rover-1.png" alt="img">
+                </div>
+                <!-- 1 -->
+                <div class="tab-content hidden" id="tab-11">
+                  <img class="max-lg:mx-auto h-63 md:h-76 lg:h-87.5 object-contain"
+                    src="./assets/images/home/middle-car.png" alt="img">
+                </div>
+                <!-- 2 -->
+                <div class="tab-content hidden" id="tab-12">
+                  <img class="max-lg:mx-auto h-63 md:h-76 lg:h-87.5 object-contain"
+                    src="./assets/images/home/rover-1.png" alt="img">
+                </div>
               </div>
             </div>
 
             <!-- Right -->
-            <div class="w-full max-w-141">
-              <div class="grid grid-cols-2 gap-y-7 gap-x-8.5 mb-20">
+            <div class="w-full lg:max-w-141 max-lg:mb-5">
+              <div
+                class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-y-4 lg:gap-y-7 gap-x-3 lg:gap-x-8.5 mb-7 md:mb-14 lg:mb-20">
                 <!-- Укажите пробег авто: -->
                 <div class="w-full max-w-67">
-                  <p class="text-display-22/[112%] mb-5">
+                  <p class="text-xs md:text-base lg:text-display-22/[112%] mb-2 lg:mb-5">
                     Укажите пробег авто:
                   </p>
 
 
                   <div class="relative">
                     <button
-                      class="dropdown-button text-primary border rounded-full h-10.5 px-4 lg:px-6 py-2.5 text-center inline-flex gap-3 items-center">
+                      class="dropdown-button text-primary text-xs md:text-base border rounded-full h-7.5 md:h-10.5 px-4 lg:px-6 py-2.5 text-center inline-flex gap-3 items-center">
                       12000
                       <svg class="w-3 h-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                         viewBox="0 0 10 6">
@@ -1927,7 +2014,7 @@
                     <!-- Dropdown menu -->
                     <div
                       class="dropdown absolute z-10 translate-y-2 hidden bg-white rounded-lg border border-primary/50 w-28">
-                      <ul class="py-2 text-primary">
+                      <ul class="py-2 text-primary text-xs md:text-base">
                         <li>
                           <button
                             class="block w-full transition duration-200 hover:bg-gray-100 px-3 py-1">12001</button>
@@ -1947,14 +2034,14 @@
 
                 <!-- Тип двигателя: -->
                 <div class="w-full max-w-67">
-                  <p class="text-display-22/[112%] mb-5">
+                  <p class="text-xs md:text-base lg:text-display-22/[112%] mb-2 lg:mb-5">
                     Тип двигателя:
                   </p>
 
 
                   <div class="relative">
                     <button
-                      class="dropdown-button text-primary border rounded-full h-10.5 px-4 lg:px-6 py-2.5 text-center inline-flex gap-3 items-center">
+                      class="dropdown-button text-primary text-xs md:text-base border rounded-full h-7.5 md:h-10.5 px-4 lg:px-6 py-2.5 text-center inline-flex gap-3 items-center">
                       2.7D
                       <svg class="w-3 h-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                         viewBox="0 0 10 6">
@@ -1966,7 +2053,7 @@
                     <!-- Dropdown menu -->
                     <div
                       class="dropdown absolute z-10 translate-y-2 hidden bg-white rounded-lg border border-primary/50 w-28">
-                      <ul class="py-2 text-primary">
+                      <ul class="py-2 text-primary text-xs md:text-base">
                         <li>
                           <button
                             class="block w-full transition duration-200 hover:bg-gray-100 px-3 py-1">12001</button>
@@ -1986,14 +2073,14 @@
 
                 <!-- Год выпуска: -->
                 <div class="w-full max-w-67">
-                  <p class="text-display-22/[112%] mb-5">
+                  <p class="text-xs md:text-base lg:text-display-22/[112%] mb-2 lg:mb-5">
                     Год выпуска:
                   </p>
 
 
                   <div class="relative">
                     <button
-                      class="dropdown-button text-primary border rounded-full h-10.5 px-4 lg:px-6 py-2.5 text-center inline-flex gap-3 items-center">
+                      class="dropdown-button text-primary text-xs md:text-base border rounded-full h-7.5 md:h-10.5 px-4 lg:px-6 py-2.5 text-center inline-flex gap-3 items-center">
                       2016
                       <svg class="w-3 h-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                         viewBox="0 0 10 6">
@@ -2005,7 +2092,7 @@
                     <!-- Dropdown menu -->
                     <div
                       class="dropdown absolute z-10 translate-y-2 hidden bg-white rounded-lg border border-primary/50 w-28">
-                      <ul class="py-2 text-primary">
+                      <ul class="py-2 text-primary text-xs md:text-base">
                         <li>
                           <button
                             class="block w-full transition duration-200 hover:bg-gray-100 px-3 py-1">12001</button>
@@ -2025,20 +2112,20 @@
               </div>
 
               <button
-                class="text-2xl h-16.75 bg-brand-red text-white rounded-full py-4 px-10 transition duration-200 hover:bg-brand-red-700">
+                class="block text-xs lg:text-lg xl:text-2xl h-9 md:h-12 lg:h-16.75 bg-brand-red text-white rounded-full py-2 px-5 xl:px-10 transition duration-200 hover:bg-brand-red-700 max-md:mx-auto">
                 Расчитать стоимость
               </button>
 
             </div>
           </div>
 
-          <div class="w-full flex justify-between gap-5">
-            <div class="w-full max-w-140 bg-brand-gray-100 rounded-[10px] px-10 py-5">
-              <p class="text-display-26/[112%] mb-3">
+          <div class="w-full flex max-md:flex-col justify-between gap-5">
+            <div class="w-full md:max-w-140 bg-brand-gray-100 rounded-[10px] px-8 lg:px-10 py-5">
+              <p class="text-base lg:text-display-26/[112%] mb-3">
                 Список работ:
               </p>
 
-              <ul class="list-disc list-outside space-y-1.5 ml-4">
+              <ul class="list-disc list-outside text-xs lg:text-base space-y-1.5 ml-4">
                 <li>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit
                 </li>
@@ -2060,11 +2147,12 @@
               </ul>
             </div>
 
-            <div class="w-full max-w-140">
-              <div class="text-display-26/[112%] w-full bg-brand-gray-100 rounded-[10px] px-10 py-5 mb-7">
+            <div class="w-full md:max-w-140">
+              <div
+                class="text-base lg:text-display-26/[112%] w-full bg-brand-gray-100 rounded-[10px] px-5 lg:px-10 py-5 mb-6 lg:mb-7">
 
                 <p class="mb-3">
-                  Список работ:
+                  Итого стоимость:
                 </p>
 
                 <div>
@@ -2078,7 +2166,7 @@
               </div>
 
               <button
-                class="text-2xl h-16.75 bg-brand-red text-white rounded-full py-4 px-10 transition duration-200 hover:bg-brand-red-700">
+                class="block text-xs lg:text-lg xl:text-2xl h-9 md:h-12 lg:h-16.75 bg-brand-red text-white rounded-full py-2 px-5 lg:px-10 transition duration-200 hover:bg-brand-red-700 max-md:mx-auto">
                 Оставить заявку
               </button>
             </div>
@@ -2089,33 +2177,34 @@
 
     <!-- Индикаторы и предупреждения 
 о неисправностях на панели приборов -->
-    <section class="hidden mb-9 md:mb-20 lg:mb-30">
+    <section class="mb-9 md:mb-20 lg:mb-30">
       <div class="container-base">
-        <div class="flex justify-between gap-5 mb-21">
-          <h2 class="font-bold text-[34px]">
+        <div class="flex justify-between max-md:flex-col gap-5 mb-7.5 md:mb-14 lg:mb-21">
+          <h2 class="font-bold text-xl md:text-3xl lg:text-[34px] leading-none">
             Индикаторы и предупреждения <br />
             о неисправностях на панели приборов
           </h2>
 
-          <div class="bg-white flex gap-2.5 w-full max-w-162.5 bg-shadow-blur-2 rounded-[10px] px-5 py-2.5">
+          <div
+            class="bg-white flex gap-2.5 w-full max-w-120 lg:max-w-162.5 bg-shadow-blur-2 rounded-[10px] px-5 py-2.5">
             <button
               class="text-[10px] flex-mai-center size-3.75 rounded-full border border-brand-red text-brand-red shrink-0">
               i
             </button>
 
-            <p>
+            <p class="text-xs md:text-base">
               Данные индикаторы носят информационный характер и не являются указателем на конкретную неисправность. Для
               выявления неисправности рекомендуется выполнить диагностику.
             </p>
           </div>
         </div>
         <!-- Выберите модель: -->
-        <div>
-          <p class="text-display-22">
+        <div class="mb-4 lg:mb-7.5">
+          <p class="text-xs md:text-base lg:text-display-22">
             Выберите модель:
           </p>
 
-          <div class="flex items-center gap-1 lg:gap-3.75 overflow-x-auto pb-7.5 pt-5 -mx-3 px-3">
+          <div class="flex items-center gap-1 lg:gap-3.75 scroll-2 overflow-x-auto pt-5 pb-2">
             <!-- 1 -->
             <a href="#"
               class="size-22.25 flex items-center justify-center shrink-0 bg-white  border border-brand-gray rounded-[1.25rem]  main-shadow-blur2">
@@ -2177,157 +2266,166 @@
               <img class="h-15.25" src="./assets/images/home/rover-full-1.png" alt="img">
             </a>
           </div>
+        </div>
 
-          <div class="pop-up h-165.25 overflow-hidden bg-shadow-blur rounded-[40px] cursor-pointer">
-            <img class="object-cover size-full object-center" src="./assets/images/home/spidermetr.png" alt="img">
-          </div>
+        <div
+          class="pop-up__car h-42.5 sm:h-80 md:h-120 lg:h-165.25 overflow-hidden bg-shadow-blur-2 lg:bg-shadow-blur rounded-2xl lg:rounded-[40px] cursor-pointer">
+          <img class="object-cover size-full object-center" src="./assets/images/home/spidermetr.png" alt="img">
+        </div>
 
-          <div class="modal-main hidden fixed top-0 left-0 right-0 size-full z-50 flex-mai-center bg-black/50">
-            <div class="modal-content relative fade-in max-w-150 w-full mx-auto bg-white rounded-[30px] px-9 py-3">
-              <div class="overflow-y-auto scroll-1 h-[calc(100vh-150px)] pr-1.5 py-5">
-                <div class="w-full h-81 bg-black flex-mai-center rounded-[30px] overflow-hidden mb-5.5">
-                  <img class="object-cover h-53.5 object-center" src="./assets/images/home/spidermetr-full.png"
-                    alt="img">
+        <div class="modal-main__car hidden fixed top-0 left-0 right-0 size-full z-50 flex-mai-center bg-black/50 p-5">
+          <div
+            class="modal-content__car relative fade-in max-w-150 w-full mx-auto bg-white rounded-[30px] px-5 lg:px-9 py-3 max-lg:pt-10">
+            <div class="overflow-y-auto scroll-1 h-[calc(100vh-150px)] max-lg:max-h-150 pr-1.5 py-5">
+              <div class="w-full bg-black flex-mai-center rounded-[30px] overflow-hidden mb-5.5 py-3">
+                <img class="object-cover h-20 md:h-40 lg:h-53.5 object-center"
+                  src="./assets/images/home/spidermetr-full.png" alt="img">
 
-                </div>
-
-                <div class="text-black mb-5.5">
-                  <h4 class="font-bold text-display-26 mb-2.5">
-                    CHECK ENGINE
-                  </h4>
-                  <p class="text-sm">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua.
-                  </p>
-                </div>
-                <!-- accordion -->
-                <div
-                  class="accordion border border-b-0 border-brand-gray text-black mb-5.5 h-70 overflow-y-auto no-scrollbar">
-                  <!-- 1 -->
-                  <div class="accordion-item border-b border-brand-gray">
-                    <button class="accordion-button w-full flex items-center justify-between gap-4 py-3.5 px-4.5">
-                      <span class="font-bold">
-                        Неисправности
-                      </span>
-
-                      <svg class="accordion-icon rotate-180 transition duration-300" width="15" height="10"
-                        viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M15 1.98668L7.52396 9.5L0 2.00266L1.46965 0.515985L7.52396 6.60657L13.5304 0.5L15 1.98668Z"
-                          fill="black" />
-                      </svg>
-
-                    </button>
-
-                    <div class="accordion-content px-4.5 pb-3.5">
-                      <p class="text-sm">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                      </p>
-                    </div>
-                  </div>
-                  <!-- 2 -->
-                  <div class="accordion-item border-b bg-brand-gray-100 border-brand-gray">
-                    <button class="accordion-button w-full flex items-center justify-between gap-4 py-3.5 px-4.5">
-                      <span class="font-bold">
-                        Регламенты
-                      </span>
-
-                      <svg class="accordion-icon rotate-0 transition duration-300" width="15" height="10"
-                        viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M15 1.98668L7.52396 9.5L0 2.00266L1.46965 0.515985L7.52396 6.60657L13.5304 0.5L15 1.98668Z"
-                          fill="black" />
-                      </svg>
-
-                    </button>
-
-                    <div class="accordion-content hidden px-4.5 pb-3.5">
-                      <p class="text-sm">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                      </p>
-                    </div>
-                  </div>
-                  <!-- 3 -->
-                  <div class="accordion-item border-b bg-brand-gray-100 border-brand-gray">
-                    <button class="accordion-button w-full flex items-center justify-between gap-4 py-3.5 px-4.5">
-                      <span class="font-bold">
-                        Техническая информация
-                      </span>
-
-                      <svg class="accordion-icon rotate-0 transition duration-300" width="15" height="10"
-                        viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M15 1.98668L7.52396 9.5L0 2.00266L1.46965 0.515985L7.52396 6.60657L13.5304 0.5L15 1.98668Z"
-                          fill="black" />
-                      </svg>
-
-                    </button>
-
-                    <div class="accordion-content hidden px-4.5 pb-3.5">
-                      <p class="text-sm">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                      </p>
-                    </div>
-                  </div>
-                  <!-- 4 -->
-                  <div class="accordion-item border-b bg-brand-gray-100 border-brand-gray">
-                    <button class="accordion-button w-full flex items-center justify-between gap-4 py-3.5 px-4.5">
-                      <span class="font-bold">
-                        Неисправности
-                      </span>
-
-                      <svg class="accordion-icon rotate-0 transition duration-300" width="15" height="10"
-                        viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M15 1.98668L7.52396 9.5L0 2.00266L1.46965 0.515985L7.52396 6.60657L13.5304 0.5L15 1.98668Z"
-                          fill="black" />
-                      </svg>
-
-                    </button>
-
-                    <div class="accordion-content hidden px-4.5 pb-3.5">
-                      <p class="text-sm">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <button
-                  class="h-12 bg-brand-red text-white rounded-full py-2 px-10 transition duration-200 hover:bg-brand-red-700">
-                  Записаться на диагностику
-                </button>
               </div>
 
-              <button class="exit-modal absolute top-0 right-0 translate-x-10 text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor" class="size-8">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                </svg>
+              <div class="text-black mb-5.5">
+                <h4 class="font-bold text-xl lg:text-display-26 mb-2.5">
+                  CHECK ENGINE
+                </h4>
+                <p class="text-xs lg:text-sm">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna aliqua.
+                </p>
+              </div>
+              <!-- accordion -->
+              <div
+                class="accordion border border-b-0 border-brand-gray text-black mb-5.5 h-57 lg:h-70 overflow-y-auto no-scrollbar">
+                <!-- 1 -->
+                <div class="accordion-item border-b border-brand-gray">
+                  <button
+                    class="accordion-button w-full flex items-center justify-between gap-4 py-2.5 lg:py-3.5 px-2.5 lg:px-4.5">
+                    <span class="font-bold text-xs lg:text-base">
+                      Неисправности
+                    </span>
+
+                    <svg class="accordion-icon rotate-180 transition duration-300" width="15" height="10"
+                      viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M15 1.98668L7.52396 9.5L0 2.00266L1.46965 0.515985L7.52396 6.60657L13.5304 0.5L15 1.98668Z"
+                        fill="black" />
+                    </svg>
+
+                  </button>
+
+                  <div class="accordion-content px-2.5 lg:px-4.5 mb-2.5 lg:pb-3.5">
+                    <p class="text-xs lg:text-sm">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                      laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                      voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                  </div>
+                </div>
+                <!-- 2 -->
+                <div class="accordion-item border-b bg-brand-gray-100 border-brand-gray">
+                  <button
+                    class="accordion-button w-full flex items-center justify-between gap-4 py-2.5 lg:py-3.5 px-2.5 lg:px-4.5">
+                    <span class="font-bold text-xs lg:text-base">
+                      Регламенты
+                    </span>
+
+                    <svg class="accordion-icon rotate-0 transition duration-300" width="15" height="10"
+                      viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M15 1.98668L7.52396 9.5L0 2.00266L1.46965 0.515985L7.52396 6.60657L13.5304 0.5L15 1.98668Z"
+                        fill="black" />
+                    </svg>
+
+                  </button>
+
+                  <div class="accordion-content hidden px-2.5 lg:px-4.5 pb-2.5 lg:pb-3.5">
+                    <p class="text-xs lg:text-sm">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                      laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                      voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                  </div>
+                </div>
+                <!-- 3 -->
+                <div class="accordion-item border-b bg-brand-gray-100 border-brand-gray">
+                  <button
+                    class="accordion-button w-full flex items-center justify-between gap-4 py-2.5 lg:py-3.5 px-2.5 md:px-4.5">
+                    <span class="font-bold text-xs lg:text-base">
+                      Техническая информация
+                    </span>
+
+                    <svg class="accordion-icon rotate-0 transition duration-300" width="15" height="10"
+                      viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M15 1.98668L7.52396 9.5L0 2.00266L1.46965 0.515985L7.52396 6.60657L13.5304 0.5L15 1.98668Z"
+                        fill="black" />
+                    </svg>
+
+                  </button>
+
+                  <div class="accordion-content hidden px-2.5 md:px-4.5 pb-2.5 lg:pb-3.5">
+                    <p class="text-sm">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                      laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                      voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                  </div>
+                </div>
+                <!-- 4 -->
+                <div class="accordion-item border-b bg-brand-gray-100 border-brand-gray">
+                  <button
+                    class="accordion-button w-full flex items-center justify-between gap-4 py-2.5 lg:py-3.5 px-2.5 md:px-4.5">
+                    <span class="font-bold text-xs lg:text-base">
+                      Неисправности
+                    </span>
+
+                    <svg class="accordion-icon rotate-0 transition duration-300" width="15" height="10"
+                      viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M15 1.98668L7.52396 9.5L0 2.00266L1.46965 0.515985L7.52396 6.60657L13.5304 0.5L15 1.98668Z"
+                        fill="black" />
+                    </svg>
+
+                  </button>
+
+                  <div class="accordion-content hidden px-2.5 md:px-4.5 pb-2.5 lg:pb-3.5">
+                    <p class="text-sm">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                      laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                      voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <button
+                class="block max-lg:mx-auto text-xs lg:text-base h-12 bg-brand-red text-white rounded-full py-2 px-7 transition duration-200 hover:bg-brand-red-700">
+                Записаться на диагностику
               </button>
             </div>
+
+            <button
+              class="exit-modal absolute top-5 lg:top-0 right-5 lg:right-0 lg:translate-x-10 text-brand-red lg:text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-8">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+              </svg>
+            </button>
           </div>
         </div>
       </div>
     </section>
 
+
+
     <!-- Запишитесь на диагностику неисправностей -->
     <section class="hidden mb-9 md:mb-20 lg:mb-30">
       <div class="bg-gradient-primary rounded-[30px] py-15">
         <div class="container-base">
-          <h2 class="font-muller text-white !font-normal text-[40px] mb-11">
+          <h2 class="font-muller text-white !font-normal lg:text-[40px] leading-none mb-11">
             Запишитесь на диагностику неисправностей
             <span class="font-semibold block mt-2.5">
               Доверьтесь нашему опыту: с нами надежно
@@ -3095,15 +3193,21 @@
       }
     });
 
-
     // Modal manager
     document.addEventListener("DOMContentLoaded", () => {
       const body = document.body;
 
       // Open modal
       document.addEventListener("click", (e) => {
-        if (e.target.closest(".pop-up")) {
-          const modal = document.querySelector(".modal-main");
+        const trigger = e.target.closest(".pop-up, .pop-up__car");
+        if (trigger) {
+          // Har bir triggerga mos modal tanlash
+          const modal = document.querySelector(
+            trigger.classList.contains("pop-up__car")
+              ? ".modal-main__car"
+              : ".modal-main"
+          );
+
           if (modal) {
             modal.classList.add("active");
             body.style.overflow = "hidden"; // scroll block
@@ -3113,12 +3217,13 @@
 
       // Close modal
       document.addEventListener("click", (e) => {
-        const modal = document.querySelector(".modal-main.active");
+        const modal = document.querySelector(".modal-main.active, .modal-main__car.active");
         if (!modal) return;
 
         const isExitBtn = e.target.closest(".exit-modal");
         const isOutsideClick =
-          !e.target.closest(".modal-content") && !e.target.closest(".pop-up");
+          !e.target.closest(".modal-content, .modal-content__car") &&
+          !e.target.closest(".pop-up, .pop-up__car");
 
         if (isExitBtn || isOutsideClick) {
           modal.classList.remove("active");
@@ -3129,7 +3234,7 @@
       // Escape key support
       document.addEventListener("keydown", (e) => {
         if (e.key === "Escape") {
-          const modal = document.querySelector(".modal-main.active");
+          const modal = document.querySelector(".modal-main.active, .modal-main__car.active");
           if (modal) {
             modal.classList.remove("active");
             body.style.overflow = "";
@@ -3137,6 +3242,11 @@
         }
       });
     });
+
+
+
+
+
 
     document.addEventListener("DOMContentLoaded", () => {
       const accordions = document.querySelectorAll(".accordion-item");
@@ -3174,6 +3284,25 @@
 
     btn.addEventListener("click", () => {
       btn.textContent = btn.textContent === "+" ? "-" : "+";
+    });
+
+    // Tabs
+    const tabs = document.querySelectorAll("#tabs .tab");
+    const contents = document.querySelectorAll(".tab-content");
+
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        const target = tab.getAttribute("data-tab");
+
+        tabs.forEach((t) => {
+          t.classList.toggle("active", t === tab); // active class toggle
+        });
+
+        contents.forEach((c) => {
+          const match = c.id === "tab-" + target;
+          c.classList.toggle("hidden", !match); // content toggle
+        });
+      });
     });
 
 
