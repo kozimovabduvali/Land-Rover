@@ -610,6 +610,9 @@
   .h-\[calc\(100vh-80px\)\] {
     height: calc(100vh - 80px);
   }
+  .h-\[calc\(100vh-100px\)\] {
+    height: calc(100vh - 100px);
+  }
   .h-\[calc\(100vh-150px\)\] {
     height: calc(100vh - 150px);
   }
@@ -2477,6 +2480,11 @@
   .lg\:h-\[calc\(100vh-150px\)\] {
     @media (width >= 64rem) {
       height: calc(100vh - 150px);
+    }
+  }
+  .lg\:max-h-220 {
+    @media (width >= 64rem) {
+      max-height: calc(var(--spacing) * 220);
     }
   }
   .lg\:w-8 {
