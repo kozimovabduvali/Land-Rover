@@ -100,6 +100,10 @@
   );
 }
 
+@utility bg-lined-gradient-land {
+  background: linear-gradient(180deg, #858f97 0%, rgba(0, 0, 0, 0.6) 100%);
+}
+
 .main-shadow-blur:hover {
   animation: shadowBlurIn 0.5s ease-in-out forwards;
 }
@@ -227,4 +231,8 @@
 .tab.active {
   /* box-shadow: 0px 0px 10px 2px #1c21264d; */
   @apply !border-primary;
+}
+
+.swiper-foult .swiper-pagination-current {
+  @apply !w-5 !h-6.5 !rounded-[10px] !bg-white !flex-mai-center;
 }
