@@ -1899,6 +1899,16 @@
       height: 100%;
     }
   }
+  .max-md\:max-w-42\.5 {
+    @media (width < 48rem) {
+      max-width: calc(var(--spacing) * 42.5);
+    }
+  }
+  .max-md\:max-w-45 {
+    @media (width < 48rem) {
+      max-width: calc(var(--spacing) * 45);
+    }
+  }
   .max-md\:flex-col {
     @media (width < 48rem) {
       flex-direction: column;
