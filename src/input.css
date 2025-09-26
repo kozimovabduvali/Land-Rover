@@ -100,7 +100,6 @@
   );
 }
 
-
 .main-shadow-blur:hover {
   animation: shadowBlurIn 0.5s ease-in-out forwards;
 }
@@ -207,12 +206,22 @@
   display: flex; /* yoki block */
 }
 
-.main-swiper-hero .swiper-pagination-bullet {
-  @apply !m-0.75 !w-1.25 !h-1.25 !bg-[#6A7784] !rounded-full !opacity-100 !transition-all !duration-300 !ease-in-out;
+.main-swiper-hero .swiper-pagination-bullet,
+.swiper-model .swiper-pagination-bullet {
+  @apply !block !shrink-0 !m-0 !w-1.25 !h-1.25 !bg-[#6A7784] !rounded-full !opacity-100 !transition-all !duration-300 !ease-in-out;
 }
 
-.main-swiper-hero .swiper-pagination-bullet-active {
+.main-swiper-hero .swiper-pagination-bullet-active,
+.swiper-model .swiper-pagination-bullet-active {
   @apply !w-3.75 !h-1.25 !bg-[#1C2126] !rounded-full;
+}
+
+.swiper-model .swiper-pagination-bullet {
+  @apply !block !shrink-0 !m-0 !w-2 !h-2 !bg-[#6A7784] !rounded-full !opacity-100 !transition-all !duration-300 !ease-in-out;
+}
+
+.swiper-model .swiper-pagination-bullet-active {
+  @apply !w-6 !h-2 !bg-[#1C2126] !rounded-full;
 }
 
 .tab.active {
