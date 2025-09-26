@@ -100,6 +100,12 @@
   );
 }
 
+
+@utility tabs-gradient {
+  background: linear-gradient(86.06deg, rgba(28, 33, 38, 0.9) 45%, #7D858D 100%);
+
+}
+
 @utility bg-lined-gradient-land {
   background: linear-gradient(180deg, #858f97 0%, rgba(0, 0, 0, 0.6) 100%);
 }

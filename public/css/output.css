@@ -770,11 +770,23 @@
   .max-w-127\.25 {
     max-width: calc(var(--spacing) * 127.25);
   }
+  .max-w-128 {
+    max-width: calc(var(--spacing) * 128);
+  }
+  .max-w-128\.25 {
+    max-width: calc(var(--spacing) * 128.25);
+  }
   .max-w-140 {
     max-width: calc(var(--spacing) * 140);
   }
   .max-w-141 {
     max-width: calc(var(--spacing) * 141);
+  }
+  .max-w-148 {
+    max-width: calc(var(--spacing) * 148);
+  }
+  .max-w-148\.25 {
+    max-width: calc(var(--spacing) * 148.25);
   }
   .max-w-150 {
     max-width: calc(var(--spacing) * 150);
@@ -1017,6 +1029,13 @@
       margin-block-end: calc(calc(var(--spacing) * 5) * calc(1 - var(--tw-space-y-reverse)));
     }
   }
+  .space-y-6 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 6) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
   .space-y-7 {
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 0;
@@ -1235,6 +1254,9 @@
   .p-3 {
     padding: calc(var(--spacing) * 3);
   }
+  .p-4 {
+    padding: calc(var(--spacing) * 4);
+  }
   .p-5 {
     padding: calc(var(--spacing) * 5);
   }
@@ -1277,8 +1299,8 @@
   .px-7\.5 {
     padding-inline: calc(var(--spacing) * 7.5);
   }
-  .px-8 {
-    padding-inline: calc(var(--spacing) * 8);
+  .px-9 {
+    padding-inline: calc(var(--spacing) * 9);
   }
   .px-10 {
     padding-inline: calc(var(--spacing) * 10);
@@ -1306,6 +1328,9 @@
   }
   .py-3\.5 {
     padding-block: calc(var(--spacing) * 3.5);
+  }
+  .py-3\.75 {
+    padding-block: calc(var(--spacing) * 3.75);
   }
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
@@ -1379,9 +1404,6 @@
   .pr-1\.5 {
     padding-right: calc(var(--spacing) * 1.5);
   }
-  .\!pb-7\.5 {
-    padding-bottom: calc(var(--spacing) * 7.5) !important;
-  }
   .pb-0 {
     padding-bottom: calc(var(--spacing) * 0);
   }
@@ -1415,9 +1437,6 @@
   .pb-7\.5 {
     padding-bottom: calc(var(--spacing) * 7.5);
   }
-  .pb-9 {
-    padding-bottom: calc(var(--spacing) * 9);
-  }
   .text-center {
     text-align: center;
   }
@@ -1443,6 +1462,10 @@
   .text-2xl\/\[112\%\] {
     font-size: var(--text-2xl);
     line-height: 112%;
+  }
+  .text-2xl\/\[118\%\] {
+    font-size: var(--text-2xl);
+    line-height: 118%;
   }
   .text-2xl\/\[120\%\] {
     font-size: var(--text-2xl);
@@ -1511,6 +1534,10 @@
   .text-sm {
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .text-sm\/\[118\%\] {
+    font-size: var(--text-sm);
+    line-height: 118%;
   }
   .text-sm\/\[120\%\] {
     font-size: var(--text-sm);
@@ -1689,6 +1716,9 @@
     --tw-outline-style: none;
     outline-style: none;
   }
+  .\!tabs-gradient {
+    background: linear-gradient(86.06deg, rgba(28, 33, 38, 0.9) 45%, #7D858D 100%) !important;
+  }
   .bg-gradient-primary {
     background: linear-gradient(86.06deg, #1c2126 45%, #7d858d 100%);
   }
@@ -1697,6 +1727,9 @@
   }
   .bg-main-gradient {
     background: linear-gradient( 89.99deg, #d60000 0.01%, rgba(217, 217, 217, 0.29) 100% );
+  }
+  .tabs-gradient {
+    background: linear-gradient(86.06deg, rgba(28, 33, 38, 0.9) 45%, #7D858D 100%);
   }
   .group-hover\:flex-mai-center {
     &:is(:where(.group):hover *) {
@@ -2313,11 +2346,6 @@
       padding-bottom: calc(var(--spacing) * 4);
     }
   }
-  .md\:pb-20 {
-    @media (width >= 48rem) {
-      padding-bottom: calc(var(--spacing) * 20);
-    }
-  }
   .md\:text-2xl {
     @media (width >= 48rem) {
       font-size: var(--text-2xl);
@@ -2777,11 +2805,6 @@
       padding-inline: calc(var(--spacing) * 6.5);
     }
   }
-  .lg\:px-8 {
-    @media (width >= 64rem) {
-      padding-inline: calc(var(--spacing) * 8);
-    }
-  }
   .lg\:px-9 {
     @media (width >= 64rem) {
       padding-inline: calc(var(--spacing) * 9);
@@ -2835,11 +2858,6 @@
   .lg\:pb-3\.5 {
     @media (width >= 64rem) {
       padding-bottom: calc(var(--spacing) * 3.5);
-    }
-  }
-  .lg\:pb-30 {
-    @media (width >= 64rem) {
-      padding-bottom: calc(var(--spacing) * 30);
     }
   }
   .lg\:text-3xl {
