@@ -100,6 +100,7 @@
   );
 }
 
+
 .main-shadow-blur:hover {
   animation: shadowBlurIn 0.5s ease-in-out forwards;
 }
@@ -200,7 +201,9 @@
 .modal-main {
   display: none;
 }
-.modal-main.active, .modal-main__car.active, .modal-main__user.active {
+.modal-main.active,
+.modal-main__car.active,
+.modal-main__user.active {
   display: flex; /* yoki block */
 }
 
