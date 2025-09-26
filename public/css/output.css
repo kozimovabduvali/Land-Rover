@@ -647,6 +647,9 @@
   .min-h-40 {
     min-height: calc(var(--spacing) * 40);
   }
+  .min-h-50 {
+    min-height: calc(var(--spacing) * 50);
+  }
   .min-h-80 {
     min-height: calc(var(--spacing) * 80);
   }
@@ -1530,6 +1533,9 @@
   }
   .text-\[10px\] {
     font-size: 10px;
+  }
+  .text-\[30px\] {
+    font-size: 30px;
   }
   .text-\[40px\] {
     font-size: 40px;
