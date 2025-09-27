@@ -252,3 +252,10 @@
 .swiper-foult .swiper-pagination-current {
   @apply !w-5 !h-6.5 !rounded-[10px] !bg-white !flex-mai-center;
 }
+
+
+
+.about-slider-img::after {
+  content: '';
+  @apply absolute left-0 top-0 size-full z-10 bg-black/30
+}
