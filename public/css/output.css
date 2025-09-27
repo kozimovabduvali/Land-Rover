@@ -2044,6 +2044,13 @@
       }
     }
   }
+  .hover\:text-brand-red-700 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-brand-red-700);
+      }
+    }
+  }
   .hover\:text-main-primary {
     &:hover {
       @media (hover: hover) {
