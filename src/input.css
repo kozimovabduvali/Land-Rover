@@ -234,6 +234,16 @@
   @apply !w-6 !h-2 !bg-[#1C2126] !rounded-full;
 }
 
+
+.swiper-about .swiper-pagination-bullet {
+  @apply !block !shrink-0 !m-0 !w-2 !h-2 !bg-white !rounded-full !opacity-100 !transition-all !duration-300 !ease-in-out;
+}
+
+.swiper-about .swiper-pagination-bullet-active {
+  @apply !w-6 !h-2 !bg-white !rounded-full;
+}
+
+
 .tab.active {
   /* box-shadow: 0px 0px 10px 2px #1c21264d; */
   @apply !border-primary;
