@@ -307,6 +307,27 @@
   .z-\[5\] {
     z-index: 5;
   }
+  .container {
+    width: 100%;
+    @media (width >= 36rem) {
+      max-width: 36rem;
+    }
+    @media (width >= 40rem) {
+      max-width: 40rem;
+    }
+    @media (width >= 48rem) {
+      max-width: 48rem;
+    }
+    @media (width >= 64rem) {
+      max-width: 64rem;
+    }
+    @media (width >= 80rem) {
+      max-width: 80rem;
+    }
+    @media (width >= 90rem) {
+      max-width: 90rem;
+    }
+  }
   .container-base {
     margin-inline: auto;
     width: 100%;
@@ -794,6 +815,12 @@
   }
   .max-w-105 {
     max-width: calc(var(--spacing) * 105);
+  }
+  .max-w-106 {
+    max-width: calc(var(--spacing) * 106);
+  }
+  .max-w-106\.5 {
+    max-width: calc(var(--spacing) * 106.5);
   }
   .max-w-115 {
     max-width: calc(var(--spacing) * 115);
