@@ -188,9 +188,9 @@
             </div>
           </div>
 
-          <div class="swiper-grid-container lg:flex hidden items-center justify-between gap-3">
+          <div class="swiper-grid-container md:flex hidden items-center justify-between gap-3">
             <button
-              class="swiper-button-prev__grid size-11.25 rounded-full shrink-0 button-blur bg-black/10 flex-mai-center">
+              class="swiper-button-prev__grid size-11.25 rounded-full shrink-0 button-blur bg-black/10 xl:!flex-mai-center !hidden">
               <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9 0.500122L1 8.50012L9 16.5001" stroke="black" />
               </svg>
@@ -322,7 +322,7 @@
               </div>
             </div>
             <button
-              class="swiper-button-next__grid size-11.25 rounded-full shrink-0 button-blur bg-black/10 flex-mai-center">
+              class="swiper-button-next__grid size-11.25 rounded-full shrink-0 button-blur bg-black/10 xl:!flex-mai-center !hidden">
               <svg class="rotate-180" width="10" height="17" viewBox="0 0 10 17" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M9 0.500122L1 8.50012L9 16.5001" stroke="black" />
@@ -331,62 +331,69 @@
           </div>
 
 
-          <div class="lg:hidden scroll-2 overflow-x-auto">
+          <div class="md:hidden scroll-2 overflow-x-auto">
             <!-- row 1 -->
             <div class="flex gap-1.5 mb-1.5">
               <!-- CARD -->
               <div
-                class="relative flex-none w-[94px] h-[92px] bg-brand-gray-100 p-2.5 pb-0 rounded-3xl overflow-hidden">
-                <h4 class="font-bold text-xs text-center leading-tight
-                           [display:-webkit-box] [-webkit-line-clamp:2] [-webkit-box-orient:vertical] overflow-hidden">
+                class="cursor-pointer min-w-28 h-28 relative bg-brand-gray-100 rounded-2xl lg:rounded-[30px] overflow-hidden p-3 md:p-5 lg:p-7.5">
+                <h4 class="relative z-10 font-bold text-sm md:text-base lg:text-xl">
                   Электроника
                 </h4>
-                <img src="./assets/images/home/middle-car-mobile-2.png" class="absolute bottom-0 left-0" alt="Car Img">
+  
+                <img
+                  class="object-contain absolute z-0 bottom-0 right-0 translate-x-5 h-[80%] xl:h-[90%] -translate-y-0 transition duration-700 group-hover:translate-x-3 group-hover:-translate-y-1"
+                  src="./assets/images/home/middle-car-mobile-2.png" alt="Car Img">
               </div>
-
               <div
-                class="relative flex-none w-[94px] h-[92px] bg-brand-gray-100 p-2.5 pb-0 rounded-3xl overflow-hidden">
-                <h4 class="font-bold text-xs text-center leading-tight
-                           [display:-webkit-box] [-webkit-line-clamp:2] [-webkit-box-orient:vertical] overflow-hidden">
+                class="pop-up cursor-pointer block min-w-28 h-28 relative group bg-brand-gray-100 group rounded-2xl lg:rounded-[30px] overflow-hidden p-3 md:p-5 lg:p-7.5">
+                <h4 class="text-center relative z-10 font-bold text-xs md:text-base lg:text-xl">
                   Подвеска
                 </h4>
-                <img src="./assets/images/home/middle-car-mobile-2.png" class="absolute bottom-0 left-0" alt="Car Img">
+  
+                <img
+                  class="object-contain absolute z-0 bottom-0 right-0 translate-x-5 h-[80%] xl:h-[90%] -translate-y-0 transition duration-700 group-hover:translate-x-3 group-hover:-translate-y-1"
+                  src="./assets/images/home/middle-car-mobile-2.png" alt="Car Img">
               </div>
-
               <div
-                class="relative flex-none w-[94px] h-[92px] bg-brand-gray-100 p-2.5 pb-0 rounded-3xl overflow-hidden">
-                <h4 class="font-bold text-xs text-center leading-tight
-                           [display:-webkit-box] [-webkit-line-clamp:2] [-webkit-box-orient:vertical] overflow-hidden">
+                class="pop-up cursor-pointer block min-w-28 h-28 relative group bg-brand-gray-100 group rounded-2xl lg:rounded-[30px] overflow-hidden p-3 md:p-5 lg:p-7.5">
+                <h4 class="text-center relative z-10 font-bold text-xs md:text-base lg:text-xl">
                   Тормоза
                 </h4>
-                <img src="./assets/images/home/middle-car-mobile-2.png" class="absolute bottom-0 left-0" alt="Car Img">
+  
+                <img
+                  class="object-contain absolute z-0 bottom-0 right-0 translate-x-5 h-[80%] xl:h-[90%] -translate-y-0 transition duration-700 group-hover:translate-x-3 group-hover:-translate-y-1"
+                  src="./assets/images/home/middle-car-mobile-2.png" alt="Car Img">
               </div>
-
               <div
-                class="relative flex-none w-[94px] h-[92px] bg-brand-gray-100 p-2.5 pb-0 rounded-3xl overflow-hidden">
-                <h4 class="font-bold text-xs text-center leading-tight
-                           [display:-webkit-box] [-webkit-line-clamp:2] [-webkit-box-orient:vertical] overflow-hidden">
+                class="pop-up cursor-pointer block min-w-28 h-28 relative group bg-brand-gray-100 group rounded-2xl lg:rounded-[30px] overflow-hidden p-3 md:p-5 lg:p-7.5">
+                <h4 class="text-center relative z-10 font-bold text-xs md:text-base lg:text-xl">
                   Двигатель
                 </h4>
-                <img src="./assets/images/home/middle-car-mobile-2.png" class="absolute bottom-0 left-0" alt="Car Img">
+  
+                <img
+                  class="object-contain absolute z-0 bottom-0 right-0 translate-x-5 h-[80%] xl:h-[90%] -translate-y-0 transition duration-700 group-hover:translate-x-3 group-hover:-translate-y-1"
+                  src="./assets/images/home/middle-car-mobile-2.png" alt="Car Img">
               </div>
-
               <div
-                class="relative flex-none w-[94px] h-[92px] bg-brand-gray-100 p-2.5 pb-0 rounded-3xl overflow-hidden">
-                <h4 class="font-bold text-xs text-center leading-tight
-                           [display:-webkit-box] [-webkit-line-clamp:2] [-webkit-box-orient:vertical] overflow-hidden">
+                class="pop-up cursor-pointer block min-w-28 h-28 relative group bg-brand-gray-100 group rounded-2xl lg:rounded-[30px] overflow-hidden p-3 md:p-5 lg:p-7.5">
+                <h4 class="text-center relative z-10 font-bold text-xs md:text-base lg:text-xl">
                   Электроника
                 </h4>
-                <img src="./assets/images/home/middle-car-mobile-2.png" class="absolute bottom-0 left-0" alt="Car Img">
+  
+                <img
+                  class="object-contain absolute z-0 bottom-0 right-0 translate-x-5 h-[80%] xl:h-[90%] -translate-y-0 transition duration-700 group-hover:translate-x-3 group-hover:-translate-y-1"
+                  src="./assets/images/home/middle-car-mobile-2.png" alt="Car Img">
               </div>
-
               <div
-                class="relative flex-none w-[94px] h-[92px] bg-brand-gray-100 p-2.5 pb-0 rounded-3xl overflow-hidden">
-                <h4 class="font-bold text-xs text-center leading-tight
-                           [display:-webkit-box] [-webkit-line-clamp:2] [-webkit-box-orient:vertical] overflow-hidden">
+                class="pop-up cursor-pointer block min-w-28 h-28 relative group bg-brand-gray-100 group rounded-2xl lg:rounded-[30px] overflow-hidden p-3 md:p-5 lg:p-7.5">
+                <h4 class="text-center relative z-10 font-bold text-xs md:text-base lg:text-xl">
                   Электроника
                 </h4>
-                <img src="./assets/images/home/middle-car-mobile-2.png" class="absolute bottom-0 left-0" alt="Car Img">
+  
+                <img
+                  class="object-contain absolute z-0 bottom-0 right-0 translate-x-5 h-[80%] xl:h-[90%] -translate-y-0 transition duration-700 group-hover:translate-x-3 group-hover:-translate-y-1"
+                  src="./assets/images/home/middle-car-mobile-2.png" alt="Car Img">
               </div>
             </div>
           </div>
