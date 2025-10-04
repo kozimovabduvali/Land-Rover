@@ -19,7 +19,7 @@
 <body>
   <!-- Header -->
   <header>
-    <div class="container-base pt-3.5 lg:pt-6.5">
+    <div class="container-base pt-3.5 lg:pt-6.5 md:pb-7.5 pb-5">
       <!-- Top -->
       <div
         class="w-full flex items-center justify-between xl:border-b border-black/20 pb-2.5 md:pb-4 xl:pb-5.5 xl:mb-5.5">
@@ -89,7 +89,7 @@
       <div class="flex items-center justify-between gap-5">
         <!-- Links -->
         <div class="text-sm xl:text-lg hidden lg:flex items-center lg:gap-5 xl:gap-10">
-          <a href="#" class="flex-mai-center h-7.5 py-1.5 rounded-[10px]">
+          <a href="#" class="flex-mai-center border-[0.5px] border-primary h-7.5 py-1.5 px-4 rounded-[10px]">
             Главная
           </a>
           <a href="#" class="flex-mai-center h-7.5 rounded-[10px] transition duration-300 hover:text-brand-red">
@@ -131,43 +131,55 @@
   <!-- Main -->
   <main>
     <!-- Hero -->
-    <section class="mb-9 md:mb-20 lg:mb-30 pt-7.5">
-      <div class="bg-white bg-shadow-blur-2 lg:bg-shadow-blur rounded-[30px] max-lg:-mx-5 mb-7.5">
-        <div class="container-base py-12.5">
+    <section class="mb-20  md:pt-7.5 pt-0">
+      <div class="bg-white bg-shadow-blur border-brand-gray rounded-[30px] lg:max-lg:-mx-5 mb-8">
+        <div class="container-base md:py-12.5 py-6">
           <!-- link list -->
-          <div class="text-lg flex items-center gap-1.5 mb-10">
+          <div class="text-lg md:flex hidden items-center gap-1.5 mb-15">
             <p class="text-black/30">
               Главная /
             </p>
             <p class="text-black/30">
               Модель Range Rover Sport L320 /
             </p>
-            <p class="text-black/30">
-              Коды неисправностей /
-            </p>
-            <a href="#" class="">
+            <a href="#">
               Код PO2361-10
             </a>
           </div>
 
-          <div class="flex items-center gap-2.5 mb-11">
-            <p class="text-display-22">
-              Описание кода
-            </p>
 
-            <div class="border border-brand-green-400 flex-mai-center rounded-full h-8.75 lg:px-6.5 py-2">
-              <p class="text-base">
-                PO2361-10
-              </p>
-            </div>
+          <!-- Link list mobile -->
+          <div class="text-xs md:hidden flex items-center gap-1.5 mb-3">
+            <a href="#" class="">
+              ← Назад
+            </a>
           </div>
 
+          <!-- Mobile -->
+          <div class="md:hidden">
+            <h1 class="font-bold md:hidden sm:text-4xl text-xl  sm:mb-2.5 mb-1">
+              Описание кода
+            </h1>
+            <p class="sm:text-2xl text-base mb-2.5">
+              Модель Range Rover Sport L320
+            </p>
+          </div>
+
+          <div class="flex items-center gap-2.5 md:mb-12 mb-4">
+            <h1 class="font-bold md:text-2xl text-xl sm:mb-2.5 mb-1 md:block hidden">
+              Описание кода
+            </h1>
+            <button
+              class="rounded-full bg-transparent flex-mai-center md:h-10 h-9 border border-primary transition duration-300 hover:bg-primary/80 hover:border-transparent hover:text-white px-5">
+              PO2361-10
+            </button>
+          </div>
 
           <!-- Swiper -->
           <div>
             <div class="swiper-fault-main flex items-center justify-center gap-3">
               <button
-                class="swiper-button-prev__foult size-11.25 rounded-[20px] shrink-0 button-blur bg-black/10 flex-mai-center">
+                class="swiper-button-prev__foult size-11.25 rounded-[20px] shrink-0 button-blur bg-black/10 md:flex-mai-center hidden">
                 <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M9 0.500122L1 8.50012L9 16.5001" stroke="black" />
                 </svg>
@@ -177,25 +189,45 @@
                 <div class="swiper swiper-foult">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                      <img class="w-full h-207.5 object-contain" src="./assets/images/foult-1.png" alt="Img">
+                      <img class="w-full md:h-207.5 object-contain" src="./assets/images/foult-1.png" alt="Img">
                     </div>
                     <div class="swiper-slide">
-                      <img class="w-full h-207.5 object-contain" src="./assets/images/foult-1.png" alt="Img">
+                      <img class="w-full md:h-207.5 object-contain" src="./assets/images/foult-1.png" alt="Img">
                     </div>
                     <div class="swiper-slide">
-                      <img class="w-full h-207.5 object-contain" src="./assets/images/foult-1.png" alt="Img">
+                      <img class="w-full md:h-207.5 object-contain" src="./assets/images/foult-1.png" alt="Img">
                     </div>
                   </div>
 
-                  <div class="bg-[#D9D9D9]/30 rounded-[20px] w-fit flex-mai-center mx-auto py-2 px-3">
-                    <div class="swiper-pagination-foult !w-fit !flex !items-center !gap-1.5">
+                  <div class="flex items-center justify-center gap-5">
+                    <!-- Prev -->
+                    <button
+                      class="swiper-button-prev__foult md:size-11.25 size-6 rounded-[20px] button-blur bg-black/10 flex-mai-center z-10 md:hidden">
+                      <svg class="md:w-2.5 w-1.5" width="10" height="17" viewBox="0 0 10 17" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 0.500122L1 8.50012L9 16.5001" stroke="black" />
+                      </svg>
+                    </button>
+
+                    <div class="bg-[#D9D9D9]/30 rounded-[20px] w-fit flex-mai-center md:mx-auto py-2 px-3">
+                      <div class="swiper-pagination-foult !w-fit !flex !items-center !gap-1.5">
+                      </div>
                     </div>
+
+                    <!-- Next -->
+                    <button
+                      class="swiper-button-next__foult md:size-11.25 size-6 rounded-[20px] button-blur bg-black/10 flex-mai-center z-10 md:hidden">
+                      <svg class="rotate-180 md:w-2.5 w-1.5" width="10" height="17" viewBox="0 0 10 17" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 0.500122L1 8.50012L9 16.5001" stroke="black" />
+                      </svg>
+                    </button>
                   </div>
                 </div>
               </div>
 
               <button
-                class="swiper-button-next__foult size-11.25 rounded-[20px] shrink-0 button-blur bg-black/10 flex-mai-center">
+                class="swiper-button-next__foult size-11.25 rounded-[20px] shrink-0 button-blur bg-black/10 md:flex-mai-center hidden">
                 <svg class="rotate-180" width="10" height="17" viewBox="0 0 10 17" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path d="M9 0.500122L1 8.50012L9 16.5001" stroke="black" />
@@ -205,17 +237,18 @@
           </div>
         </div>
       </div>
-
-      <div class="container-base">
-        <a href="#" class="text-display-22 font-medium">
-          ← Назад
-        </a>
+      <div class="md:block hidden container-base mb-32">
+        <div class="text-[22px] flex items-center gap-1.5">
+          <a href="#" class="">
+            ← Назад
+          </a>
+        </div>
       </div>
     </section>
   </main>
 
   <!-- Footer -->
-  <footer class="">
+  <footer>
     <div class="container-base flex max-md:flex-col-reverse md:items-end justify-between gap-7.5 lg:gap-5 mb-10.5">
       <div class="md:max-w-85 w-full">
         <div class="max-md:w-full flex items-center justify-between gap-5 mb-5 lg:mb-7.25">

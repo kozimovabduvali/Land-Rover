@@ -18,16 +18,26 @@
 <body>
   <!-- Header -->
   <header>
-    <div class="container-base pt-6.5 pb-7.5">
+    <div class="container-base pt-3.5 lg:pt-6.5 md:pb-7.5 pb-5">
       <!-- Top -->
-      <div class="w-full flex items-center justify-between border-b border-black/20 pb-5.5 mb-5.5">
+      <div
+        class="w-full flex items-center justify-between xl:border-b border-black/20 pb-2.5 md:pb-4 xl:pb-5.5 xl:mb-5.5">
+        <!-- Menu Btn -->
+        <button class="lg:hidden transition duration-300 hover:text-brand-red">
+          <svg width="31" height="20" viewBox="0 0 31 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M1.72223 20C1.23426 20 0.825524 19.84 0.496006 19.52C0.166488 19.2 0.00115409 18.8044 5.93869e-06 18.3333C-0.00114221 17.8622 0.164191 17.4666 0.496006 17.1466C0.827821 16.8266 1.23656 16.6666 1.72223 16.6666H29.2778C29.7657 16.6666 30.175 16.8266 30.5057 17.1466C30.8364 17.4666 31.0011 17.8622 31 18.3333C30.9988 18.8044 30.8335 19.2005 30.504 19.5216C30.1745 19.8428 29.7657 20.0022 29.2778 20H1.72223ZM1.72223 11.6667C1.23426 11.6667 0.825524 11.5067 0.496006 11.1867C0.166488 10.8667 0.00115409 10.4711 5.93869e-06 9.99999C-0.00114221 9.52888 0.164191 9.13332 0.496006 8.81332C0.827821 8.49332 1.23656 8.33332 1.72223 8.33332H29.2778C29.7657 8.33332 30.175 8.49332 30.5057 8.81332C30.8364 9.13332 31.0011 9.52888 31 9.99999C30.9988 10.4711 30.8335 10.8672 30.504 11.1883C30.1745 11.5094 29.7657 11.6689 29.2778 11.6667H1.72223ZM1.72223 3.33333C1.23426 3.33333 0.825524 3.17333 0.496006 2.85333C0.166488 2.53333 0.00115409 2.13778 5.93869e-06 1.66666C-0.00114221 1.19555 0.164191 0.799999 0.496006 0.48C0.827821 0.16 1.23656 0 1.72223 0H29.2778C29.7657 0 30.175 0.16 30.5057 0.48C30.8364 0.799999 31.0011 1.19555 31 1.66666C30.9988 2.13778 30.8335 2.53389 30.504 2.855C30.1745 3.17611 29.7657 3.33555 29.2778 3.33333H1.72223Z"
+              fill="currentColor" />
+          </svg>
+
+        </button>
         <!-- Logo  -->
         <a href="./index.html" class="shrink-0">
-          <img class="h-15.25" src="./assets/icons/logo.svg" alt="Logo">
+          <img class="h-6.5 md:h-8.5 lg:h-12 xl:h-15.25" src="./assets/icons/logo.svg" alt="Logo">
         </a>
 
         <!-- Center -->
-        <div class="text-center">
+        <div class="max-lg:hidden text-center">
           <h4 class="font-bold text-xl mb-1.5">
             43-км МКАД, Вл1, С1
           </h4>
@@ -36,8 +46,27 @@
           </p>
         </div>
 
+        <!-- Mobile call & Contacts -->
+        <div class="flex items-center gap-3.75 lg:hidden">
+          <a href="#" class="transition duration-300 hover:text-brand-red">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16.0257 19.9998C15.1541 19.9998 13.9297 19.6846 12.0963 18.6605C9.86683 17.4105 8.14237 16.2565 5.92495 14.0453C3.78701 11.9091 2.74662 10.5261 1.29052 7.87691C-0.354456 4.8858 -0.074042 3.31793 0.239415 2.64783C0.612706 1.84693 1.16371 1.36791 1.87591 0.892454C2.28043 0.627466 2.70852 0.400313 3.15474 0.213874C3.1994 0.194677 3.24092 0.176374 3.27798 0.159856C3.49901 0.0603008 3.8339 -0.0901474 4.25809 0.0705688C4.54119 0.17682 4.79392 0.394233 5.18953 0.784863C6.00086 1.58487 7.10957 3.36659 7.51858 4.2416C7.79319 4.83134 7.97493 5.22063 7.97537 5.65724C7.97537 6.16841 7.71818 6.56261 7.40606 6.98806C7.34756 7.06797 7.28952 7.14431 7.23325 7.21842C6.89345 7.66486 6.81888 7.79388 6.868 8.02424C6.96758 8.48719 7.71014 9.86533 8.93048 11.0828C10.1508 12.3002 11.4895 12.9957 11.9543 13.0948C12.1945 13.1462 12.3263 13.0685 12.7871 12.7167C12.8532 12.6663 12.921 12.614 12.992 12.5618C13.468 12.2078 13.844 11.9573 14.3432 11.9573H14.3459C14.7803 11.9573 15.1523 12.1457 15.7685 12.4564C16.5722 12.8618 18.4079 13.956 19.2129 14.7681C19.6045 15.1627 19.8229 15.4145 19.9296 15.6971C20.0903 16.1225 19.939 16.456 19.8403 16.6792C19.8238 16.7163 19.8055 16.7569 19.7863 16.802C19.5983 17.2474 19.3698 17.6745 19.1035 18.0779C18.6289 18.7878 18.148 19.3373 17.3451 19.711C16.9329 19.906 16.4817 20.0047 16.0257 19.9998Z"
+                fill="currentColor" />
+            </svg>
+          </a>
+          <a href="#" class="transition duration-300 hover:text-brand-red">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10 0C11.3261 0 12.5979 0.526784 13.5355 1.46447C14.4732 2.40215 15 3.67392 15 5C15 6.32608 14.4732 7.59785 13.5355 8.53553C12.5979 9.47322 11.3261 10 10 10C8.67392 10 7.40215 9.47322 6.46447 8.53553C5.52678 7.59785 5 6.32608 5 5C5 3.67392 5.52678 2.40215 6.46447 1.46447C7.40215 0.526784 8.67392 0 10 0ZM10 12.5C15.525 12.5 20 14.7375 20 17.5V20H0V17.5C0 14.7375 4.475 12.5 10 12.5Z"
+                fill="currentColor" />
+            </svg>
+
+          </a>
+        </div>
+
         <!-- Right -->
-        <div class="flex gap-4">
+        <div class="hidden lg:flex gap-4">
           <div class="text-right">
             <a href="+84950250005" class="font-bold block text-xl mb-1.5">
               8 (495) 025-00-05
@@ -56,10 +85,10 @@
         </div>
       </div>
       <!-- Bottom -->
-      <div class="flex items-center justify-between">
+      <div class="flex items-center justify-between gap-5">
         <!-- Links -->
-        <div class="text-lg flex items-center lg:gap-7 xl:gap-10">
-          <a href="#" class="flex-mai-center h-7.5 py-1.5 rounded-[10px]">
+        <div class="text-sm xl:text-lg hidden lg:flex items-center lg:gap-5 xl:gap-10">
+          <a href="#" class="flex-mai-center border-[0.5px] border-primary h-7.5 py-1.5 px-4 rounded-[10px]">
             Главная
           </a>
           <a href="#" class="flex-mai-center h-7.5 rounded-[10px] transition duration-300 hover:text-brand-red">
@@ -79,13 +108,14 @@
           </a>
         </div>
 
+
         <!-- Search -->
-        <div class="relative w-full max-w-87.5">
+        <div class="relative w-full lg:max-w-87.5 flex-1">
           <input type="text" name="search" id="search"
-            class="w-full h-8.5 bg-brand-gray-100 rounded-lg p-2.5 outline-none placeholder:text-sm text-sm border-[0.5px] border-transparent focus:border-black/20"
+            class="w-full h-8.5 bg-brand-gray-100 rounded-lg p-2.5 max-lg:pl-7.5 outline-none placeholder:text-sm text-sm border-[0.5px] border-transparent focus:border-black/20"
             placeholder="Поиск по сайту">
 
-          <div class="absolute right-2.5 top-1/2 -translate-y-1/2">
+          <div class="absolute max-lg:left-2.5 lg:right-2.5 top-1/2 -translate-y-1/2">
             <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M5.88095 1.73822C4.64959 1.73822 3.46866 2.22737 2.59796 3.09808C1.72725 3.96878 1.2381 5.14971 1.2381 6.38107C1.2381 7.61244 1.72725 8.79337 2.59796 9.66407C3.46866 10.5348 4.64959 11.0239 5.88095 11.0239C7.1067 11.0239 8.28248 10.5392 9.15203 9.67595C9.15677 9.67089 9.16162 9.66589 9.16656 9.66095C9.17104 9.65648 9.17558 9.65209 9.18016 9.64778C10.0407 8.77867 10.5238 7.60477 10.5238 6.38107C10.5238 5.14971 10.0347 3.96878 9.16395 3.09808C8.29324 2.22737 7.11231 1.73822 5.88095 1.73822ZM10.4559 10.0764C11.2971 9.0351 11.7619 7.73205 11.7619 6.38107C11.7619 4.82135 11.1423 3.32551 10.0394 2.22261C8.93652 1.11972 7.44068 0.500122 5.88095 0.500122C4.32123 0.500122 2.82538 1.11972 1.72249 2.22261C0.619599 3.32551 0 4.82135 0 6.38107C0 7.9408 0.619599 9.43664 1.72249 10.5395C2.82538 11.6424 4.32123 12.262 5.88095 12.262C7.23394 12.262 8.53887 11.7958 9.58092 10.9523L11.9428 13.3184C12.1844 13.5604 12.5763 13.5607 12.8183 13.3192C13.0603 13.0777 13.0606 12.6857 12.8191 12.4437L10.4559 10.0764Z"
@@ -101,10 +131,10 @@
   <main>
     <!-- Hero -->
     <section class="mb-9 md:mb-20 lg:mb-30">
-      <div class="bg-white bg-shadow-blur rounded-[30px] max-lg:-mx-5">
-        <div class="container-base py-12.5">
+      <div class="bg-white bg-shadow-blur border-brand-gray rounded-[30px] lg:max-lg:-mx-5">
+        <div class="container-base md:py-12.5 py-6">
           <!-- link list -->
-          <div class="text-lg flex items-center gap-1.5 mb-10">
+          <div class="text-lg md:flex hidden items-center gap-1.5 mb-10">
             <p class="text-black/30">
               Главная /
             </p>
@@ -119,7 +149,14 @@
             </a>
           </div>
 
-          <div class="text-center">
+          <!-- Link list mobile -->
+          <div class="text-xs md:hidden flex items-center gap-1.5 mb-3">
+            <a href="#" class="">
+              ← Назад
+            </a>
+          </div>
+
+          <div class="text-center md:block hidden">
             <p class="text-2xl mb-2.5">
               Модель Range Rover Sport L320
             </p>
@@ -128,18 +165,29 @@
               Неисправность дисков
             </h1>
           </div>
+
+
+          <!-- Mobile -->
+          <div class="md:hidden">
+            <h1 class="font-bold md:hidden sm:text-4xl text-xl  sm:mb-2.5 mb-1">
+              Неисправность дисков
+            </h1>
+            <p class="sm:text-2xl text-base mb-2.5">
+              Модель Range Rover Sport L320
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
 
     <!-- Grid -->
-    <section class="mb-9 md:mb-20 lg:mb-30">
+    <section class="mb-9 md:mb-20 lg:mb-30 ">
       <div class="container-base">
-        <div class="grid grid-cols-2 gap-12.5">
+        <div class="grid md:grid-cols-2 grid-cols-1 md:gap-12.5 gap-4">
           <!-- Left -->
           <div>
-            <p class="mb-12.5 text-2xl/[120%]">
+            <p class="md:mb-12.5 mb-4 md:text-2xl/[120%]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
               ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
@@ -147,11 +195,11 @@
               mollit anim id est laborum.
             </p>
 
-            <div class="h-80 rounded-[30px] overflow-hidden border border-[#9E9E9E] mb-12.5">
+            <div class="md:h-80 sm:h-44 h-36 rounded-[30px] overflow-hidden border border-[#9E9E9E] md:mb-12.5 mb-4">
               <img class="size-full object-cover" src="./assets/images/brake/brake.png" alt="img">
             </div>
 
-            <p class="text-2xl/[120%]">
+            <p class="md:text-2xl/[120%]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
               ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
@@ -160,22 +208,22 @@
             </p>
           </div>
           <!-- right -->
-          <div>
-            <p class="mb-12.5 text-2xl/[120%]">
+          <div class="md:block flex flex-col-reverse">
+            <p class="md:mb-12.5 mb-0 md:text-2xl/[120%]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
               ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
               fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
               mollit anim id est laborum.
             </p>
-            <p class="text-2xl/[120%] mb-12.5 min-h-80">
+            <p class="md:text-2xl/[120%] md:mb-12.5 mb-4 md:min-h-80 h-auto">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
               ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
               fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
               mollit anim id est laborum.
             </p>
-            <div class="h-80 rounded-[30px] overflow-hidden border border-[#9E9E9E] mb-12.5">
+            <div class="md:h-80 sm:h-44 h-36 rounded-[30px] overflow-hidden border border-[#9E9E9E] md:mb-12.5 mb-4">
               <img class="size-full object-cover" src="./assets/images/brake/brake-2.png" alt="img">
             </div>
           </div>
@@ -185,19 +233,20 @@
 
     <!-- Запишитесь на диагностику неисправностей -->
     <section class="mb-9 md:mb-20 lg:mb-30">
-      <div class="bg-gradient-primary rounded-[30px] py-15">
+      <div class="bg-gradient-primary rounded-[30px] py-9 md:py-12 lg:py-15">
         <div class="container-base">
-          <h2 class="font-muller text-white !font-normal text-[40px] mb-11">
-            Воспользуйтесь нашим опытом
-            <span class="font-semibold block mt-2.5">
-              С нами надежно
+          <h2 class="font-muller text-white !font-normal text-xl md:text-2xl lg:text-[40px] leading-none mb-5 lg:mb-11">
+            Запишитесь на диагностику неисправностей
+            <span class="font-semibold max-md:text-xs block mt-2.5">
+              Доверьтесь нашему опыту: с нами надежно
             </span>
           </h2>
 
           <div class="flex items-center justify-between gap-5">
             <!-- Left -->
-            <div class="max-w-195 w-full px-17.5 py-8.25 bg-white bg-gradient-secondary rounded-[30px]">
-              <div class="mb-9.25">
+            <div
+              class="max-w-195 w-full lg:px-10 xl:px-17.5 lg:py-8.25 lg:bg-white lg:bg-gradient-secondary rounded-[30px]">
+              <div class="mb-9.25  max-lg:hidden">
                 <p class="font-bold text-display-22 mb-3.75">
                   Записаться на диагностику
                 </p>
@@ -207,27 +256,29 @@
                 </p>
               </div>
               <form action="">
-                <div class="flex items-end justify-between mb-1">
-                  <input type="text" name="name" id="name" placeholder="Имя"
-                    class="max-w-45 w-full h-7.75 border-b border-primary pb-3.75 text-primary placeholder:text-primary/70 focus:outline-none focus:border-brand-gray" />
+                <div class="flex max-lg:flex-col lg:items-end lg:justify-between gap-5 mb-1">
+                  <div class="grid grid-cols-2 gap-5 xl:gap-14">
+                    <input type="text" name="name" id="name" placeholder="Имя"
+                      class="lg:max-w-45 w-full h-7.75 border-b border-white lg:border-primary pb-3.75 placeholder:text-white/50 text-white lg:text-primary text-sm lg:text-base placeholder:lg:text-primary/70 focus:outline-none focus:border-brand-gray" />
 
-                  <input type="text" name="number" id="number" placeholder="Телефон"
-                    class="max-w-45 w-full h-7.75 border-b border-primary pb-3.75 text-primary placeholder:text-primary/70 focus:outline-none focus:border-brand-gray" />
+                    <input type="text" name="number" id="number" placeholder="Телефон"
+                      class="lg:max-w-45 w-full h-7.75 border-b border-white lg:border-primary pb-3.75 placeholder:text-white/50 text-white lg:text-primary text-sm lg:text-base placeholder:lg:text-primary/70 focus:outline-none focus:border-brand-gray" />
+                  </div>
 
                   <button
-                    class="h-12 bg-brand-red text-white rounded-full py-2 px-10 transition duration-200 hover:bg-brand-red-700">
+                    class="h-7.5 md:h-10 lg:h-12 w-fit bg-brand-red text-white text-xs md:text-base rounded-full py-2 px-10 transition duration-200 hover:bg-brand-red-700">
                     Записаться
                   </button>
                 </div>
 
-                <p class="text-primary/50 text-[0.5rem] w-full max-w-43 ml-auto">
+                <p class="text-white/50 lg:text-primary/50 text-[0.5rem] w-full lg:max-w-43 lg:ml-auto mt-2">
                   Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности
                 </p>
               </form>
             </div>
 
             <!-- Right -->
-            <div class="w-full max-w-127.5 flex items-center gap-4">
+            <div class="w-full max-w-127.5 max-lg:hidden flex items-center gap-4">
               <img class="shrink-0 h-39.25" src="./assets/images/home/rounded-line.svg" alt="line icon">
 
               <div class="min-h-40 text-2xl text-white flex flex-col justify-between">
@@ -244,14 +295,14 @@
     <!-- Grid -->
     <section class="mb-9 md:mb-20 lg:mb-30">
       <div class="container-base">
-        <div class="grid grid-cols-2 gap-12.5">
+        <div class="grid md:grid-cols-2 grid-cols-1 md:gap-12.5 gap-4">
           <!-- Left -->
-          <div>
-            <div class="h-80 rounded-[30px] overflow-hidden border border-[#9E9E9E] mb-12.5">
+          <div class="md:block flex flex-col-reverse gap-4">
+            <div class="md:h-80 sm:h-40 h-32 rounded-[30px] overflow-hidden border border-[#9E9E9E] md:mb-12.5 mb-4">
               <img class="size-full object-cover" src="./assets/images/brake/brake.png" alt="img">
             </div>
 
-            <p class="text-2xl/[120%]">
+            <p class="md:text-2xl/[120%]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
               ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
@@ -261,14 +312,14 @@
           </div>
           <!-- right -->
           <div>
-            <p class="text-2xl/[120%] mb-12.5 min-h-80">
+            <p class="md:text-2xl/[120%] md:mb-12.5 mb-4 md:min-h-80 h-auto">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
               ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
               fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
               mollit anim id est laborum.
             </p>
-            <div class="h-80 rounded-[30px] overflow-hidden border border-[#9E9E9E] mb-12.5">
+            <div class="md:h-80 sm:h-40 h-32 rounded-[30px] overflow-hidden border border-[#9E9E9E] md:mb-12.5 mb-0">
               <img class="size-full object-cover" src="./assets/images/brake/brake-2.png" alt="img">
             </div>
           </div>
@@ -278,19 +329,20 @@
 
     <!-- Запишитесь на диагностику неисправностей -->
     <section class="mb-9 md:mb-20 lg:mb-30">
-      <div class="bg-gradient-primary rounded-[30px] py-15">
+      <div class="bg-gradient-primary rounded-[30px] py-9 md:py-12 lg:py-15">
         <div class="container-base">
-          <h2 class="font-muller text-white !font-normal text-[40px] mb-11">
-            Воспользуйтесь нашим опытом
-            <span class="font-semibold block mt-2.5">
-              С нами надежно
+          <h2 class="font-muller text-white !font-normal text-xl md:text-2xl lg:text-[40px] leading-none mb-5 lg:mb-11">
+            Запишитесь на диагностику неисправностей
+            <span class="font-semibold max-md:text-xs block mt-2.5">
+              Доверьтесь нашему опыту: с нами надежно
             </span>
           </h2>
 
           <div class="flex items-center justify-between gap-5">
             <!-- Left -->
-            <div class="max-w-195 w-full px-17.5 py-8.25 bg-white bg-gradient-secondary rounded-[30px]">
-              <div class="mb-9.25">
+            <div
+              class="max-w-195 w-full lg:px-10 xl:px-17.5 lg:py-8.25 lg:bg-white lg:bg-gradient-secondary rounded-[30px]">
+              <div class="mb-9.25  max-lg:hidden">
                 <p class="font-bold text-display-22 mb-3.75">
                   Записаться на диагностику
                 </p>
@@ -300,27 +352,29 @@
                 </p>
               </div>
               <form action="">
-                <div class="flex items-end justify-between mb-1">
-                  <input type="text" name="name" id="name" placeholder="Имя"
-                    class="max-w-45 w-full h-7.75 border-b border-primary pb-3.75 text-primary placeholder:text-primary/70 focus:outline-none focus:border-brand-gray" />
+                <div class="flex max-lg:flex-col lg:items-end lg:justify-between gap-5 mb-1">
+                  <div class="grid grid-cols-2 gap-5 xl:gap-14">
+                    <input type="text" name="name" id="name" placeholder="Имя"
+                      class="lg:max-w-45 w-full h-7.75 border-b border-white lg:border-primary pb-3.75 placeholder:text-white/50 text-white lg:text-primary text-sm lg:text-base placeholder:lg:text-primary/70 focus:outline-none focus:border-brand-gray" />
 
-                  <input type="text" name="number" id="number" placeholder="Телефон"
-                    class="max-w-45 w-full h-7.75 border-b border-primary pb-3.75 text-primary placeholder:text-primary/70 focus:outline-none focus:border-brand-gray" />
+                    <input type="text" name="number" id="number" placeholder="Телефон"
+                      class="lg:max-w-45 w-full h-7.75 border-b border-white lg:border-primary pb-3.75 placeholder:text-white/50 text-white lg:text-primary text-sm lg:text-base placeholder:lg:text-primary/70 focus:outline-none focus:border-brand-gray" />
+                  </div>
 
                   <button
-                    class="h-12 bg-brand-red text-white rounded-full py-2 px-10 transition duration-200 hover:bg-brand-red-700">
+                    class="h-7.5 md:h-10 lg:h-12 w-fit bg-brand-red text-white text-xs md:text-base rounded-full py-2 px-10 transition duration-200 hover:bg-brand-red-700">
                     Записаться
                   </button>
                 </div>
 
-                <p class="text-primary/50 text-[0.5rem] w-full max-w-43 ml-auto">
+                <p class="text-white/50 lg:text-primary/50 text-[0.5rem] w-full lg:max-w-43 lg:ml-auto mt-2">
                   Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности
                 </p>
               </form>
             </div>
 
             <!-- Right -->
-            <div class="w-full max-w-127.5 flex items-center gap-4">
+            <div class="w-full max-w-127.5 max-lg:hidden flex items-center gap-4">
               <img class="shrink-0 h-39.25" src="./assets/images/home/rounded-line.svg" alt="line icon">
 
               <div class="min-h-40 text-2xl text-white flex flex-col justify-between">
@@ -337,157 +391,203 @@
     <!-- Неисправности -->
     <section class="mb-9 md:mb-20 lg:mb-30">
       <div class="container-base">
-        <div class="text-center mb-11.5">
-          <h2 class="font-bold text-display-50 mb-5">
-            Неисправности
-          </h2>
-          <p class="text-3xl">
-            Выберите раздел, чтобы ознакомиться со списком неисправностей
-          </p>
+        <h2 class="md:text-center font-bold text-xl md:text-3xl lg:text-display-50 md:mb-5 mb-1.5">
+          Неисправности
+        </h2>
+
+        <p class="md:text-center text-xs md:text-xl lg:text-3xl md:mb-14 mb-3">Выберите раздел, чтобы
+          ознакомиться со
+          списком неисправностей</p>
+
+        <div class="md:grid hidden xl:grid-cols-4 grid-cols-3  gap-4">
+          <!-- 1 -->
+          <a href="#"
+            class="block h-75 relative group bg-white border border-[#9E9E9E] rounded-[1.875rem] overflow-hidden p-7.5 transition duration-200 hover:bg-shadow-blur">
+            <h4 class="relative z-10 font-bold text-xl text-center">
+              Электроника
+            </h4>
+
+            <img class="w-75 h-42.5 absolute z-0 bottom-7.5 left-1/2 -translate-x-1/2"
+              src="./assets/images/home/middle-car.png" alt="Car Img">
+          </a>
+
+          <!-- 1 -->
+          <a href="#"
+            class="block h-75 relative group bg-white border border-[#9E9E9E] rounded-[1.875rem] overflow-hidden p-7.5 transition duration-200 hover:bg-shadow-blur">
+            <h4 class="relative z-10 font-bold text-xl text-center">
+              Электроника
+            </h4>
+
+            <img class="w-75 h-42.5 absolute z-0 bottom-7.5 left-1/2 -translate-x-1/2"
+              src="./assets/images/home/middle-car.png" alt="Car Img">
+          </a>
+
+          <!-- 1 -->
+          <a href="#"
+            class="block h-75 relative group bg-white border border-[#9E9E9E] rounded-[1.875rem] overflow-hidden p-7.5 transition duration-200 hover:bg-shadow-blur">
+            <h4 class="relative z-10 font-bold text-xl text-center">
+              Электроника
+            </h4>
+
+            <img class="w-75 h-42.5 absolute z-0 bottom-7.5 left-1/2 -translate-x-1/2"
+              src="./assets/images/home/middle-car.png" alt="Car Img">
+          </a>
+
+          <!-- 1 -->
+          <a href="#"
+            class="block h-75 relative group bg-white border border-[#9E9E9E] rounded-[1.875rem] overflow-hidden p-7.5 transition duration-200 hover:bg-shadow-blur">
+            <h4 class="relative z-10 font-bold text-xl text-center">
+              Электроника
+            </h4>
+
+            <img class="w-75 h-42.5 absolute z-0 bottom-7.5 left-1/2 -translate-x-1/2"
+              src="./assets/images/home/middle-car.png" alt="Car Img">
+          </a>
+
+          <!-- 1 -->
+          <a href="#"
+            class="block h-75 relative group bg-white border border-[#9E9E9E] rounded-[1.875rem] overflow-hidden p-7.5 transition duration-200 hover:bg-shadow-blur">
+            <h4 class="relative z-10 font-bold text-xl text-center">
+              Электроника
+            </h4>
+
+            <img class="w-75 h-42.5 absolute z-0 bottom-7.5 left-1/2 -translate-x-1/2"
+              src="./assets/images/home/middle-car.png" alt="Car Img">
+          </a>
+
+          <!-- 1 -->
+          <a href="#"
+            class="block h-75 relative group bg-white border border-[#9E9E9E] rounded-[1.875rem] overflow-hidden p-7.5 transition duration-200 hover:bg-shadow-blur">
+            <h4 class="relative z-10 font-bold text-xl text-center">
+              Электроника
+            </h4>
+
+            <img class="w-75 h-42.5 absolute z-0 bottom-7.5 left-1/2 -translate-x-1/2"
+              src="./assets/images/home/middle-car.png" alt="Car Img">
+          </a>
+
+          <!-- 1 -->
+          <a href="#"
+            class="block h-75 relative group bg-white border border-[#9E9E9E] rounded-[1.875rem] overflow-hidden p-7.5 transition duration-200 hover:bg-shadow-blur">
+            <h4 class="relative z-10 font-bold text-xl text-center">
+              Электроника
+            </h4>
+
+            <img class="w-75 h-42.5 absolute z-0 bottom-7.5 left-1/2 -translate-x-1/2"
+              src="./assets/images/home/middle-car.png" alt="Car Img">
+          </a>
+
+          <!-- 1 -->
+          <a href="#"
+            class="block h-75 relative group bg-white border border-[#9E9E9E] rounded-[1.875rem] overflow-hidden p-7.5 transition duration-200 hover:bg-shadow-blur">
+            <h4 class="relative z-10 font-bold text-xl text-center">
+              Электроника
+            </h4>
+
+            <img class="w-75 h-42.5 absolute z-0 bottom-7.5 left-1/2 -translate-x-1/2"
+              src="./assets/images/home/middle-car.png" alt="Car Img">
+          </a>
+
+          <!-- 1 -->
+          <a href="#"
+            class="block h-75 relative group bg-white border border-[#9E9E9E] rounded-[1.875rem] overflow-hidden p-7.5 transition duration-200 hover:bg-shadow-blur">
+            <h4 class="relative z-10 font-bold text-xl text-center">
+              Электроника
+            </h4>
+
+            <img class="w-75 h-42.5 absolute z-0 bottom-7.5 left-1/2 -translate-x-1/2"
+              src="./assets/images/home/middle-car.png" alt="Car Img">
+          </a>
+
+          <!-- 1 -->
+          <a href="#"
+            class="block h-75 relative group bg-white border border-[#9E9E9E] rounded-[1.875rem] overflow-hidden p-7.5 transition duration-200 hover:bg-shadow-blur">
+            <h4 class="relative z-10 font-bold text-xl text-center">
+              Электроника
+            </h4>
+
+            <img class="w-75 h-42.5 absolute z-0 bottom-7.5 left-1/2 -translate-x-1/2"
+              src="./assets/images/home/middle-car.png" alt="Car Img">
+          </a>
+
+          <!-- 1 -->
+          <a href="#"
+            class="block h-75 relative group bg-white border border-[#9E9E9E] rounded-[1.875rem] overflow-hidden p-7.5 transition duration-200 hover:bg-shadow-blur">
+            <h4 class="relative z-10 font-bold text-xl text-center">
+              Электроника
+            </h4>
+
+            <img class="w-75 h-42.5 absolute z-0 bottom-7.5 left-1/2 -translate-x-1/2"
+              src="./assets/images/home/middle-car.png" alt="Car Img">
+          </a>
+
+          <!-- 1 -->
+          <a href="#"
+            class="block h-75 relative group bg-white border border-[#9E9E9E] rounded-[1.875rem] overflow-hidden p-7.5 transition duration-200 hover:bg-shadow-blur">
+            <h4 class="relative z-10 font-bold text-xl text-center">
+              Электроника
+            </h4>
+
+            <img class="w-75 h-42.5 absolute z-0 bottom-7.5 left-1/2 -translate-x-1/2"
+              src="./assets/images/home/middle-car.png" alt="Car Img">
+          </a>
         </div>
 
-        <div class="swiper-grid-container flex items-center justify-between gap-3">
-          <button
-            class="swiper-button-prev__grid size-11.25 rounded-full shrink-0 button-blur bg-black/10 flex-mai-center">
-            <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M9 0.500122L1 8.50012L9 16.5001" stroke="black" />
-            </svg>
-          </button>
-          <div class="max-w-295.5 w-full mx-auto">
-            <div class="swiper swiper-grid">
-              <div class="swiper-wrapper">
-                <!-- 1 -->
-                <div class="swiper-slide !h-73">
-                  <a href="#"
-                    class="block h-full relative group bg-white border border-[#9E9E9E] rounded-[1.875rem] overflow-hidden p-7.5">
-                    <h4 class="relative z-10 font-bold text-xl text-center">
-                      Колодки
-                    </h4>
 
-                    <img class="w-full h-41 absolute z-0 bottom-7.5 left-1/2 -translate-x-1/2"
-                      src="./assets/images/home/middle-car.png" alt="Car Img">
-                  </a>
-                </div>
-                <!-- 1 -->
-                <div class="swiper-slide !h-73">
-                  <a href="#"
-                    class="block h-full relative group bg-white border border-[#9E9E9E] rounded-[1.875rem] overflow-hidden p-7.5">
-                    <h4 class="relative z-10 font-bold text-xl text-center">
-                      Колодки
-                    </h4>
+        <div class="md:hidden scroll-2 overflow-x-auto">
+          <!-- row 1 -->
+          <div class="flex gap-1.5 mb-1.5">
+            <!-- CARD -->
+            <div class="relative flex-none w-[94px] h-[92px] bg-brand-gray-100 p-2.5 pb-0 rounded-3xl overflow-hidden">
+              <h4 class="font-bold text-xs text-center leading-tight
+                         [display:-webkit-box] [-webkit-line-clamp:2] [-webkit-box-orient:vertical] overflow-hidden">
+                Электроника
+              </h4>
+              <img src="./assets/images/home/middle-car-mobile-2.png" class="absolute bottom-0 left-0" alt="Car Img">
+            </div>
 
-                    <img class="w-full h-41 absolute z-0 bottom-7.5 left-1/2 -translate-x-1/2"
-                      src="./assets/images/home/middle-car.png" alt="Car Img">
-                  </a>
-                </div>
-                <!-- 1 -->
-                <div class="swiper-slide !h-73">
-                  <a href="#"
-                    class="block h-full relative group bg-white border border-[#9E9E9E] rounded-[1.875rem] overflow-hidden p-7.5">
-                    <h4 class="relative z-10 font-bold text-xl text-center">
-                      Колодки
-                    </h4>
+            <div class="relative flex-none w-[94px] h-[92px] bg-brand-gray-100 p-2.5 pb-0 rounded-3xl overflow-hidden">
+              <h4 class="font-bold text-xs text-center leading-tight
+                         [display:-webkit-box] [-webkit-line-clamp:2] [-webkit-box-orient:vertical] overflow-hidden">
+                Подвеска
+              </h4>
+              <img src="./assets/images/home/middle-car-mobile-2.png" class="absolute bottom-0 left-0" alt="Car Img">
+            </div>
 
-                    <img class="w-full h-41 absolute z-0 bottom-7.5 left-1/2 -translate-x-1/2"
-                      src="./assets/images/home/middle-car.png" alt="Car Img">
-                  </a>
-                </div>
-                <!-- 1 -->
-                <div class="swiper-slide !h-73">
-                  <a href="#"
-                    class="block h-full relative group bg-white border border-[#9E9E9E] rounded-[1.875rem] overflow-hidden p-7.5">
-                    <h4 class="relative z-10 font-bold text-xl text-center">
-                      Колодки
-                    </h4>
+            <div class="relative flex-none w-[94px] h-[92px] bg-brand-gray-100 p-2.5 pb-0 rounded-3xl overflow-hidden">
+              <h4 class="font-bold text-xs text-center leading-tight
+                         [display:-webkit-box] [-webkit-line-clamp:2] [-webkit-box-orient:vertical] overflow-hidden">
+                Тормоза
+              </h4>
+              <img src="./assets/images/home/middle-car-mobile-2.png" class="absolute bottom-0 left-0" alt="Car Img">
+            </div>
 
-                    <img class="w-full h-41 absolute z-0 bottom-7.5 left-1/2 -translate-x-1/2"
-                      src="./assets/images/home/middle-car.png" alt="Car Img">
-                  </a>
-                </div>
-                <!-- 1 -->
-                <div class="swiper-slide !h-73">
-                  <a href="#"
-                    class="block h-full relative group bg-white border border-[#9E9E9E] rounded-[1.875rem] overflow-hidden p-7.5">
-                    <h4 class="relative z-10 font-bold text-xl text-center">
-                      Колодки
-                    </h4>
+            <div class="relative flex-none w-[94px] h-[92px] bg-brand-gray-100 p-2.5 pb-0 rounded-3xl overflow-hidden">
+              <h4 class="font-bold text-xs text-center leading-tight
+                         [display:-webkit-box] [-webkit-line-clamp:2] [-webkit-box-orient:vertical] overflow-hidden">
+                Двигатель
+              </h4>
+              <img src="./assets/images/home/middle-car-mobile-2.png" class="absolute bottom-0 left-0" alt="Car Img">
+            </div>
 
-                    <img class="w-full h-41 absolute z-0 bottom-7.5 left-1/2 -translate-x-1/2"
-                      src="./assets/images/home/middle-car.png" alt="Car Img">
-                  </a>
-                </div>
-                <!-- 1 -->
-                <div class="swiper-slide !h-73">
-                  <a href="#"
-                    class="block h-full relative group bg-white border border-[#9E9E9E] rounded-[1.875rem] overflow-hidden p-7.5">
-                    <h4 class="relative z-10 font-bold text-xl text-center">
-                      Колодки
-                    </h4>
+            <div class="relative flex-none w-[94px] h-[92px] bg-brand-gray-100 p-2.5 pb-0 rounded-3xl overflow-hidden">
+              <h4 class="font-bold text-xs text-center leading-tight
+                         [display:-webkit-box] [-webkit-line-clamp:2] [-webkit-box-orient:vertical] overflow-hidden">
+                Электроника
+              </h4>
+              <img src="./assets/images/home/middle-car-mobile-2.png" class="absolute bottom-0 left-0" alt="Car Img">
+            </div>
 
-                    <img class="w-full h-41 absolute z-0 bottom-7.5 left-1/2 -translate-x-1/2"
-                      src="./assets/images/home/middle-car.png" alt="Car Img">
-                  </a>
-                </div>
-                <!-- 1 -->
-                <div class="swiper-slide !h-73">
-                  <a href="#"
-                    class="block h-full relative group bg-white border border-[#9E9E9E] rounded-[1.875rem] overflow-hidden p-7.5">
-                    <h4 class="relative z-10 font-bold text-xl text-center">
-                      Колодки
-                    </h4>
-
-                    <img class="w-full h-41 absolute z-0 bottom-7.5 left-1/2 -translate-x-1/2"
-                      src="./assets/images/home/middle-car.png" alt="Car Img">
-                  </a>
-                </div>
-                <!-- 1 -->
-                <div class="swiper-slide !h-73">
-                  <a href="#"
-                    class="block h-full relative group bg-white border border-[#9E9E9E] rounded-[1.875rem] overflow-hidden p-7.5">
-                    <h4 class="relative z-10 font-bold text-xl text-center">
-                      Колодки
-                    </h4>
-
-                    <img class="w-full h-41 absolute z-0 bottom-7.5 left-1/2 -translate-x-1/2"
-                      src="./assets/images/home/middle-car.png" alt="Car Img">
-                  </a>
-                </div>
-                <!-- 1 -->
-                <div class="swiper-slide !h-73">
-                  <a href="#"
-                    class="block h-full relative group bg-white border border-[#9E9E9E] rounded-[1.875rem] overflow-hidden p-7.5">
-                    <h4 class="relative z-10 font-bold text-xl text-center">
-                      Колодки
-                    </h4>
-
-                    <img class="w-full h-41 absolute z-0 bottom-7.5 left-1/2 -translate-x-1/2"
-                      src="./assets/images/home/middle-car.png" alt="Car Img">
-                  </a>
-                </div>
-                <!-- 1 -->
-                <div class="swiper-slide !h-73">
-                  <a href="#"
-                    class="block h-full relative group bg-white border border-[#9E9E9E] rounded-[1.875rem] overflow-hidden p-7.5">
-                    <h4 class="relative z-10 font-bold text-xl text-center">
-                      Колодки
-                    </h4>
-
-                    <img class="w-full h-41 absolute z-0 bottom-7.5 left-1/2 -translate-x-1/2"
-                      src="./assets/images/home/middle-car.png" alt="Car Img">
-                  </a>
-                </div>
-              </div>
-                <!-- <div class="swiper-scrollbar"></div> -->
+            <div class="relative flex-none w-[94px] h-[92px] bg-brand-gray-100 p-2.5 pb-0 rounded-3xl overflow-hidden">
+              <h4 class="font-bold text-xs text-center leading-tight
+                         [display:-webkit-box] [-webkit-line-clamp:2] [-webkit-box-orient:vertical] overflow-hidden">
+                Электроника
+              </h4>
+              <img src="./assets/images/home/middle-car-mobile-2.png" class="absolute bottom-0 left-0" alt="Car Img">
             </div>
           </div>
-          <button
-            class="swiper-button-next__grid size-11.25 rounded-full shrink-0 button-blur bg-black/10 flex-mai-center">
-            <svg class="rotate-180" width="10" height="17" viewBox="0 0 10 17" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path d="M9 0.500122L1 8.50012L9 16.5001" stroke="black" />
-            </svg>
-          </button>
         </div>
+
       </div>
     </section>
 
@@ -496,17 +596,23 @@
 
   <!-- Footer -->
   <footer>
-    <div class="container-base flex items-end justify-between gap-5 mb-10.5">
-      <div class="max-w-85 w-full">
-        <a class="block mb-7.25" href="#">
-          <img src="./assets/icons/logo.svg" alt="Logo" class="h-15.25">
-        </a>
+    <div class="container-base flex max-md:flex-col-reverse md:items-end justify-between gap-7.5 lg:gap-5 mb-10.5">
+      <div class="md:max-w-85 w-full">
+        <div class="max-md:w-full flex items-center justify-between gap-5 mb-5 lg:mb-7.25">
+          <a class="block" href="#">
+            <img src="./assets/icons/logo.svg" alt="Logo" class="h-12.5">
+          </a>
 
-        <p class="text-xl/[112%] mb-7.25">
+          <div class="md:hidden">
+            <img class="h-11" src="./assets/images/home/footer-yandex.png" alt="Img">
+          </div>
+        </div>
+
+        <p class="lg:text-xl/[112%] mb-5 lg:mb-7.25">
           © BROTHERS, 2016-2024
         </p>
 
-        <div class="font-bold text-xl/[112%] space-y-5 mb-7.25">
+        <div class="font-bold lg:text-xl/[112%] space-y-3 lg:space-y-5 mb-7.25">
           <p>
             Москва, 43-км МКАД, Вл1, С1 (Проектируемый проезд №7534)
           </p>
@@ -518,85 +624,88 @@
           </p>
         </div>
 
-        <div class="mb-7.25">
-          <img class="h-18.75" src="./assets/images/home/footer-yandex.png" alt="Img">
+        <div class="max-md:hidden mb-5 lg:mb-7.25">
+          <img class="h-15 lg:h-18.75" src="./assets/images/home/footer-yandex.png" alt="Img">
         </div>
 
-        <p class="max-w-75 w-full text-base/[140%]">
+        <p class="md:max-w-75 w-full text-xs lg:text-base/[140%] max-md:mb-2.5">
           Копирование материалов с сайта преследуется по закону
         </p>
+
+        <p class="md:hidden text-xs lg:text-base/[112%]">
+          Вся предоставленная информация на сайте ни при каких условиях не является публичной офертой, определяемой
+          по
       </div>
 
-      <div class="max-w-203.5 w-full">
-        <div class="text-display-22 max-w-170 w-full flex justify-between gap-5 mb-7">
-          <div class="max-w-95 w-full flex flex-col gap-7">
-            <a href="#" class="text-display-22 transition duration-200 hover:text-brand-red">
+      <div class="lg:max-w-203.5 w-full">
+        <div class="lg:text-display-22 max-w-170 w-full flex max-lg:flex-col justify-between gap-5 mb-7">
+          <div class="lg:max-w-95 w-full grid grid-cols-2 lg:flex flex-col ga-4 lg:gap-7 max-lg:space-y-4">
+            <a href="#" class="transition duration-200 hover:text-brand-red">
               Главная
             </a>
 
-            <a href="#" class="text-display-22 transition duration-200 hover:text-brand-red">
+            <a href="#" class="transition duration-200 hover:text-brand-red">
               О компании
             </a>
 
-            <a href="#" class="text-display-22 transition duration-200 hover:text-brand-red">
+            <a href="#" class="transition duration-200 hover:text-brand-red">
               Акции
             </a>
 
-            <a href="#" class="text-display-22 transition duration-200 hover:text-brand-red">
+            <a href="#" class="transition duration-200 hover:text-brand-red">
               Вакансии
             </a>
 
-            <a href="#" class="text-display-22 transition duration-200 hover:text-brand-red">
+            <a href="#" class="transition duration-200 hover:text-brand-red">
               Контакты
             </a>
 
-            <a href="#" class="text-display-22 transition duration-200 hover:text-brand-red">
+            <a href="#" class="break-all transition duration-200 hover:text-brand-red">
               Политика конфиденциальности
             </a>
           </div>
 
-          <div class="max-w-62.5 w-full flex flex-col gap-5.5">
-            <h4 class="text-display-22 transition duration-200 hover:text-brand-red">
+          <div class="lg:max-w-62.5 w-full flex lg:flex-col max-[576px]:justify-between gap-5.5">
+            <p class="max-lg:hidden text-display-22 transition duration-200 hover:text-brand-red">
               Мы в социальных сетях
-            </h4>
-
+            </p>
             <a href="#" class="flex items-center gap-2.5 group">
-              <img class="shrink-0" src="./assets/icons/vk.svg" alt="vk icon">
-              <span class="transition duration-200 group-hover:text-brand-red">
+              <img class="shrink-0 max-md:size-10" src="./assets/icons/vk.svg" alt="vk icon">
+              <span class="max-lg:hidden transition duration-200 group-hover:text-brand-red">
                 ВКонтакте
               </span>
             </a>
 
             <a href="#" class="flex items-center gap-2.5 group">
-              <img class="shrink-0" src="./assets/icons/you-tube.svg" alt="icon">
-              <span class="transition duration-200 group-hover:text-brand-red">
+              <img class="shrink-0 max-md:h-7.5" src="./assets/icons/you-tube.svg" alt="icon">
+              <span class="max-lg:hidden transition duration-200 group-hover:text-brand-red">
                 YouTube
               </span>
             </a>
 
             <a href="#" class="flex items-center gap-2.5 group">
-              <img class="shrink-0" src="./assets/icons/rutube.svg" alt="icon">
-              <span class="transition duration-200 group-hover:text-brand-red">
+              <img class="shrink-0 max-md:size-10" src="./assets/icons/rutube.svg" alt="icon">
+              <span class="max-lg:hidden transition duration-200 group-hover:text-brand-red">
                 RuTube
               </span>
             </a>
 
             <a href="#" class="flex items-center gap-2.5 group">
-              <img class="shrink-0" src="./assets/icons/instagram.svg" alt="icon">
-              <span class="transition duration-200 group-hover:text-brand-red">
+              <img class="shrink-0 max-md:size-10" src="./assets/icons/instagram.svg" alt="icon">
+              <span class="max-lg:hidden transition duration-200 group-hover:text-brand-red">
                 Instagram
               </span>
             </a>
 
             <a href="#" class="flex items-center gap-2.5 group">
-              <img class="shrink-0" src="./assets/icons/zden.svg" alt="icon">
-              <span class="transition duration-200 group-hover:text-brand-red">
+              <img class="shrink-0 max-md:size-10" src="./assets/icons/zden.svg" alt="icon">
+              <span class="max-lg:hidden transition duration-200 group-hover:text-brand-red">
                 Дзен
               </span>
             </a>
           </div>
         </div>
-        <p class="text-base/[112%]">
+        <p class="max-md:hidden text-xs lg:text-base/[112%]">
           Вся предоставленная информация на сайте ни при каких условиях не является публичной офертой, определяемой
           положениями Статьи 437 (2) Гражданского кодекса РФ
         </p>

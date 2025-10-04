@@ -16,16 +16,26 @@
 <body>
   <!-- Header -->
   <header>
-    <div class="container-base pt-6.5 pb-7.5">
+    <div class="container-base pt-3.5 lg:pt-6.5 md:pb-7.5 pb-5">
       <!-- Top -->
-      <div class="w-full flex items-center justify-between border-b border-black/20 pb-5.5 mb-5.5">
+      <div
+        class="w-full flex items-center justify-between xl:border-b border-black/20 pb-2.5 md:pb-4 xl:pb-5.5 xl:mb-5.5">
+        <!-- Menu Btn -->
+        <button class="lg:hidden transition duration-300 hover:text-brand-red">
+          <svg width="31" height="20" viewBox="0 0 31 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M1.72223 20C1.23426 20 0.825524 19.84 0.496006 19.52C0.166488 19.2 0.00115409 18.8044 5.93869e-06 18.3333C-0.00114221 17.8622 0.164191 17.4666 0.496006 17.1466C0.827821 16.8266 1.23656 16.6666 1.72223 16.6666H29.2778C29.7657 16.6666 30.175 16.8266 30.5057 17.1466C30.8364 17.4666 31.0011 17.8622 31 18.3333C30.9988 18.8044 30.8335 19.2005 30.504 19.5216C30.1745 19.8428 29.7657 20.0022 29.2778 20H1.72223ZM1.72223 11.6667C1.23426 11.6667 0.825524 11.5067 0.496006 11.1867C0.166488 10.8667 0.00115409 10.4711 5.93869e-06 9.99999C-0.00114221 9.52888 0.164191 9.13332 0.496006 8.81332C0.827821 8.49332 1.23656 8.33332 1.72223 8.33332H29.2778C29.7657 8.33332 30.175 8.49332 30.5057 8.81332C30.8364 9.13332 31.0011 9.52888 31 9.99999C30.9988 10.4711 30.8335 10.8672 30.504 11.1883C30.1745 11.5094 29.7657 11.6689 29.2778 11.6667H1.72223ZM1.72223 3.33333C1.23426 3.33333 0.825524 3.17333 0.496006 2.85333C0.166488 2.53333 0.00115409 2.13778 5.93869e-06 1.66666C-0.00114221 1.19555 0.164191 0.799999 0.496006 0.48C0.827821 0.16 1.23656 0 1.72223 0H29.2778C29.7657 0 30.175 0.16 30.5057 0.48C30.8364 0.799999 31.0011 1.19555 31 1.66666C30.9988 2.13778 30.8335 2.53389 30.504 2.855C30.1745 3.17611 29.7657 3.33555 29.2778 3.33333H1.72223Z"
+              fill="currentColor" />
+          </svg>
+
+        </button>
         <!-- Logo  -->
         <a href="./index.html" class="shrink-0">
-          <img class="h-15.25" src="./assets/icons/logo.svg" alt="Logo">
+          <img class="h-6.5 md:h-8.5 lg:h-12 xl:h-15.25" src="./assets/icons/logo.svg" alt="Logo">
         </a>
 
         <!-- Center -->
-        <div class="text-center">
+        <div class="max-lg:hidden text-center">
           <h4 class="font-bold text-xl mb-1.5">
             43-км МКАД, Вл1, С1
           </h4>
@@ -34,8 +44,27 @@
           </p>
         </div>
 
+        <!-- Mobile call & Contacts -->
+        <div class="flex items-center gap-3.75 lg:hidden">
+          <a href="#" class="transition duration-300 hover:text-brand-red">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16.0257 19.9998C15.1541 19.9998 13.9297 19.6846 12.0963 18.6605C9.86683 17.4105 8.14237 16.2565 5.92495 14.0453C3.78701 11.9091 2.74662 10.5261 1.29052 7.87691C-0.354456 4.8858 -0.074042 3.31793 0.239415 2.64783C0.612706 1.84693 1.16371 1.36791 1.87591 0.892454C2.28043 0.627466 2.70852 0.400313 3.15474 0.213874C3.1994 0.194677 3.24092 0.176374 3.27798 0.159856C3.49901 0.0603008 3.8339 -0.0901474 4.25809 0.0705688C4.54119 0.17682 4.79392 0.394233 5.18953 0.784863C6.00086 1.58487 7.10957 3.36659 7.51858 4.2416C7.79319 4.83134 7.97493 5.22063 7.97537 5.65724C7.97537 6.16841 7.71818 6.56261 7.40606 6.98806C7.34756 7.06797 7.28952 7.14431 7.23325 7.21842C6.89345 7.66486 6.81888 7.79388 6.868 8.02424C6.96758 8.48719 7.71014 9.86533 8.93048 11.0828C10.1508 12.3002 11.4895 12.9957 11.9543 13.0948C12.1945 13.1462 12.3263 13.0685 12.7871 12.7167C12.8532 12.6663 12.921 12.614 12.992 12.5618C13.468 12.2078 13.844 11.9573 14.3432 11.9573H14.3459C14.7803 11.9573 15.1523 12.1457 15.7685 12.4564C16.5722 12.8618 18.4079 13.956 19.2129 14.7681C19.6045 15.1627 19.8229 15.4145 19.9296 15.6971C20.0903 16.1225 19.939 16.456 19.8403 16.6792C19.8238 16.7163 19.8055 16.7569 19.7863 16.802C19.5983 17.2474 19.3698 17.6745 19.1035 18.0779C18.6289 18.7878 18.148 19.3373 17.3451 19.711C16.9329 19.906 16.4817 20.0047 16.0257 19.9998Z"
+                fill="currentColor" />
+            </svg>
+          </a>
+          <a href="#" class="transition duration-300 hover:text-brand-red">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10 0C11.3261 0 12.5979 0.526784 13.5355 1.46447C14.4732 2.40215 15 3.67392 15 5C15 6.32608 14.4732 7.59785 13.5355 8.53553C12.5979 9.47322 11.3261 10 10 10C8.67392 10 7.40215 9.47322 6.46447 8.53553C5.52678 7.59785 5 6.32608 5 5C5 3.67392 5.52678 2.40215 6.46447 1.46447C7.40215 0.526784 8.67392 0 10 0ZM10 12.5C15.525 12.5 20 14.7375 20 17.5V20H0V17.5C0 14.7375 4.475 12.5 10 12.5Z"
+                fill="currentColor" />
+            </svg>
+
+          </a>
+        </div>
+
         <!-- Right -->
-        <div class="flex gap-4">
+        <div class="hidden lg:flex gap-4">
           <div class="text-right">
             <a href="+84950250005" class="font-bold block text-xl mb-1.5">
               8 (495) 025-00-05
@@ -54,10 +83,10 @@
         </div>
       </div>
       <!-- Bottom -->
-      <div class="flex items-center justify-between">
+      <div class="flex items-center justify-between gap-5">
         <!-- Links -->
-        <div class="text-lg flex items-center lg:gap-7 xl:gap-10">
-          <a href="#" class="flex-mai-center h-7.5 py-1.5 rounded-[10px]">
+        <div class="text-sm xl:text-lg hidden lg:flex items-center lg:gap-5 xl:gap-10">
+          <a href="#" class="flex-mai-center border-[0.5px] border-primary h-7.5 py-1.5 px-4 rounded-[10px]">
             Главная
           </a>
           <a href="#" class="flex-mai-center h-7.5 rounded-[10px] transition duration-300 hover:text-brand-red">
@@ -77,13 +106,14 @@
           </a>
         </div>
 
+
         <!-- Search -->
-        <div class="relative w-full max-w-87.5">
+        <div class="relative w-full lg:max-w-87.5 flex-1">
           <input type="text" name="search" id="search"
-            class="w-full h-8.5 bg-brand-gray-100 rounded-lg p-2.5 outline-none placeholder:text-sm text-sm border-[0.5px] border-transparent focus:border-black/20"
+            class="w-full h-8.5 bg-brand-gray-100 rounded-lg p-2.5 max-lg:pl-7.5 outline-none placeholder:text-sm text-sm border-[0.5px] border-transparent focus:border-black/20"
             placeholder="Поиск по сайту">
 
-          <div class="absolute right-2.5 top-1/2 -translate-y-1/2">
+          <div class="absolute max-lg:left-2.5 lg:right-2.5 top-1/2 -translate-y-1/2">
             <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M5.88095 1.73822C4.64959 1.73822 3.46866 2.22737 2.59796 3.09808C1.72725 3.96878 1.2381 5.14971 1.2381 6.38107C1.2381 7.61244 1.72725 8.79337 2.59796 9.66407C3.46866 10.5348 4.64959 11.0239 5.88095 11.0239C7.1067 11.0239 8.28248 10.5392 9.15203 9.67595C9.15677 9.67089 9.16162 9.66589 9.16656 9.66095C9.17104 9.65648 9.17558 9.65209 9.18016 9.64778C10.0407 8.77867 10.5238 7.60477 10.5238 6.38107C10.5238 5.14971 10.0347 3.96878 9.16395 3.09808C8.29324 2.22737 7.11231 1.73822 5.88095 1.73822ZM10.4559 10.0764C11.2971 9.0351 11.7619 7.73205 11.7619 6.38107C11.7619 4.82135 11.1423 3.32551 10.0394 2.22261C8.93652 1.11972 7.44068 0.500122 5.88095 0.500122C4.32123 0.500122 2.82538 1.11972 1.72249 2.22261C0.619599 3.32551 0 4.82135 0 6.38107C0 7.9408 0.619599 9.43664 1.72249 10.5395C2.82538 11.6424 4.32123 12.262 5.88095 12.262C7.23394 12.262 8.53887 11.7958 9.58092 10.9523L11.9428 13.3184C12.1844 13.5604 12.5763 13.5607 12.8183 13.3192C13.0603 13.0777 13.0606 12.6857 12.8191 12.4437L10.4559 10.0764Z"
@@ -99,10 +129,10 @@
   <main>
     <!-- Hero -->
     <section class="mb-9 md:mb-20 lg:mb-30">
-      <div class="bg-white bg-shadow-blur border border-brand-gray rounded-[30px] max-lg:-mx-5">
-        <div class="container-base py-12.5">
+      <div class="bg-white bg-shadow-blur border-brand-gray rounded-[30px] lg:max-lg:-mx-5">
+        <div class="container-base md:py-12.5 py-9">
           <!-- link list -->
-          <div class="text-lg flex items-center gap-1.5 mb-10">
+          <div class="text-lg md:flex hidden items-center gap-1.5 mb-10">
             <p class="text-black/30">
               Главная /
             </p>
@@ -111,51 +141,63 @@
             </a>
           </div>
 
+          <!-- Link list mobile -->
+          <div class="text-xs md:hidden flex items-center gap-1.5 mb-3">
+            <a href="#" class="">
+              ← Назад
+            </a>
+          </div>
+
+          <h1 class="font-bold md:hidden text-2xl md:text-3xl lg:text-5xl xl:text-7xl mb-3">
+            Range Rover Sport L320
+          </h1>
+
           <!--  -->
           <div class="grid lg:grid-cols-2 gap-11 mb-2">
             <!-- Left -->
-            <div class="w-full">
-              <img src="./assets/images/home/middle-car.png" alt="img" class="h-80">
+            <div class="w-full md:inline-block  flex justify-center">
+              <img src="./assets/images/home/middle-car.png" alt="img" class="h-80 md:block hidden">
+              <img src="./assets/images/home/middle-car-mobile.png" alt="img" class="md:hidden block">
             </div>
             <!-- Right -->
-            <div>
-              <h1 class="font-bold text-7xl mb-12.5">
+            <div class="md:mb-0 mb-4">
+              <h1 class="font-bold md:inline-block hidden text-2xl md:text-3xl lg:text-5xl xl:text-7xl mb-12.5">
                 Range Rover Sport L320
               </h1>
-              <p class="text-2xl/[112%]">
+              <p class="xl:text-2xl/[112%] lg:text-xl/[112%] md:text-lg/[112%] ">
                 Диагностика, обслуживание и ремонт автомобилей согласно требованиям заводов изготовителей
               </p>
             </div>
           </div>
 
-          <div class="grid grid-cols-3 gap-5.5">
+          <div class="flex flex-wrap gap-2.5 md:grid md:grid-cols-3 md:gap-5.5">
             <!-- 1 -->
             <button
-              class="rounded-full bg-transparent flex-mai-center h-16.75 border border-primary transition duration-300 hover:bg-primary/80 hover:border-transparent hover:text-white text-2xl px-6 py-4">
+              class="rounded-full bg-transparent md:flex-mai-center xl:h-16.75 lg:h-14 md:h-11 h-10 border border-primary transition duration-300 hover:bg-primary/80 hover:border-transparent hover:text-white xl:text-2xl md:text-xl text-xs lg:px-6 lg:py-4 px-5">
               Регламенты
             </button>
             <!-- 1 -->
             <button
-              class="rounded-full bg-transparent flex-mai-center h-16.75 border border-primary transition duration-300 hover:bg-primary/80 hover:border-transparent hover:text-white text-2xl px-6 py-4">
+              class="rounded-full bg-transparent flex-mai-center xl:h-16.75 lg:h-14 md:h-11 h-10 border border-primary transition duration-300 hover:bg-primary/80 hover:border-transparent hover:text-white xl:text-2xl md:text-xl text-xs lg:px-6 lg:py-4 px-5">
               Инструкция по эксплуатации
             </button>
             <!-- 1 -->
             <button
-              class="rounded-full bg-transparent flex-mai-center h-16.75 border border-primary transition duration-300 hover:bg-primary/80 hover:border-transparent hover:text-white text-2xl px-6 py-4">
+              class="rounded-full bg-transparent flex-mai-center xl:h-16.75 lg:h-14 md:h-11 h-10 border border-primary transition duration-300 hover:bg-primary/80 hover:border-transparent hover:text-white xl:text-2xl md:text-xl text-xs lg:px-6 lg:py-4 px-5">
               Техническая информация
             </button>
             <!-- 1 -->
             <button
-              class="rounded-full bg-transparent flex-mai-center h-16.75 border border-primary transition duration-300 hover:bg-primary/80 hover:border-transparent hover:text-white text-2xl px-6 py-4">
+              class="rounded-full bg-transparent flex-mai-center xl:h-16.75 lg:h-14 md:h-11 h-10 border border-primary transition duration-300 hover:bg-primary/80 hover:border-transparent hover:text-white xl:text-2xl md:text-xl text-xs lg:px-6 lg:py-4 px-5">
               Запчасти </button>
             <!-- 1 -->
             <button
-              class="rounded-full bg-transparent flex-mai-center h-16.75 border border-primary transition duration-300 hover:bg-primary/80 hover:border-transparent hover:text-white text-2xl px-6 py-4">
+              class="rounded-full bg-transparent flex-mai-center xl:h-16.75 lg:h-14 md:h-11 h-10 border border-primary transition duration-300 hover:bg-primary/80 hover:border-transparent hover:text-white xl:text-2xl md:text-xl text-xs lg:px-6 lg:py-4 px-5">
               Коды неисправности
             </button>
             <!-- 1 -->
             <button
-              class="rounded-full bg-transparent flex-mai-center h-16.75 border border-primary transition duration-300 hover:bg-primary/80 hover:border-transparent hover:text-white text-2xl px-6 py-4">
+              class="rounded-full bg-transparent flex-mai-center xl:h-16.75 lg:h-14 md:h-11 h-10 border border-primary transition duration-300 hover:bg-primary/80 hover:border-transparent hover:text-white xl:text-2xl md:text-xl text-xs lg:px-6 lg:py-4 px-5">
               Неисправности
             </button>
           </div>
@@ -166,19 +208,19 @@
     <!-- Регламенты обслуживания Land Rover -->
     <section class="mb-9 md:mb-20 lg:mb-30">
       <div class="container-base">
-        <h2 class="font-bold text-display-50 mb-11.5">
+        <h2 class="font-bold text-xl md:text-3xl lg:text-display-50 mb-3 md:mb-6 lg:mb-11.5">
           Регламенты обслуживания Land Rover
         </h2>
 
         <div
-          class="bg-white bg-shadow-blur border border-brand-gray rounded-[30px] px-5 lg:px-10 py-12.5 space-y-11.5 max-lg:-mx-5">
+          class="bg-white bg-shadow-blur-mobile lg:bg-shadow-blur md:border border-brand-gray rounded-[30px] px-5 lg:px-10 py-6 md:py-8 lg:py-12.5 space-y-7.5 lg:space-y-11.5 max-lg:-mx-5">
           <!-- Выберите модель: -->
           <div>
-            <p class="text-display-22 mb-5">
+            <p class="text-xs md:text-base lg:text-display-22">
               Выберите модель:
             </p>
 
-            <div class="flex items-center gap-1 lg:gap-3.75 overflow-x-auto">
+            <div class="flex items-center gap-1 lg:gap-3.75 scroll-2 overflow-x-auto pt-5 pb-2">
               <!-- 1 -->
               <a href="#"
                 class="size-22.25 flex items-center justify-center shrink-0 bg-white  border border-brand-gray rounded-[1.25rem]  main-shadow-blur2">
@@ -242,17 +284,22 @@
             </div>
           </div>
 
-          <div class="w-full max-w-250 flex justify-between">
+          <div class="w-full max-w-250 flex flex-wrap justify-between gap-4">
             <!-- 1 -->
-            <div class="w-full max-w-67">
-              <p class="text-display-22/[112%] mb-5">
-                Выберите год выпуска:
+            <div class="w-full max-w-40 md:max-w-67">
+              <p class="text-xs md:text-base lg:text-display-22/[112%] mb-2 md:mb-3.5 lg:mb-5">
+                <span class="max-md:hidden">
+                  Выберите год выпуска:
+                </span>
+                <span class="md:hidden">
+                  Год выпуска:
+                </span>
               </p>
 
 
               <div class="relative">
                 <button
-                  class="dropdown-button text-primary border rounded-full h-10.5 px-4 lg:px-6 py-2.5 text-center inline-flex gap-3 items-center">2016
+                  class="dropdown-button text-primary max-md:text-xs border rounded-full h-7.5 md:h-10.5 px-4 lg:px-6 py-2 text-center inline-flex gap-3 items-center">2016
                   <svg class="w-3 h-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                     viewBox="0 0 10 6">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -263,7 +310,7 @@
                 <!-- Dropdown menu -->
                 <div
                   class="dropdown absolute z-10 translate-y-2 hidden bg-white rounded-lg border border-primary/50 w-28">
-                  <ul class="py-2 text-primary">
+                  <ul class="py-2 text-primary max-md:text-xs">
                     <li>
                       <button class="block w-full transition duration-200 hover:bg-gray-100 px-3 py-1">2017</button>
                     </li>
@@ -279,15 +326,20 @@
             </div>
 
             <!-- 2 -->
-            <div class="w-full max-w-73">
-              <p class="text-display-22/[112%] mb-5">
-                Выберите тип двигателя:
+            <div class="w-full max-w-40 md:max-w-73">
+              <p class="text-xs md:text-base lg:text-display-22/[112%] mb-2 md:mb-3.5 lg:mb-5">
+                <span class="max-md:hidden">
+                  Выберите тип двигателя:
+                </span>
+                <span class="md:hidden">
+                  Тип двигателя:
+                </span>
               </p>
 
 
               <div class="relative w-fit">
                 <button
-                  class="dropdown-button text-white bg-brand-green-400 rounded-full h-10.5 px-4 lg:px-6 py-2.5 text-center inline-flex gap-3 items-center">
+                  class="dropdown-button text-white bg-brand-green-400 rounded-full h-7.5 md:h-10.5 px-4 lg:px-6 py-2 text-center inline-flex gap-3 items-center">
                   3.6 TDV 6
                   <svg class="w-3 h-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                     viewBox="0 0 10 6">
@@ -299,7 +351,7 @@
                 <!-- Dropdown menu -->
                 <div
                   class="dropdown absolute z-10 translate-y-2 hidden bg-white rounded-lg border border-primary/50 w-full">
-                  <ul class="py-2 text-primary">
+                  <ul class="py-2 text-primary max-md:text-xs">
                     <li>
                       <button class="block w-full transition duration-200 hover:bg-gray-100 px-3 py-1.5">3.6 TDV
                         6</button>
@@ -318,13 +370,19 @@
             </div>
 
             <!-- 3 -->
-            <div class="w-full max-w-82">
-              <div class="flex gap-1 mb-5">
-                <p class="text-display-22/[112%]">
-                  Выберите рекомендации:
+            <div class="w-full max-w-40 md:max-w-82">
+              <div class="lg:flex gap-1 mb-2 md:mb-3.5 lg:mb-5">
+                <p class="text-xs md:text-base lg:text-display-22/[112%]">
+                  <span class="max-md:hidden">
+                    Выберите рекомендации:
+                  </span>
+                  <span class="md:hidden">
+                    Рекомендации:
+                  </span>
                 </p>
 
-                <button class="text-[10px] flex-mai-center size-3.75 rounded-full border border-primary">
+
+                <button class="max-lg:hidden text-[10px] flex-mai-center size-3.75 rounded-full border border-primary">
                   i
                 </button>
               </div>
@@ -332,7 +390,7 @@
 
               <div class="relative w-fit">
                 <button
-                  class="dropdown-button text-white bg-brand-green-400 rounded-full h-10.5 px-4 lg:px-6 py-2.5 text-center inline-flex gap-3 items-center">
+                  class="dropdown-button text-white bg-brand-green-400 rounded-full h-7.5 md:h-10.5 px-4 lg:px-6 py-2 text-center inline-flex gap-3 items-center">
                   Land Rover
                   <svg class="w-3 h-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                     viewBox="0 0 10 6">
@@ -366,21 +424,21 @@
 
           <!-- Ваш пробег: -->
           <div class="w-full">
-            <p class="text-display-22/[112%]">
+            <p class="text-xs md:text-base lg:text-display-22">
               Ваш пробег:
             </p>
 
             <div class="relative h-14.5">
               <img class="relative z-[5] h-14.5" src="./assets/images/home/car.png" alt="img car">
 
-              <div class="bg-main-gradient absolute z-0 left-0 !bottom-0 rounded-[5px] w-full h-6.25">
+              <div class="bg-main-gradient absolute z-0 left-0 !bottom-0 rounded-[5px] w-full h-5 lg:h-6.25">
               </div>
             </div>
           </div>
 
           <!-- Итого стоимость работ технического обслуживания: -->
           <div class="w-full">
-            <p class="max-w-90 text-display-22/[112%] mb-11.5">
+            <p class="max-w-90 text-xs md:text-base lg:text-display-22 mb-2.5 md:mb-6 lg:mb-11.5">
               Итого стоимость работ технического обслуживания:
             </p>
 
@@ -1408,15 +1466,16 @@
       </div>
     </section>
 
+
     <!-- Калькулятор технического обслуживания -->
     <section class="mb-9 md:mb-20 lg:mb-30">
       <div class="container-base">
         <div>
-          <h2 class="font-bold text-display-50 mb-5">
+          <h2 class="font-bold text-xl md:text-3xl lg:text-display-50 mb-3 md:mb-6">
             Калькулятор технического обслуживания
           </h2>
 
-          <p class="text-3xl mb-11.5">
+          <p class="md:text-xl lg:text-3xl mb-3 md:mb-6 lg:mb-11.5">
             Рассчитайте стоимость в
             <span class="text-brand-red">
               3 шага
@@ -1424,82 +1483,168 @@
           </p>
         </div>
 
-        <div class="bg-white bg-shadow-blur border border-brand-gray rounded-[30px] px-5 lg:px-10 py-12.5 max-lg:-mx-5">
-          <div class="w-full flex justify-between gap-5">
+        <div
+          class="bg-white bg-shadow-blur-2 lg:bg-shadow-blur md:border border-brand-gray rounded-[30px] px-5 lg:px-10 py-6 md:py-8 lg:py-12.5 max-lg:-mx-5">
+          <div class="w-full flex max-lg:flex-col justify-between gap-5">
             <!-- Left -->
-            <div class="w-full max-w-150">
-              <p class="text-display-22 mb-4">
+            <div class="w-full lg:max-w-150">
+              <p class="lg:font-bold text-xs md:text-base lg:text-display-22 mb-4">
                 Выберите модель:
               </p>
 
-              <div class="flex gap-2 overflow-x-auto no-scrollbar">
+              <div id="tabs" class="flex gap-2 overflow-x-auto scroll-2 pb-2">
+                <!-- 1 -->
                 <div
-                  class="shrink-0 size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden">
+                  class="tab active shrink-0 size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden"
+                  data-tab="1">
                   <img src="./assets/images/home/car.png" alt="car Img" />
                 </div>
+                <!-- 2 -->
                 <div
-                  class="shrink-0 size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden">
+                  class="tab shrink-0 size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden"
+                  data-tab="2">
+                  <img src="./assets/images/home/rover-1.png" alt="car Img" />
+                </div>
+                <!-- 3 -->
+                <div
+                  class="tab shrink-0 size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden"
+                  data-tab="3">
                   <img src="./assets/images/home/car.png" alt="car Img" />
                 </div>
+                <!-- 4 -->
                 <div
-                  class="shrink-0 size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden">
+                  class="tab shrink-0 size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden"
+                  data-tab="4">
+                  <img src="./assets/images/home/rover-1.png" alt="car Img" />
+                </div>
+                <!-- 5 -->
+                <div
+                  class="tab shrink-0 size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden"
+                  data-tab="5">
                   <img src="./assets/images/home/car.png" alt="car Img" />
                 </div>
+                <!-- 6 -->
                 <div
-                  class="shrink-0 size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden">
+                  class="tab shrink-0 size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden"
+                  data-tab="6">
+                  <img src="./assets/images/home/rover-1.png" alt="car Img" />
+                </div>
+                <!-- 7 -->
+                <div
+                  class="tab shrink-0 size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden"
+                  data-tab="7">
                   <img src="./assets/images/home/car.png" alt="car Img" />
                 </div>
+                <!-- 8 -->
                 <div
-                  class="shrink-0 size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden">
+                  class="tab shrink-0 size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden"
+                  data-tab="8">
+                  <img src="./assets/images/home/rover-1.png" alt="car Img" />
+                </div>
+                <!-- 9 -->
+                <div
+                  class="tab shrink-0 size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden"
+                  data-tab="9">
                   <img src="./assets/images/home/car.png" alt="car Img" />
                 </div>
+                <!-- 10 -->
                 <div
-                  class="shrink-0 size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden">
+                  class="tab shrink-0 size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden"
+                  data-tab="10">
+                  <img src="./assets/images/home/rover-1.png" alt="car Img" />
+                </div>
+                <!-- 11 -->
+                <div
+                  class="tab shrink-0 size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden"
+                  data-tab="11">
                   <img src="./assets/images/home/car.png" alt="car Img" />
                 </div>
+                <!-- 12 -->
                 <div
-                  class="shrink-0 size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden">
-                  <img src="./assets/images/home/car.png" alt="car Img" />
-                </div>
-                <div
-                  class="shrink-0 size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden">
-                  <img src="./assets/images/home/car.png" alt="car Img" />
-                </div>
-                <div
-                  class="shrink-0 size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden">
-                  <img src="./assets/images/home/car.png" alt="car Img" />
-                </div>
-                <div
-                  class="shrink-0 size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden">
-                  <img src="./assets/images/home/car.png" alt="car Img" />
-                </div>
-                <div
-                  class="shrink-0 size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden">
-                  <img src="./assets/images/home/car.png" alt="car Img" />
-                </div>
-                <div
-                  class="shrink-0 size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden">
-                  <img src="./assets/images/home/car.png" alt="car Img" />
+                  class="tab shrink-0 size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden"
+                  data-tab="12">
+                  <img src="./assets/images/home/rover-1.png" alt="car Img" />
                 </div>
               </div>
+              <!-- Tab contents -->
               <div class="py-2">
-                <img class="h-87.5" src="./assets/images/home/middle-car.png" alt="img">
+                <!-- 1 -->
+                <div class="tab-content" id="tab-1">
+                  <img class="max-lg:mx-auto h-63 md:h-76 lg:h-87.5 object-contain"
+                    src="./assets/images/home/middle-car.png" alt="img">
+                </div>
+                <!-- 2 -->
+                <div class="tab-content hidden" id="tab-2">
+                  <img class="max-lg:mx-auto h-63 md:h-76 lg:h-87.5 object-contain"
+                    src="./assets/images/home/rover-1.png" alt="img">
+                </div>
+                <!-- 1 -->
+                <div class="tab-content hidden" id="tab-3">
+                  <img class="max-lg:mx-auto h-63 md:h-76 lg:h-87.5 object-contain"
+                    src="./assets/images/home/middle-car.png" alt="img">
+                </div>
+                <!-- 2 -->
+                <div class="tab-content hidden" id="tab-4">
+                  <img class="max-lg:mx-auto h-63 md:h-76 lg:h-87.5 object-contain"
+                    src="./assets/images/home/rover-1.png" alt="img">
+                </div>
+                <!-- 1 -->
+                <div class="tab-content hidden" id="tab-5">
+                  <img class="max-lg:mx-auto h-63 md:h-76 lg:h-87.5 object-contain"
+                    src="./assets/images/home/middle-car.png" alt="img">
+                </div>
+                <!-- 2 -->
+                <div class="tab-content hidden" id="tab-6">
+                  <img class="max-lg:mx-auto h-63 md:h-76 lg:h-87.5 object-contain"
+                    src="./assets/images/home/rover-1.png" alt="img">
+                </div>
+                <!-- 1 -->
+                <div class="tab-content hidden" id="tab-7">
+                  <img class="max-lg:mx-auto h-63 md:h-76 lg:h-87.5 object-contain"
+                    src="./assets/images/home/middle-car.png" alt="img">
+                </div>
+                <!-- 2 -->
+                <div class="tab-content hidden" id="tab-8">
+                  <img class="max-lg:mx-auto h-63 md:h-76 lg:h-87.5 object-contain"
+                    src="./assets/images/home/rover-1.png" alt="img">
+                </div>
+                <!-- 1 -->
+                <div class="tab-content hidden" id="tab-9">
+                  <img class="max-lg:mx-auto h-63 md:h-76 lg:h-87.5 object-contain"
+                    src="./assets/images/home/middle-car.png" alt="img">
+                </div>
+                <!-- 2 -->
+                <div class="tab-content hidden" id="tab-10">
+                  <img class="max-lg:mx-auto h-63 md:h-76 lg:h-87.5 object-contain"
+                    src="./assets/images/home/rover-1.png" alt="img">
+                </div>
+                <!-- 1 -->
+                <div class="tab-content hidden" id="tab-11">
+                  <img class="max-lg:mx-auto h-63 md:h-76 lg:h-87.5 object-contain"
+                    src="./assets/images/home/middle-car.png" alt="img">
+                </div>
+                <!-- 2 -->
+                <div class="tab-content hidden" id="tab-12">
+                  <img class="max-lg:mx-auto h-63 md:h-76 lg:h-87.5 object-contain"
+                    src="./assets/images/home/rover-1.png" alt="img">
+                </div>
               </div>
             </div>
 
             <!-- Right -->
-            <div class="w-full max-w-141">
-              <div class="grid grid-cols-2 gap-y-7 gap-x-8.5 mb-20">
+            <div class="w-full lg:max-w-141 max-lg:mb-5">
+              <div
+                class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-y-4 lg:gap-y-7 gap-x-3 lg:gap-x-8.5 mb-7 md:mb-14 lg:mb-20">
                 <!-- Укажите пробег авто: -->
                 <div class="w-full max-w-67">
-                  <p class="text-display-22/[112%] mb-5">
+                  <p class="text-xs md:text-base lg:text-display-22/[112%] mb-2 lg:mb-5">
                     Укажите пробег авто:
                   </p>
 
 
                   <div class="relative">
                     <button
-                      class="dropdown-button text-primary border rounded-full h-10.5 px-4 lg:px-6 py-2.5 text-center inline-flex gap-3 items-center">
+                      class="dropdown-button text-primary text-xs md:text-base border rounded-full h-7.5 md:h-10.5 px-4 lg:px-6 py-2.5 text-center inline-flex gap-3 items-center">
                       12000
                       <svg class="w-3 h-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                         viewBox="0 0 10 6">
@@ -1511,7 +1656,7 @@
                     <!-- Dropdown menu -->
                     <div
                       class="dropdown absolute z-10 translate-y-2 hidden bg-white rounded-lg border border-primary/50 w-28">
-                      <ul class="py-2 text-primary">
+                      <ul class="py-2 text-primary text-xs md:text-base">
                         <li>
                           <button
                             class="block w-full transition duration-200 hover:bg-gray-100 px-3 py-1">12001</button>
@@ -1531,14 +1676,14 @@
 
                 <!-- Тип двигателя: -->
                 <div class="w-full max-w-67">
-                  <p class="text-display-22/[112%] mb-5">
+                  <p class="text-xs md:text-base lg:text-display-22/[112%] mb-2 lg:mb-5">
                     Тип двигателя:
                   </p>
 
 
                   <div class="relative">
                     <button
-                      class="dropdown-button text-primary border rounded-full h-10.5 px-4 lg:px-6 py-2.5 text-center inline-flex gap-3 items-center">
+                      class="dropdown-button text-primary text-xs md:text-base border rounded-full h-7.5 md:h-10.5 px-4 lg:px-6 py-2.5 text-center inline-flex gap-3 items-center">
                       2.7D
                       <svg class="w-3 h-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                         viewBox="0 0 10 6">
@@ -1550,7 +1695,7 @@
                     <!-- Dropdown menu -->
                     <div
                       class="dropdown absolute z-10 translate-y-2 hidden bg-white rounded-lg border border-primary/50 w-28">
-                      <ul class="py-2 text-primary">
+                      <ul class="py-2 text-primary text-xs md:text-base">
                         <li>
                           <button
                             class="block w-full transition duration-200 hover:bg-gray-100 px-3 py-1">12001</button>
@@ -1570,14 +1715,14 @@
 
                 <!-- Год выпуска: -->
                 <div class="w-full max-w-67">
-                  <p class="text-display-22/[112%] mb-5">
+                  <p class="text-xs md:text-base lg:text-display-22/[112%] mb-2 lg:mb-5">
                     Год выпуска:
                   </p>
 
 
                   <div class="relative">
                     <button
-                      class="dropdown-button text-primary border rounded-full h-10.5 px-4 lg:px-6 py-2.5 text-center inline-flex gap-3 items-center">
+                      class="dropdown-button text-primary text-xs md:text-base border rounded-full h-7.5 md:h-10.5 px-4 lg:px-6 py-2.5 text-center inline-flex gap-3 items-center">
                       2016
                       <svg class="w-3 h-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                         viewBox="0 0 10 6">
@@ -1589,7 +1734,7 @@
                     <!-- Dropdown menu -->
                     <div
                       class="dropdown absolute z-10 translate-y-2 hidden bg-white rounded-lg border border-primary/50 w-28">
-                      <ul class="py-2 text-primary">
+                      <ul class="py-2 text-primary text-xs md:text-base">
                         <li>
                           <button
                             class="block w-full transition duration-200 hover:bg-gray-100 px-3 py-1">12001</button>
@@ -1609,20 +1754,20 @@
               </div>
 
               <button
-                class="text-2xl h-16.75 bg-brand-red text-white rounded-full py-4 px-10 transition duration-200 hover:bg-brand-red-700">
+                class="block text-xs lg:text-lg xl:text-2xl h-9 md:h-12 lg:h-16.75 bg-brand-red text-white rounded-full py-2 px-5 xl:px-10 transition duration-200 hover:bg-brand-red-700 max-md:mx-auto">
                 Расчитать стоимость
               </button>
 
             </div>
           </div>
 
-          <div class="w-full flex justify-between gap-5">
-            <div class="w-full max-w-140 bg-brand-gray-100 rounded-[10px] px-10 py-5">
-              <p class="text-display-26/[112%] mb-3">
+          <div class="w-full flex max-md:flex-col justify-between gap-5">
+            <div class="w-full md:max-w-140 bg-brand-gray-100 rounded-[10px] px-5 md:px-8 lg:px-10 py-5">
+              <p class="text-base lg:text-display-26/[112%] mb-3">
                 Список работ:
               </p>
 
-              <ul class="list-disc list-outside space-y-1.5 ml-4">
+              <ul class="list-disc list-outside text-xs lg:text-base space-y-1.5 ml-4">
                 <li>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit
                 </li>
@@ -1644,11 +1789,12 @@
               </ul>
             </div>
 
-            <div class="w-full max-w-140">
-              <div class="text-display-26/[112%] w-full bg-brand-gray-100 rounded-[10px] px-10 py-5 mb-7">
+            <div class="w-full md:max-w-140">
+              <div
+                class="text-base lg:text-display-26/[112%] w-full bg-brand-gray-100 rounded-[10px] px-5 lg:px-10 py-5 mb-6 lg:mb-7">
 
                 <p class="mb-3">
-                  Список работ:
+                  Итого стоимость:
                 </p>
 
                 <div>
@@ -1662,7 +1808,7 @@
               </div>
 
               <button
-                class="text-2xl h-16.75 bg-brand-red text-white rounded-full py-4 px-10 transition duration-200 hover:bg-brand-red-700">
+                class="block text-xs lg:text-lg xl:text-2xl h-9 md:h-12 lg:h-16.75 bg-brand-red text-white rounded-full py-2 px-5 lg:px-10 transition duration-200 hover:bg-brand-red-700 max-md:mx-auto">
                 Оставить заявку
               </button>
             </div>
@@ -1674,12 +1820,14 @@
     <!-- Неисправности -->
     <section class="mb-9 md:mb-20 lg:mb-30">
       <div class="container-base">
-        <h2 class="font-bold text-display-50 mb-11.5">
+        <h2 class="md:text-center font-bold text-xl md:text-3xl lg:text-display-50 md:mb-5 mb-1.5">
           Неисправности
         </h2>
 
-        <div class="grid grid-cols-4 gap-4">
+        <p class="md:text-center text-xs md:text-xl lg:text-3xl md:mb-14 mb-3">Выберите раздел, чтобы ознакомиться со
+          списком неисправностей</p>
 
+        <div class="md:grid hidden xl:grid-cols-4 grid-cols-3  gap-4">
           <!-- 1 -->
           <a href="#"
             class="block h-75 relative group bg-white border border-[#9E9E9E] rounded-[1.875rem] overflow-hidden p-7.5 transition duration-200 hover:bg-shadow-blur">
@@ -1812,24 +1960,156 @@
               src="./assets/images/home/middle-car.png" alt="Car Img">
           </a>
         </div>
+
+
+        <div class="md:hidden scroll-2 overflow-x-auto">
+          <!-- row 1 -->
+          <div class="flex gap-1.5 mb-1.5">
+            <!-- CARD -->
+            <div class="relative flex-none w-[94px] h-[92px] bg-brand-gray-100 p-2.5 pb-0 rounded-3xl overflow-hidden">
+              <h4 class="font-bold text-xs text-center leading-tight
+                         [display:-webkit-box] [-webkit-line-clamp:2] [-webkit-box-orient:vertical] overflow-hidden">
+                Электроника
+              </h4>
+              <img src="./assets/images/home/middle-car-mobile-2.png"
+                   class="absolute bottom-0 left-0"
+                    alt="Car Img">
+            </div>
+        
+            <div class="relative flex-none w-[94px] h-[92px] bg-brand-gray-100 p-2.5 pb-0 rounded-3xl overflow-hidden">
+              <h4 class="font-bold text-xs text-center leading-tight
+                         [display:-webkit-box] [-webkit-line-clamp:2] [-webkit-box-orient:vertical] overflow-hidden">
+                Подвеска
+              </h4>
+              <img src="./assets/images/home/middle-car-mobile-2.png"
+                   class="absolute bottom-0 left-0"
+                    alt="Car Img">
+            </div>
+        
+            <div class="relative flex-none w-[94px] h-[92px] bg-brand-gray-100 p-2.5 pb-0 rounded-3xl overflow-hidden">
+              <h4 class="font-bold text-xs text-center leading-tight
+                         [display:-webkit-box] [-webkit-line-clamp:2] [-webkit-box-orient:vertical] overflow-hidden">
+                Тормоза
+              </h4>
+              <img src="./assets/images/home/middle-car-mobile-2.png"
+                   class="absolute bottom-0 left-0"
+                    alt="Car Img">
+            </div>
+        
+            <div class="relative flex-none w-[94px] h-[92px] bg-brand-gray-100 p-2.5 pb-0 rounded-3xl overflow-hidden">
+              <h4 class="font-bold text-xs text-center leading-tight
+                         [display:-webkit-box] [-webkit-line-clamp:2] [-webkit-box-orient:vertical] overflow-hidden">
+                Двигатель
+              </h4>
+              <img src="./assets/images/home/middle-car-mobile-2.png"
+                   class="absolute bottom-0 left-0"
+                    alt="Car Img">
+            </div>
+        
+            <div class="relative flex-none w-[94px] h-[92px] bg-brand-gray-100 p-2.5 pb-0 rounded-3xl overflow-hidden">
+              <h4 class="font-bold text-xs text-center leading-tight
+                         [display:-webkit-box] [-webkit-line-clamp:2] [-webkit-box-orient:vertical] overflow-hidden">
+                Электроника
+              </h4>
+              <img src="./assets/images/home/middle-car-mobile-2.png"
+                   class="absolute bottom-0 left-0"
+                    alt="Car Img">
+            </div>
+        
+            <div class="relative flex-none w-[94px] h-[92px] bg-brand-gray-100 p-2.5 pb-0 rounded-3xl overflow-hidden">
+              <h4 class="font-bold text-xs text-center leading-tight
+                         [display:-webkit-box] [-webkit-line-clamp:2] [-webkit-box-orient:vertical] overflow-hidden">
+                Электроника
+              </h4>
+              <img src="./assets/images/home/middle-car-mobile-2.png"
+                   class="absolute bottom-0 left-0"
+                    alt="Car Img">
+            </div>
+          </div>
+        
+          <!-- row 2 -->
+          <div class="flex gap-1.5 pb-2">
+            <div class="relative flex-none w-[94px] h-[92px] bg-brand-gray-100 p-2.5 pb-0 rounded-3xl overflow-hidden">
+              <h4 class="font-bold text-xs text-center leading-tight
+                         [display:-webkit-box] [-webkit-line-clamp:2] [-webkit-box-orient:vertical] overflow-hidden">
+                Рулевое управление
+              </h4>
+              <img src="./assets/images/home/middle-car-mobile-2.png"
+                   class="absolute bottom-0 left-0"
+                    alt="Car Img">
+            </div>
+        
+            <div class="relative flex-none w-[94px] h-[92px] bg-brand-gray-100 p-2.5 pb-0 rounded-3xl overflow-hidden">
+              <h4 class="font-bold text-xs text-center leading-tight
+                         [display:-webkit-box] [-webkit-line-clamp:2] [-webkit-box-orient:vertical] overflow-hidden">
+                Трансмиссия
+              </h4>
+              <img src="./assets/images/home/middle-car-mobile-2.png"
+                   class="absolute bottom-0 left-0"
+                    alt="Car Img">
+            </div>
+        
+            <div class="relative flex-none w-[94px] h-[92px] bg-brand-gray-100 p-2.5 pb-0 rounded-3xl overflow-hidden">
+              <h4 class="font-bold text-xs text-center leading-tight
+                         [display:-webkit-box] [-webkit-line-clamp:2] [-webkit-box-orient:vertical] overflow-hidden">
+                Коробка передач
+              </h4>
+              <img src="./assets/images/home/middle-car-mobile-2.png"
+                   class="absolute bottom-0 left-0"
+                    alt="Car Img">
+            </div>
+        
+            <div class="relative flex-none w-[94px] h-[92px] bg-brand-gray-100 p-2.5 pb-0 rounded-3xl overflow-hidden">
+              <h4 class="font-bold text-xs text-center leading-tight
+                         [display:-webkit-box] [-webkit-line-clamp:2] [-webkit-box-orient:vertical] overflow-hidden">
+                Система
+              </h4>
+              <img src="./assets/images/home/middle-car-mobile-2.png"
+                   class="absolute bottom-0 left-0"
+                    alt="Car Img">
+            </div>
+        
+            <div class="relative flex-none w-[94px] h-[92px] bg-brand-gray-100 p-2.5 pb-0 rounded-3xl overflow-hidden">
+              <h4 class="font-bold text-xs text-center leading-tight
+                         [display:-webkit-box] [-webkit-line-clamp:2] [-webkit-box-orient:vertical] overflow-hidden">
+                Электроника
+              </h4>
+              <img src="./assets/images/home/middle-car-mobile-2.png"
+                   class="absolute bottom-0 left-0"
+                    alt="Car Img">
+            </div>
+        
+            <div class="relative flex-none w-[94px] h-[92px] bg-brand-gray-100 p-2.5 pb-0 rounded-3xl overflow-hidden">
+              <h4 class="font-bold text-xs text-center leading-tight
+                         [display:-webkit-box] [-webkit-line-clamp:2] [-webkit-box-orient:vertical] overflow-hidden">
+                Электроника
+              </h4>
+              <img src="./assets/images/home/middle-car-mobile-2.png"
+                   class="absolute bottom-0 left-0"
+                    alt="Car Img">
+            </div>
+          </div>
+        </div>
+        
       </div>
     </section>
 
     <!-- Запишитесь на диагностику неисправностей -->
     <section class="mb-9 md:mb-20 lg:mb-30">
-      <div class="bg-gradient-primary rounded-[30px] py-15">
+      <div class="bg-gradient-primary rounded-[30px] py-9 md:py-12 lg:py-15">
         <div class="container-base">
-          <h2 class="font-muller text-white !font-normal text-[40px] mb-11">
-            Воспользуйтесь нашим опытом
-            <span class="font-semibold block mt-2.5">
-              С нами надежно
+          <h2 class="font-muller text-white !font-normal text-xl md:text-2xl lg:text-[40px] leading-none mb-5 lg:mb-11">
+            Запишитесь на диагностику неисправностей
+            <span class="font-semibold max-md:text-xs block mt-2.5">
+              Доверьтесь нашему опыту: с нами надежно
             </span>
           </h2>
 
           <div class="flex items-center justify-between gap-5">
             <!-- Left -->
-            <div class="max-w-195 w-full px-17.5 py-8.25 bg-white bg-gradient-secondary rounded-[30px]">
-              <div class="mb-9.25">
+            <div
+              class="max-w-195 w-full lg:px-10 xl:px-17.5 lg:py-8.25 lg:bg-white lg:bg-gradient-secondary rounded-[30px]">
+              <div class="mb-9.25  max-lg:hidden">
                 <p class="font-bold text-display-22 mb-3.75">
                   Записаться на диагностику
                 </p>
@@ -1839,27 +2119,29 @@
                 </p>
               </div>
               <form action="">
-                <div class="flex items-end justify-between mb-1">
-                  <input type="text" name="name" id="name" placeholder="Имя"
-                    class="max-w-45 w-full h-7.75 border-b border-primary pb-3.75 text-primary placeholder:text-primary/70 focus:outline-none focus:border-brand-gray" />
+                <div class="flex max-lg:flex-col lg:items-end lg:justify-between gap-5 mb-1">
+                  <div class="grid grid-cols-2 gap-5 xl:gap-14">
+                    <input type="text" name="name" id="name" placeholder="Имя"
+                      class="lg:max-w-45 w-full h-7.75 border-b border-white lg:border-primary pb-3.75 placeholder:text-white/50 text-white lg:text-primary text-sm lg:text-base placeholder:lg:text-primary/70 focus:outline-none focus:border-brand-gray" />
 
-                  <input type="text" name="number" id="number" placeholder="Телефон"
-                    class="max-w-45 w-full h-7.75 border-b border-primary pb-3.75 text-primary placeholder:text-primary/70 focus:outline-none focus:border-brand-gray" />
+                    <input type="text" name="number" id="number" placeholder="Телефон"
+                      class="lg:max-w-45 w-full h-7.75 border-b border-white lg:border-primary pb-3.75 placeholder:text-white/50 text-white lg:text-primary text-sm lg:text-base placeholder:lg:text-primary/70 focus:outline-none focus:border-brand-gray" />
+                  </div>
 
                   <button
-                    class="h-12 bg-brand-red text-white rounded-full py-2 px-10 transition duration-200 hover:bg-brand-red-700">
+                    class="h-7.5 md:h-10 lg:h-12 w-fit bg-brand-red text-white text-xs md:text-base rounded-full py-2 px-10 transition duration-200 hover:bg-brand-red-700">
                     Записаться
                   </button>
                 </div>
 
-                <p class="text-primary/50 text-[0.5rem] w-full max-w-43 ml-auto">
+                <p class="text-white/50 lg:text-primary/50 text-[0.5rem] w-full lg:max-w-43 lg:ml-auto mt-2">
                   Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности
                 </p>
               </form>
             </div>
 
             <!-- Right -->
-            <div class="w-full max-w-127.5 flex items-center gap-4">
+            <div class="w-full max-w-127.5 max-lg:hidden flex items-center gap-4">
               <img class="shrink-0 h-39.25" src="./assets/images/home/rounded-line.svg" alt="line icon">
 
               <div class="min-h-40 text-2xl text-white flex flex-col justify-between">
@@ -1877,11 +2159,11 @@
     <section class="mb-9 md:mb-20 lg:mb-30">
       <div class="container-base">
         <div>
-          <h2 class="font-bold text-display-50 mb-5">
+          <h2 class="font-bold text-xl md:text-3xl lg:text-display-50 mb-3 lg:mb-5">
             Калькулятор запчастей Land Rover
           </h2>
 
-          <p class="text-3xl mb-11.5">
+          <p class="md:text-xl lg:text-3xl mb-3 md:mb-6 lg:mb-11.5">
             Рассчитайте стоимость в
             <span class="text-brand-red">
               3 шага
@@ -1889,163 +2171,168 @@
           </p>
         </div>
 
-        <div class="bg-white bg-shadow-blur border border-brand-gray rounded-[30px] px-5 lg:px-10 py-12.5 max-lg:-mx-5">
-          <div class="max-w-265 w-full flex justify-between gap-5 mx-auto">
+        <div
+          class="bg-white bg-shadow-blur-2 lg:bg-shadow-blur md:border border-brand-gray rounded-[30px] px-5 lg:px-10 py-6 md:py-8 lg:py-12.5 max-lg:-mx-5">
+          <div class="lg:max-w-265 w-full flex max-lg:flex-col justify-between gap-5 mx-auto">
             <!-- Left -->
-            <div class="w-full max-w-127.25">
-              <p class="text-display-22 mb-4">
+            <div class="w-full lg:max-w-127.25">
+              <p class="text-xs md:text-base lg:text-display-22 mb-4">
                 Выберите модель:
               </p>
 
-              <!--  -->
-              <div class="flex gap-2 justify-center max-lg:overflow-x-auto no-scrollbar">
-                <div class="shrink-0 relative group">
-                  <div
-                    class="size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden">
-                    <img src="./assets/images/home/shine-middle.png" alt="car Img" />
-                  </div>
+              <!-- Tabs -->
+              <div class="tabs">
+                <!-- tabs -->
+                <div class="tab-buttons flex gap-2 max-lg:overflow-x-auto pb-2 scroll-2">
+                  <!-- 1 -->
+                  <div class="tab-shine shrink-0 relative group" data-tab="shine-1">
+                    <div
+                      class="size-9 lg:size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden">
+                      <img src="./assets/images/home/shine-middle.png" alt="car Img" />
+                    </div>
 
-                  <div
-                    class="absolute translate-y-11 bottom-0 left-1/2 -translate-x-1/2 z-10 flex-mai-center bg-black/70 text-white/70 rounded-2xl w-27.5 h-10 hidden transition duration-200 group-hover:flex-mai-center px-2 py-1">
-                    Название
+                    <div
+                      class="absolute translate-y-11 bottom-0 left-1/2 -translate-x-1/2 z-10 flex-mai-center bg-black/70 text-white/70 rounded-2xl w-27.5 h-10 hidden transition duration-200 group-hover:lg:flex-mai-center px-2 py-1">
+                      Название
+                    </div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="tab-shine shrink-0 relative group opacity-60" data-tab="shine-2">
+                    <div
+                      class="size-9 lg:size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden">
+                      <img src="./assets/images/home/shine-middle.png" alt="car Img" />
+                    </div>
+
+                    <div
+                      class="absolute translate-y-11 bottom-0 left-1/2 -translate-x-1/2 z-10 flex-mai-center bg-black/70 text-white/70 rounded-2xl w-27.5 h-10 hidden transition duration-200 group-hover:lg:flex-mai-center px-2 py-1">
+                      Название
+                    </div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="tab-shine shrink-0 relative group opacity-60" data-tab="shine-3">
+                    <div
+                      class="size-9 lg:size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden">
+                      <img src="./assets/images/home/shine-middle.png" alt="car Img" />
+                    </div>
+
+                    <div
+                      class="absolute translate-y-11 bottom-0 left-1/2 -translate-x-1/2 z-10 flex-mai-center bg-black/70 text-white/70 rounded-2xl w-27.5 h-10 hidden transition duration-200 group-hover:lg:flex-mai-center px-2 py-1">
+                      Название
+                    </div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="tab-shine shrink-0 relative group opacity-60" data-tab="shine-4">
+                    <div
+                      class="size-9 lg:size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden">
+                      <img src="./assets/images/home/shine-middle.png" alt="car Img" />
+                    </div>
+
+                    <div
+                      class="absolute translate-y-11 bottom-0 left-1/2 -translate-x-1/2 z-10 flex-mai-center bg-black/70 text-white/70 rounded-2xl w-27.5 h-10 hidden transition duration-200 group-hover:lg:flex-mai-center px-2 py-1">
+                      Название
+                    </div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="tab-shine shrink-0 relative group opacity-60" data-tab="shine-5">
+                    <div
+                      class="size-9 lg:size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden">
+                      <img src="./assets/images/home/shine-middle.png" alt="car Img" />
+                    </div>
+
+                    <div
+                      class="absolute translate-y-11 bottom-0 left-1/2 -translate-x-1/2 z-10 flex-mai-center bg-black/70 text-white/70 rounded-2xl w-27.5 h-10 hidden transition duration-200 group-hover:lg:flex-mai-center px-2 py-1">
+                      Название
+                    </div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="tab-shine shrink-0 relative group opacity-60" data-tab="shine-6">
+                    <div
+                      class="size-9 lg:size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden">
+                      <img src="./assets/images/home/shine-middle.png" alt="car Img" />
+                    </div>
+
+                    <div
+                      class="absolute translate-y-11 bottom-0 left-1/2 -translate-x-1/2 z-10 flex-mai-center bg-black/70 text-white/70 rounded-2xl w-27.5 h-10 hidden transition duration-200 group-hover:lg:flex-mai-center px-2 py-1">
+                      Название
+                    </div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="tab-shine shrink-0 relative group opacity-60" data-tab="shine-7">
+                    <div
+                      class="size-9 lg:size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden">
+                      <img src="./assets/images/home/shine-middle.png" alt="car Img" />
+                    </div>
+
+                    <div
+                      class="absolute translate-y-11 bottom-0 left-1/2 -translate-x-1/2 z-10 flex-mai-center bg-black/70 text-white/70 rounded-2xl w-27.5 h-10 hidden transition duration-200 group-hover:lg:flex-mai-center px-2 py-1">
+                      Название
+                    </div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="tab-shine shrink-0 relative group opacity-60" data-tab="shine-8">
+                    <div
+                      class="size-9 lg:size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden">
+                      <img src="./assets/images/home/shine-middle.png" alt="car Img" />
+                    </div>
+
+                    <div
+                      class="absolute translate-y-11 bottom-0 left-1/2 -translate-x-1/2 z-10 flex-mai-center bg-black/70 text-white/70 rounded-2xl w-27.5 h-10 hidden transition duration-200 group-hover:lg:flex-mai-center px-2 py-1">
+                      Название
+                    </div>
                   </div>
                 </div>
-
-                <!-- 2 -->
-                <div class="shrink-0 relative opacity-60">
-                  <div
-                    class="size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden">
-                    <img src="./assets/images/home/shine-middle.png" alt="car Img" />
+                <!-- Tabs Content -->
+                <div class="pt-4 md:pt-7 lg:pt-12.5">
+                  <!-- 1 -->
+                  <div class="tab-contents" data-content="shine-1">
+                    <img class="h-36 md:h-65 lg:h-75 mx-auto" src="./assets/images/home/shine-middle.png" alt="img">
                   </div>
-
-                  <div
-                    class="absolute translate-y-11 bottom-0 left-1/2 -translate-x-1/2 z-10 flex-mai-center bg-black/70 text-white/70 rounded-2xl w-27.5 h-10 hidden transition duration-200 group-hover:flex-mai-center px-2 py-1">
-                    Название
+                  <!-- 2 -->
+                  <div class="tab-contents hidden opacity-80" data-content="shine-2">
+                    <img class="h-36 md:h-65 lg:h-75 mx-auto" src="./assets/images/home/shine-middle.png" alt="img">
                   </div>
-                </div>
-
-                <!-- 2 -->
-                <div class="shrink-0 relative opacity-60">
-                  <div
-                    class="size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden">
-                    <img src="./assets/images/home/shine-middle.png" alt="car Img" />
+                  <!-- 2 -->
+                  <div class="tab-contents hidden opacity-80" data-content="shine-3">
+                    <img class="h-36 md:h-65 lg:h-75 mx-auto" src="./assets/images/home/shine-middle.png" alt="img">
                   </div>
-
-                  <div
-                    class="absolute translate-y-11 bottom-0 left-1/2 -translate-x-1/2 z-10 flex-mai-center bg-black/70 text-white/70 rounded-2xl w-27.5 h-10 hidden transition duration-200 group-hover:flex-mai-center px-2 py-1">
-                    Название
+                  <!-- 2 -->
+                  <div class="tab-contents hidden opacity-80" data-content="shine-4">
+                    <img class="h-36 md:h-65 lg:h-75 mx-auto" src="./assets/images/home/shine-middle.png" alt="img">
                   </div>
-                </div>
-
-                <!-- 2 -->
-                <div class="shrink-0 relative opacity-60">
-                  <div
-                    class="size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden">
-                    <img src="./assets/images/home/shine-middle.png" alt="car Img" />
+                  <!-- 2 -->
+                  <div class="tab-contents hidden opacity-80" data-content="shine-5">
+                    <img class="h-36 md:h-65 lg:h-75 mx-auto" src="./assets/images/home/shine-middle.png" alt="img">
                   </div>
-
-                  <div
-                    class="absolute translate-y-11 bottom-0 left-1/2 -translate-x-1/2 z-10 flex-mai-center bg-black/70 text-white/70 rounded-2xl w-27.5 h-10 hidden transition duration-200 group-hover:flex-mai-center px-2 py-1">
-                    Название
+                  <!-- 2 -->
+                  <div class="tab-contents hidden opacity-80" data-content="shine-6">
+                    <img class="h-36 md:h-65 lg:h-75 mx-auto" src="./assets/images/home/shine-middle.png" alt="img">
+                  </div>
+                  <!-- 2 -->
+                  <div class="tab-contents hidden opacity-80" data-content="shine-7">
+                    <img class="h-36 md:h-65 lg:h-75 mx-auto" src="./assets/images/home/shine-middle.png" alt="img">
+                  </div>
+                  <!-- 2 -->
+                  <div class="tab-contents hidden opacity-80" data-content="shine-8">
+                    <img class="h-36 md:h-65 lg:h-75 mx-auto" src="./assets/images/home/shine-middle.png" alt="img">
                   </div>
                 </div>
-
-                <!-- 2 -->
-                <div class="shrink-0 relative opacity-60">
-                  <div
-                    class="size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden">
-                    <img src="./assets/images/home/shine-middle.png" alt="car Img" />
-                  </div>
-
-                  <div
-                    class="absolute translate-y-11 bottom-0 left-1/2 -translate-x-1/2 z-10 flex-mai-center bg-black/70 text-white/70 rounded-2xl w-27.5 h-10 hidden transition duration-200 group-hover:flex-mai-center px-2 py-1">
-                    Название
-                  </div>
-                </div>
-
-                <!-- 2 -->
-                <div class="shrink-0 relative opacity-60">
-                  <div
-                    class="size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden">
-                    <img src="./assets/images/home/shine-middle.png" alt="car Img" />
-                  </div>
-
-                  <div
-                    class="absolute translate-y-11 bottom-0 left-1/2 -translate-x-1/2 z-10 flex-mai-center bg-black/70 text-white/70 rounded-2xl w-27.5 h-10 hidden transition duration-200 group-hover:flex-mai-center px-2 py-1">
-                    Название
-                  </div>
-                </div>
-
-                <!-- 2 -->
-                <div class="shrink-0 relative opacity-60">
-                  <div
-                    class="size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden">
-                    <img src="./assets/images/home/shine-middle.png" alt="car Img" />
-                  </div>
-
-                  <div
-                    class="absolute translate-y-11 bottom-0 left-1/2 -translate-x-1/2 z-10 flex-mai-center bg-black/70 text-white/70 rounded-2xl w-27.5 h-10 hidden transition duration-200 group-hover:flex-mai-center px-2 py-1">
-                    Название
-                  </div>
-                </div>
-
-                <!-- 2 -->
-                <div class="shrink-0 relative opacity-60">
-                  <div
-                    class="size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden">
-                    <img src="./assets/images/home/shine-middle.png" alt="car Img" />
-                  </div>
-
-                  <div
-                    class="absolute translate-y-11 bottom-0 left-1/2 -translate-x-1/2 z-10 flex-mai-center bg-black/70 text-white/70 rounded-2xl w-27.5 h-10 hidden transition duration-200 group-hover:flex-mai-center px-2 py-1">
-                    Название
-                  </div>
-                </div>
-
-                <!-- 2 -->
-                <div class="shrink-0 relative opacity-60">
-                  <div
-                    class="size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden">
-                    <img src="./assets/images/home/shine-middle.png" alt="car Img" />
-                  </div>
-
-                  <div
-                    class="absolute translate-y-11 bottom-0 left-1/2 -translate-x-1/2 z-10 flex-mai-center bg-black/70 text-white/70 rounded-2xl w-27.5 h-10 hidden transition duration-200 group-hover:flex-mai-center px-2 py-1">
-                    Название
-                  </div>
-                </div>
-
-                <!-- 2 -->
-                <div class="shrink-0 relative opacity-60">
-                  <div
-                    class="size-10.5 flex-mai-center border border-brand-gray rounded-full cursor-pointer overflow-hidden">
-                    <img src="./assets/images/home/shine-middle.png" alt="car Img" />
-                  </div>
-
-                  <div
-                    class="absolute translate-y-11 bottom-0 left-1/2 -translate-x-1/2 z-10 flex-mai-center bg-black/70 text-white/70 rounded-2xl w-27.5 h-10 hidden transition duration-200 group-hover:flex-mai-center px-2 py-1">
-                    Название
-                  </div>
-                </div>
-              </div>
-              <div class="pt-12.5">
-                <img class="h-75 mx-auto" src="./assets/images/home/shine-middle.png" alt="img">
               </div>
             </div>
 
             <!-- Right -->
-            <div class="w-full flex flex-col justify-between max-w-105">
-              <div class="grid grid-cols-2 gap-y-7 gap-x-8.5 mb-20">
+            <div class="w-full flex flex-col justify-between lg:max-w-105">
+              <div
+                class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-y-4 lg:gap-y-7 gap-x-3 lg:gap-x-8.5 mb-7 md:mb-14 lg:mb-20">
                 <!-- Модель: -->
                 <div class="w-full max-w-67">
-                  <p class="text-display-22/[112%] mb-5">
+                  <p class="text-xs md:text-base lg:text-display-22/[112%] mb-2 lg:mb-5">
                     Модель:
                   </p>
 
 
                   <div class="relative">
                     <button
-                      class="dropdown-button text-primary border rounded-full h-10.5 px-4 lg:px-6 py-2.5 text-center inline-flex gap-3 items-center">
+                      class="dropdown-button text-primary text-xs md:text-base border rounded-full h-7.5 md:h-10.5 px-4 lg:px-6 py-2.5 text-center inline-flex gap-3 items-center">
                       12000
                       <svg class="w-3 h-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                         viewBox="0 0 10 6">
@@ -2057,7 +2344,7 @@
                     <!-- Dropdown menu -->
                     <div
                       class="dropdown absolute z-10 translate-y-2 hidden bg-white rounded-lg border border-primary/50 w-28">
-                      <ul class="py-2 text-primary">
+                      <ul class="py-2 text-primary text-xs md:text-base">
                         <li>
                           <button
                             class="block w-full transition duration-200 hover:bg-gray-100 px-3 py-1">12001</button>
@@ -2077,14 +2364,14 @@
 
                 <!-- Двигатель: -->
                 <div class="w-full max-w-67">
-                  <p class="text-display-22/[112%] mb-5">
+                  <p class="text-xs md:text-base lg:text-display-22/[112%] mb-2 lg:mb-5">
                     Двигатель:
                   </p>
 
 
                   <div class="relative">
                     <button
-                      class="dropdown-button text-primary border rounded-full h-10.5 px-4 lg:px-6 py-2.5 text-center inline-flex gap-3 items-center">
+                      class="dropdown-button text-primary text-xs md:text-base border rounded-full h-7.5 md:h-10.5 px-4 lg:px-6 py-2.5 text-center inline-flex gap-3 items-center">
                       2.7D
                       <svg class="w-3 h-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                         viewBox="0 0 10 6">
@@ -2096,7 +2383,7 @@
                     <!-- Dropdown menu -->
                     <div
                       class="dropdown absolute z-10 translate-y-2 hidden bg-white rounded-lg border border-primary/50 w-28">
-                      <ul class="py-2 text-primary">
+                      <ul class="py-2 text-primary text-xs md:text-base">
                         <li>
                           <button
                             class="block w-full transition duration-200 hover:bg-gray-100 px-3 py-1">12001</button>
@@ -2116,14 +2403,14 @@
 
                 <!-- Год выпуска: -->
                 <div class="w-full max-w-67">
-                  <p class="text-display-22/[112%] mb-5">
+                  <p class="text-xs md:text-base lg:text-display-22/[112%] mb-2 lg:mb-5">
                     Год выпуска:
                   </p>
 
 
                   <div class="relative">
                     <button
-                      class="dropdown-button text-primary border rounded-full h-10.5 px-4 lg:px-6 py-2.5 text-center inline-flex gap-3 items-center">
+                      class="dropdown-button text-primary text-xs md:text-base border rounded-full h-7.5 md:h-10.5 px-4 lg:px-6 py-2.5 text-center inline-flex gap-3 items-center">
                       2016
                       <svg class="w-3 h-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                         viewBox="0 0 10 6">
@@ -2135,7 +2422,7 @@
                     <!-- Dropdown menu -->
                     <div
                       class="dropdown absolute z-10 translate-y-2 hidden bg-white rounded-lg border border-primary/50 w-28">
-                      <ul class="py-2 text-primary">
+                      <ul class="py-2 text-primary text-xs md:text-base">
                         <li>
                           <button
                             class="block w-full transition duration-200 hover:bg-gray-100 px-3 py-1">12001</button>
@@ -2154,15 +2441,14 @@
                 </div>
               </div>
 
-
-              <div class="flex gap-3.75">
-                <button
-                  class="size-16.75 text-[50px] font-extralight flex-mai-center rounded-full border border-primary text-primary transition duration-200 hover:opacity-75">
+              <div class="flex items-center max-lg:justify-end gap-3.75">
+                <button id="toggleBtn"
+                  class="size-9 md:size-12 lg:size-16.75 shrink-0 text-2xl md:text-[40px] lg:text-[50px] font-extralight flex-mai-center rounded-full border border-primary text-primary transition duration-200 hover:bg-primary hover:text-white">
                   +
                 </button>
 
                 <button
-                  class="text-2xl max-w-82 w-full h-16.75 bg-brand-red text-white rounded-full py-4 px-7 transition duration-200 hover:bg-brand-red-700">
+                  class="text-xs md:text-base lg:text-xl xl:text-2xl max-w-82 w-full h-9 md:h-12 lg:h-14 xl:h-16.75 bg-brand-red text-white rounded-full py-2 px-5 xl:px-7 transition duration-200 hover:bg-brand-red-700">
                   Расчитать стоимость
                 </button>
               </div>
@@ -2178,17 +2464,23 @@
 
   <!-- Footer -->
   <footer>
-    <div class="container-base flex items-end justify-between gap-5 mb-10.5">
-      <div class="max-w-85 w-full">
-        <a class="block mb-7.25" href="#">
-          <img src="./assets/icons/logo.svg" alt="Logo" class="h-15.25">
-        </a>
+    <div class="container-base flex max-md:flex-col-reverse md:items-end justify-between gap-7.5 lg:gap-5 mb-10.5">
+      <div class="md:max-w-85 w-full">
+        <div class="max-md:w-full flex items-center justify-between gap-5 mb-5 lg:mb-7.25">
+          <a class="block" href="#">
+            <img src="./assets/icons/logo.svg" alt="Logo" class="h-12.5">
+          </a>
 
-        <p class="text-xl/[112%] mb-7.25">
+          <div class="md:hidden">
+            <img class="h-11" src="./assets/images/home/footer-yandex.png" alt="Img">
+          </div>
+        </div>
+
+        <p class="lg:text-xl/[112%] mb-5 lg:mb-7.25">
           © BROTHERS, 2016-2024
         </p>
 
-        <div class="font-bold text-xl/[112%] space-y-5 mb-7.25">
+        <div class="font-bold lg:text-xl/[112%] space-y-3 lg:space-y-5 mb-7.25">
           <p>
             Москва, 43-км МКАД, Вл1, С1 (Проектируемый проезд №7534)
           </p>
@@ -2200,92 +2492,94 @@
           </p>
         </div>
 
-        <div class="mb-7.25">
-          <img class="h-18.75" src="./assets/images/home/footer-yandex.png" alt="Img">
+        <div class="max-md:hidden mb-5 lg:mb-7.25">
+          <img class="h-15 lg:h-18.75" src="./assets/images/home/footer-yandex.png" alt="Img">
         </div>
 
-        <p class="max-w-75 w-full text-base/[140%]">
+        <p class="md:max-w-75 w-full text-xs lg:text-base/[140%] max-md:mb-2.5">
           Копирование материалов с сайта преследуется по закону
         </p>
+
+        <p class="md:hidden text-xs lg:text-base/[112%]">
+          Вся предоставленная информация на сайте ни при каких условиях не является публичной офертой, определяемой
+          по
       </div>
 
-      <div class="max-w-203.5 w-full">
-        <div class="text-display-22 max-w-170 w-full flex justify-between gap-5 mb-7">
-          <div class="max-w-95 w-full flex flex-col gap-7">
-            <a href="#" class="text-display-22 transition duration-200 hover:text-brand-red">
+      <div class="lg:max-w-203.5 w-full">
+        <div class="lg:text-display-22 max-w-170 w-full flex max-lg:flex-col justify-between gap-5 mb-7">
+          <div class="lg:max-w-95 w-full grid grid-cols-2 lg:flex flex-col ga-4 lg:gap-7 max-lg:space-y-4">
+            <a href="#" class="transition duration-200 hover:text-brand-red">
               Главная
             </a>
 
-            <a href="#" class="text-display-22 transition duration-200 hover:text-brand-red">
+            <a href="#" class="transition duration-200 hover:text-brand-red">
               О компании
             </a>
 
-            <a href="#" class="text-display-22 transition duration-200 hover:text-brand-red">
+            <a href="#" class="transition duration-200 hover:text-brand-red">
               Акции
             </a>
 
-            <a href="#" class="text-display-22 transition duration-200 hover:text-brand-red">
+            <a href="#" class="transition duration-200 hover:text-brand-red">
               Вакансии
             </a>
 
-            <a href="#" class="text-display-22 transition duration-200 hover:text-brand-red">
+            <a href="#" class="transition duration-200 hover:text-brand-red">
               Контакты
             </a>
 
-            <a href="#" class="text-display-22 transition duration-200 hover:text-brand-red">
+            <a href="#" class="break-all transition duration-200 hover:text-brand-red">
               Политика конфиденциальности
             </a>
           </div>
 
-          <div class="max-w-62.5 w-full flex flex-col gap-5.5">
-            <h4 class="text-display-22 transition duration-200 hover:text-brand-red">
+          <div class="lg:max-w-62.5 w-full flex lg:flex-col max-[576px]:justify-between gap-5.5">
+            <p class="max-lg:hidden text-display-22 transition duration-200 hover:text-brand-red">
               Мы в социальных сетях
-            </h4>
-
+            </p>
             <a href="#" class="flex items-center gap-2.5 group">
-              <img class="shrink-0" src="./assets/icons/vk.svg" alt="vk icon">
-              <span class="transition duration-200 group-hover:text-brand-red">
+              <img class="shrink-0 max-md:size-10" src="./assets/icons/vk.svg" alt="vk icon">
+              <span class="max-lg:hidden transition duration-200 group-hover:text-brand-red">
                 ВКонтакте
               </span>
             </a>
 
             <a href="#" class="flex items-center gap-2.5 group">
-              <img class="shrink-0" src="./assets/icons/you-tube.svg" alt="icon">
-              <span class="transition duration-200 group-hover:text-brand-red">
+              <img class="shrink-0 max-md:h-7.5" src="./assets/icons/you-tube.svg" alt="icon">
+              <span class="max-lg:hidden transition duration-200 group-hover:text-brand-red">
                 YouTube
               </span>
             </a>
 
             <a href="#" class="flex items-center gap-2.5 group">
-              <img class="shrink-0" src="./assets/icons/rutube.svg" alt="icon">
-              <span class="transition duration-200 group-hover:text-brand-red">
+              <img class="shrink-0 max-md:size-10" src="./assets/icons/rutube.svg" alt="icon">
+              <span class="max-lg:hidden transition duration-200 group-hover:text-brand-red">
                 RuTube
               </span>
             </a>
 
             <a href="#" class="flex items-center gap-2.5 group">
-              <img class="shrink-0" src="./assets/icons/instagram.svg" alt="icon">
-              <span class="transition duration-200 group-hover:text-brand-red">
+              <img class="shrink-0 max-md:size-10" src="./assets/icons/instagram.svg" alt="icon">
+              <span class="max-lg:hidden transition duration-200 group-hover:text-brand-red">
                 Instagram
               </span>
             </a>
 
             <a href="#" class="flex items-center gap-2.5 group">
-              <img class="shrink-0" src="./assets/icons/zden.svg" alt="icon">
-              <span class="transition duration-200 group-hover:text-brand-red">
+              <img class="shrink-0 max-md:size-10" src="./assets/icons/zden.svg" alt="icon">
+              <span class="max-lg:hidden transition duration-200 group-hover:text-brand-red">
                 Дзен
               </span>
             </a>
           </div>
         </div>
-        <p class="text-base/[112%]">
+        <p class="max-md:hidden text-xs lg:text-base/[112%]">
           Вся предоставленная информация на сайте ни при каких условиях не является публичной офертой, определяемой
           положениями Статьи 437 (2) Гражданского кодекса РФ
         </p>
       </div>
     </div>
   </footer>
-
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
